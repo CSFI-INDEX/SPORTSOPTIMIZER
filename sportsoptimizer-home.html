@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<!-- SPORTSOPTIMIZER.COM | Powered by NEURALSTITCH™ | build 2026-03-15 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SportsOptimizer — The Only AI-Powered DFS Edge</title>
+  <meta name="description" content="SportsOptimizer gives you the only AI-powered DFS lineup engine built on real performance data. Powered by NEURALSTITCH™. Yahoo and DraftKings. NBA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Exo+2:wght@300;400;500;600;700;800;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold:    #FFB800;
+      --gold2:   #FFD700;
+      --cyan:    #00d4ff;
+      --purple:  #7B2FFF;
+      --green:   #00FF41;
+      --red:     #FF3B5C;
+      --bg:      #04070f;
+      --bg2:     #080d1a;
+      --text:    #E8EDF5;
+      --muted:   #6b7280;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Exo 2', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* ── GRID BG ── */
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background-image:
+        linear-gradient(rgba(255,184,0,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,184,0,0.03) 1px, transparent 1px);
+      background-size: 80px 80px;
+      pointer-events: none; z-index: 0;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top:0; left:0; right:0; z-index:200;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 48px;
+      background: rgba(4,7,15,0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255,184,0,0.1);
+    }
+    .nav-logo {
+      display: flex; align-items: center; gap: 14px;
+      text-decoration: none;
+    }
+    .nav-logo img { height: 36px; width: auto; }
+    .nav-logo-text {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 900; font-size: 1.25em; letter-spacing: 3px;
+    }
+    .nav-logo-text .sp { color: var(--gold); }
+    .nav-logo-text .op { color: #fff; }
+    .nav-links {
+      display: flex; align-items: center; gap: 32px;
+    }
+    .nav-links a {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.72em; letter-spacing: 2px;
+      color: var(--muted); text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: #fff; }
+    .nav-btn {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 900; font-size: 0.9em; letter-spacing: 3px;
+      padding: 10px 24px; border-radius: 8px;
+      background: var(--gold); color: #000; border: none;
+      cursor: pointer; text-decoration: none;
+      transition: opacity 0.2s, transform 0.1s;
+    }
+    .nav-btn:hover { opacity: 0.88; transform: scale(0.99); }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative; z-index: 1;
+      min-height: 100vh;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      text-align: center;
+      padding: 140px 24px 100px;
+    }
+    .hero-glow {
+      position: absolute; top: 20%; left: 50%;
+      transform: translateX(-50%);
+      width: 900px; height: 500px;
+      background: radial-gradient(ellipse,
+        rgba(255,184,0,0.08) 0%,
+        rgba(123,47,255,0.06) 40%,
+        transparent 70%);
+      pointer-events: none;
+    }
+
+    .ns-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.68em; letter-spacing: 4px;
+      color: var(--cyan);
+      background: rgba(0,212,255,0.06);
+      border: 1px solid rgba(0,212,255,0.2);
+      padding: 6px 18px; border-radius: 20px;
+      margin-bottom: 40px;
+    }
+    .ns-badge .dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--cyan);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%,100% { opacity:1; transform:scale(1); }
+      50%      { opacity:0.3; transform:scale(0.7); }
+    }
+
+    .hero-pre {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.8em; letter-spacing: 6px;
+      color: var(--muted); margin-bottom: 20px;
+    }
+
+    .hero-title {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 900;
+      font-size: clamp(3em, 9vw, 6.5em);
+      letter-spacing: 4px; line-height: 0.95;
+      margin-bottom: 24px;
+    }
+    .hero-title .line1 { color: #fff; display: block; }
+    .hero-title .line2 { color: var(--gold); display: block; filter: drop-shadow(0 0 30px rgba(255,184,0,0.4)); }
+    .hero-title .line3 { color: #fff; display: block; font-size: 0.55em; letter-spacing: 8px; opacity: 0.5; margin-top: 10px; }
+
+    .hero-sub {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.88em; color: var(--muted);
+      max-width: 600px; margin: 0 auto 48px;
+      line-height: 1.8; letter-spacing: 0.5px;
+    }
+    .hero-sub strong { color: #fff; }
+
+    .hero-cta-row {
+      display: flex; gap: 16px; justify-content: center;
+      flex-wrap: wrap; margin-bottom: 64px;
+    }
+    .btn-primary {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 900; font-size: 1.1em; letter-spacing: 4px;
+      padding: 18px 44px; border-radius: 10px;
+      background: var(--gold); color: #000; border: none;
+      cursor: pointer; text-decoration: none;
+      transition: all 0.2s;
+      box-shadow: 0 0 40px rgba(255,184,0,0.25);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 60px rgba(255,184,0,0.4);
+    }
+    .btn-secondary {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 700; font-size: 1em; letter-spacing: 3px;
+      padding: 18px 36px; border-radius: 10px;
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.15);
+      color: rgba(255,255,255,0.7);
+      cursor: pointer; text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-secondary:hover {
+      border-color: rgba(255,255,255,0.4);
+      color: #fff;
+    }
+
+    /* Live stats strip */
+    .hero-stats {
+      display: flex; gap: 48px; justify-content: center;
+      flex-wrap: wrap;
+    }
+    .stat-item { text-align: center; }
+    .stat-num {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 900; font-size: 2em; letter-spacing: 2px;
+      color: var(--gold);
+    }
+    .stat-lbl {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.62em; letter-spacing: 3px; color: var(--muted);
+      margin-top: 2px;
+    }
+
+    /* ── SCROLL INDICATOR ── */
+    .scroll-hint {
+      position: absolute; bottom: 32px; left: 50%;
+      transform: translateX(-50%);
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.6em; letter-spacing: 4px; color: #333;
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+    }
+    .scroll-hint::after {
+      content: '';
+      width: 1px; height: 40px;
+      background: linear-gradient(to bottom, #333, transparent);
+    }
+
+    /* ── SECTION BASE ── */
+    section {
+      position: relative; z-index: 1;
+    }
+
+    /* ── THE EDGE SECTION ── */
+    .edge-section {
+      padding: 100px 24px;
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.04);
+    }
+    .section-eyebrow {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.68em; letter-spacing: 6px;
+      color: var(--gold); margin-bottom: 16px;
+    }
+    .section-title {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 900;
+      font-size: clamp(1.8em, 4vw, 3em);
+      letter-spacing: 3px; color: #fff;
+      margin-bottom: 16px; line-height: 1.1;
+    }
+    .section-title .gold { color: var(--gold); }
+    .section-title .cyan { color: var(--cyan); }
+    .section-sub {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.78em; color: var(--muted);
+      max-width: 560px; margin: 0 auto 60px;
+      line-height: 1.7;
+    }
+
+    .edge-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px; max-width: 1100px; margin: 0 auto;
+    }
+    .edge-card {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 16px; padding: 32px 28px;
+      text-align: left; transition: all 0.2s;
+    }
+    .edge-card:hover {
+      border-color: rgba(255,184,0,0.2);
+      background: rgba(255,184,0,0.02);
+      transform: translateY(-3px);
+    }
+    .edge-num {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 900; font-size: 3em;
+      color: rgba(255,184,0,0.15); letter-spacing: 2px;
+      line-height: 1; margin-bottom: 12px;
+    }
+    .edge-title {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 900; font-size: 1.1em;
+      letter-spacing: 3px; color: #fff;
+      margin-bottom: 10px;
+    }
+    .edge-title .accent { color: var(--gold); }
+    .edge-body {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.72em; color: var(--muted); line-height: 1.7;
+    }
+
+    /* ── PLATFORMS ── */
+    .platforms {
+      padding: 80px 24px;
+      border-top: 1px solid rgba(255,255,255,0.04);
+      text-align: center;
+    }
+    .platform-row {
+      display: flex; gap: 20px; justify-content: center;
+      flex-wrap: wrap; margin-top: 40px;
+    }
+    .platform-card {
+      background: rgba(255,255,255,0.03);
+      border-radius: 14px; padding: 28px 40px;
+      flex: 1; max-width: 300px; min-width: 220px;
+      transition: all 0.2s; text-decoration: none;
+    }
+    .platform-card.yahoo {
+      border: 1px solid rgba(123,47,255,0.3);
+    }
+    .platform-card.yahoo:hover {
+      border-color: rgba(123,47,255,0.6);
+      box-shadow: 0 0 40px rgba(123,47,255,0.08);
+      transform: translateY(-3px);
+    }
+    .platform-card.dk {
+      border: 1px solid rgba(246,134,31,0.3);
+    }
+    .platform-card.dk:hover {
+      border-color: rgba(246,134,31,0.6);
+      box-shadow: 0 0 40px rgba(246,134,31,0.08);
+      transform: translateY(-3px);
+    }
+    .platform-name {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 900; font-size: 1.6em;
+      letter-spacing: 4px; margin-bottom: 6px;
+    }
+    .platform-card.yahoo .platform-name { color: #7B2FFF; }
+    .platform-card.dk    .platform-name { color: #f6861f; }
+    .platform-sub {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.68em; color: var(--muted);
+      letter-spacing: 2px; margin-bottom: 16px;
+    }
+    .platform-features {
+      list-style: none; text-align: left;
+    }
+    .platform-features li {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.68em; color: #888;
+      padding: 4px 0; display: flex; gap: 8px;
+    }
+    .platform-features li::before {
+      content: '→'; color: var(--gold);
+    }
+
+    /* ── NEURALSTITCH CALLOUT ── */
+    .ns-callout {
+      padding: 100px 24px;
+      border-top: 1px solid rgba(255,255,255,0.04);
+    }
+    .ns-callout-inner {
+      max-width: 900px; margin: 0 auto;
+      background: linear-gradient(135deg,
+        rgba(123,47,255,0.08) 0%,
+        rgba(0,212,255,0.04) 100%);
+      border: 1px solid rgba(123,47,255,0.25);
+      border-radius: 24px; padding: 64px 48px;
+      text-align: center;
+      box-shadow: 0 0 80px rgba(123,47,255,0.06);
+      position: relative; overflow: hidden;
+    }
+    .ns-callout-inner::before {
+      content: '';
+      position: absolute; top: -50%; left: 50%;
+      transform: translateX(-50%);
+      width: 600px; height: 300px;
+      background: radial-gradient(ellipse,
+        rgba(123,47,255,0.12) 0%, transparent 65%);
+    }
+    .ns-engine-label {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.68em; letter-spacing: 6px;
+      color: var(--cyan); margin-bottom: 16px;
+      position: relative;
+    }
+    .ns-engine-name {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 900;
+      font-size: clamp(2.5em, 6vw, 4.5em);
+      letter-spacing: 6px; line-height: 1;
+      margin-bottom: 24px; position: relative;
+    }
+    .ns-engine-name .n { color: #fff; }
+    .ns-engine-name .s { color: var(--cyan); }
+    .ns-engine-name .rest { color: #fff; }
+    .ns-engine-desc {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.82em; color: var(--muted);
+      max-width: 520px; margin: 0 auto 32px;
+      line-height: 1.7; position: relative;
+    }
+    .ns-engine-desc strong { color: #fff; }
+    .ns-learn-link {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 700; font-size: 0.9em;
+      letter-spacing: 3px; color: var(--cyan);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(0,212,255,0.3);
+      padding-bottom: 2px;
+      transition: border-color 0.2s;
+      position: relative;
+    }
+    .ns-learn-link:hover { border-color: var(--cyan); }
+
+    /* ── ACCURACY STRIP ── */
+    .accuracy-strip {
+      padding: 60px 24px;
+      border-top: 1px solid rgba(255,255,255,0.04);
+      text-align: center;
+    }
+    .accuracy-row {
+      display: flex; gap: 0; justify-content: center;
+      flex-wrap: wrap; max-width: 800px; margin: 32px auto 0;
+    }
+    .acc-item {
+      flex: 1; min-width: 160px;
+      padding: 28px 20px;
+      border-right: 1px solid rgba(255,255,255,0.05);
+    }
+    .acc-item:last-child { border-right: none; }
+    .acc-pct {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 900; font-size: 2.8em;
+      letter-spacing: 2px; color: var(--gold);
+      filter: drop-shadow(0 0 12px rgba(255,184,0,0.3));
+    }
+    .acc-lbl {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.62em; letter-spacing: 3px;
+      color: var(--muted); margin-top: 4px;
+    }
+
+    /* ── PRICING PREVIEW ── */
+    .pricing-preview {
+      padding: 100px 24px;
+      border-top: 1px solid rgba(255,255,255,0.04);
+      text-align: center;
+    }
+    .price-cards-row {
+      display: flex; gap: 16px; justify-content: center;
+      flex-wrap: wrap; margin-top: 48px; margin-bottom: 32px;
+    }
+    .price-mini {
+      background: rgba(255,255,255,0.02);
+      border-radius: 14px; padding: 28px 24px;
+      min-width: 180px; flex: 1; max-width: 220px;
+      transition: all 0.2s; cursor: pointer;
+      text-decoration: none; display: block;
+    }
+    .price-mini:hover { transform: translateY(-4px); }
+    .price-mini.free   { border: 1px solid rgba(136,136,136,0.2); }
+    .price-mini.std    { border: 1px solid rgba(0,212,255,0.3); }
+    .price-mini.pro    { border: 2px solid rgba(255,184,0,0.5); box-shadow: 0 0 40px rgba(255,184,0,0.08); }
+    .price-mini.elite  { border: 1px solid rgba(0,255,65,0.3); }
+    .pm-tier {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 900; font-size: 0.8em;
+      letter-spacing: 4px; margin-bottom: 8px;
+    }
+    .price-mini.free  .pm-tier { color: #666; }
+    .price-mini.std   .pm-tier { color: var(--cyan); }
+    .price-mini.pro   .pm-tier { color: var(--gold); }
+    .price-mini.elite .pm-tier { color: var(--green); }
+    .pm-price {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 1.8em; color: #fff; font-weight: 900;
+    }
+    .pm-mo {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.6em; color: #444;
+    }
+
+    /* ── FINAL CTA ── */
+    .final-cta {
+      padding: 120px 24px;
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.04);
+    }
+    .final-cta-title {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 900;
+      font-size: clamp(2.5em, 7vw, 5em);
+      letter-spacing: 4px; line-height: 1;
+      margin-bottom: 20px;
+    }
+    .final-cta-title .gold { color: var(--gold); }
+    .final-cta-sub {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.8em; color: var(--muted);
+      margin-bottom: 40px; letter-spacing: 1px;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      position: relative; z-index: 1;
+      padding: 48px 24px 32px;
+      border-top: 1px solid rgba(255,255,255,0.04);
+    }
+    .footer-inner {
+      max-width: 1000px; margin: 0 auto;
+      display: flex; justify-content: space-between;
+      align-items: flex-start; flex-wrap: wrap; gap: 32px;
+    }
+    .footer-brand .name {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 900; font-size: 1.3em;
+      letter-spacing: 3px;
+    }
+    .footer-brand .name .sp { color: var(--gold); }
+    .footer-brand .name .op { color: #fff; }
+    .footer-brand .sub {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.65em; color: #333;
+      letter-spacing: 2px; margin-top: 4px;
+    }
+    .footer-links-col h4 {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 900; font-size: 0.75em;
+      letter-spacing: 3px; color: var(--gold);
+      margin-bottom: 12px;
+    }
+    .footer-links-col a {
+      display: block;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.68em; letter-spacing: 1px;
+      color: #444; text-decoration: none;
+      margin-bottom: 8px; transition: color 0.2s;
+    }
+    .footer-links-col a:hover { color: #aaa; }
+    .footer-bottom {
+      max-width: 1000px; margin: 32px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.04);
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.6em; color: #222;
+      letter-spacing: 2px;
+      display: flex; justify-content: space-between;
+      flex-wrap: wrap; gap: 8px;
+    }
+
+    /* ── MOBILE ── */
+    @media (max-width: 768px) {
+      nav { padding: 14px 20px; }
+      .nav-links { display: none; }
+      .hero { padding: 120px 20px 80px; }
+      .hero-stats { gap: 28px; }
+      .ns-callout-inner { padding: 40px 24px; }
+      .acc-item { min-width: 130px; }
+      .footer-inner { flex-direction: column; }
+      .footer-bottom { flex-direction: column; gap: 4px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+  <a class="nav-logo" href="#">
+    <div class="nav-logo-text">
+      <span class="sp">SPORTS</span><span class="op">OPTIMIZER</span>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="#platforms">PLATFORMS</a>
+    <a href="#edge">THE EDGE</a>
+    <a href="#pricing">PRICING</a>
+    <a href="https://neuralstitch.ai">NEURALSTITCH™</a>
+  </div>
+  <a class="nav-btn" href="#signup">START FREE</a>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-glow"></div>
+
+  <div class="ns-badge">
+    <div class="dot"></div>
+    POWERED BY NEURALSTITCH™ AI ENGINE
+  </div>
+
+  <div class="hero-pre">DAILY FANTASY SPORTS INTELLIGENCE</div>
+
+  <h1 class="hero-title">
+    <span class="line1">NOT JUST ANY</span>
+    <span class="line2">SPORTS OPTIMIZER.</span>
+    <span class="line3">THE ONLY ONE.</span>
+  </h1>
+
+  <p class="hero-sub">
+    <strong>AI-driven lineups for Yahoo &amp; DraftKings.</strong> Built on real performance data,
+    injury intelligence, and usage patterns — then handed to you to make the final call.
+    This is the edge that separates winners from the rest.
+  </p>
+
+  <div class="hero-cta-row">
+    <a class="btn-primary" href="#signup">⚡ GET STARTED FREE</a>
+    <a class="btn-secondary" href="#edge">SEE HOW IT WORKS</a>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat-item">
+      <div class="stat-num">NBA</div>
+      <div class="stat-lbl">LIVE NOW</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">2</div>
+      <div class="stat-lbl">PLATFORMS</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">3</div>
+      <div class="stat-lbl">LINEUP MODES</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">DAILY</div>
+      <div class="stat-lbl">PROJECTIONS</div>
+    </div>
+  </div>
+
+  <div class="scroll-hint">SCROLL</div>
+</section>
+
+<!-- ── THE EDGE ── -->
+<section class="edge-section" id="edge">
+  <div class="section-eyebrow">WHY SPORTSOPTIMIZER</div>
+  <h2 class="section-title">THE <span class="gold">UNFAIR</span> ADVANTAGE</h2>
+  <p class="section-sub">
+    Every other tool gives you projections. We give you the projection, the historical context, the injury adjustment, and the accuracy grade — then let you override it with your own read.
+  </p>
+
+  <div class="edge-grid">
+    <div class="edge-card">
+      <div class="edge-num">01</div>
+      <div class="edge-title"><span class="accent">RECENCY</span> WEIGHTED</div>
+      <div class="edge-body">
+        Last 5 games weighted by recency — not flat season averages. G1=40%, G2=20%, G3=20%, G4=10%, G5=10%. Hot players rise. Cold players drop. The engine sees the trend before you do.
+      </div>
+    </div>
+    <div class="edge-card">
+      <div class="edge-num">02</div>
+      <div class="edge-title"><span class="accent">USAGE</span> INTELLIGENCE</div>
+      <div class="edge-body">
+        Usage percentage is the leading indicator. When a star goes down, the engine identifies who absorbs the minutes and projects the bump — automatically, before tip-off.
+      </div>
+    </div>
+    <div class="edge-card">
+      <div class="edge-num">03</div>
+      <div class="edge-title"><span class="accent">SELF-GRADING</span> ENGINE</div>
+      <div class="edge-body">
+        NEURALSTITCH grades itself every day. You can see its accuracy over time — how often it was right, where it missed, and why. No other DFS tool shows you its homework.
+      </div>
+    </div>
+    <div class="edge-card">
+      <div class="edge-num">04</div>
+      <div class="edge-title"><span class="accent">THREE</span> LINEUP MODES</div>
+      <div class="edge-body">
+        MEDIAN for cash games. CEILING for GPP tournaments. MAXIMUM for high-variance shots. Each mode optimizes differently — you pick the game, the engine builds the lineup.
+      </div>
+    </div>
+    <div class="edge-card">
+      <div class="edge-num">05</div>
+      <div class="edge-title"><span class="accent">HUMAN</span> OVERRIDE</div>
+      <div class="edge-body">
+        You know things the data doesn't. A locker room rumor. A gut feeling. The engine gives you the base — you make the stitch. That's what separates good picks from great ones.
+      </div>
+    </div>
+    <div class="edge-card">
+      <div class="edge-num">06</div>
+      <div class="edge-title"><span class="accent">ONE-CLICK</span> CSV EXPORT</div>
+      <div class="edge-body">
+        Build your lineup, hit export. The CSV is pre-formatted exactly to DraftKings' and Yahoo's upload spec — position headers, player IDs, ready to upload in seconds.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PLATFORMS ── -->
+<section class="platforms" id="platforms">
+  <div class="section-eyebrow">SUPPORTED PLATFORMS</div>
+  <h2 class="section-title">YAHOO <span class="gold">&amp;</span> DRAFTKINGS</h2>
+  <p class="section-sub">Both platforms. One engine. Full lineup optimization, prop tools, and CSV export for each.</p>
+
+  <div class="platform-row">
+    <a class="platform-card yahoo" href="https://csfi-index.github.io/DFSLINEUP/index.html">
+      <div class="platform-name">YAHOO</div>
+      <div class="platform-sub">FANTASY DFS</div>
+      <ul class="platform-features">
+        <li>8-player lineup builder</li>
+        <li>NS projections + POWER BOOST</li>
+        <li>Prop builder &amp; accuracy tracker</li>
+        <li>Yahoo CSV export</li>
+      </ul>
+    </a>
+    <a class="platform-card dk" href="https://csfi-index.github.io/DFSLINEUP/Draftkings.html">
+      <div class="platform-name">DRAFTKINGS</div>
+      <div class="platform-sub">DAILY FANTASY</div>
+      <ul class="platform-features">
+        <li>8-player lineup builder</li>
+        <li>NS projections + POWER BOOST</li>
+        <li>Prop builder &amp; accuracy tracker</li>
+        <li>DK CSV export (player IDs)</li>
+      </ul>
+    </a>
+  </div>
+</section>
+
+<!-- ── NEURALSTITCH CALLOUT ── -->
+<section class="ns-callout">
+  <div class="ns-callout-inner">
+    <div class="ns-engine-label">THE ENGINE INSIDE</div>
+    <div class="ns-engine-name">
+      <span class="n">N</span><span class="s">S</span><span class="rest"> NEURALSTITCH™</span>
+    </div>
+    <p class="ns-engine-desc">
+      <strong>The machine sees the data. The human sees the market.</strong><br>
+      NEURALSTITCH is the AI engine powering every projection on this site. It consumes historical performance data, detects outliers, adjusts for injuries, and grades itself daily. It doesn't replace your instincts — it sharpens them.
+    </p>
+    <a class="ns-learn-link" href="https://neuralstitch.ai">LEARN ABOUT NEURALSTITCH →</a>
+  </div>
+</section>
+
+<!-- ── ACCURACY ── -->
+<section class="accuracy-strip">
+  <div class="section-eyebrow">NEURALSTITCH PERFORMANCE</div>
+  <h2 class="section-title">THE ENGINE <span class="gold">GRADES ITSELF</span></h2>
+  <p class="section-sub">Updated daily. These numbers are real — not marketing copy.</p>
+  <div class="accuracy-row">
+    <div class="acc-item">
+      <div class="acc-pct">NBA</div>
+      <div class="acc-lbl">SPORT · LIVE</div>
+    </div>
+    <div class="acc-item">
+      <div class="acc-pct">DAILY</div>
+      <div class="acc-lbl">PROJECTION UPDATES</div>
+    </div>
+    <div class="acc-item">
+      <div class="acc-pct">3</div>
+      <div class="acc-lbl">LINEUP MODES</div>
+    </div>
+    <div class="acc-item">
+      <div class="acc-pct">5</div>
+      <div class="acc-lbl">PROP CATEGORIES</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PRICING ── -->
+<section class="pricing-preview" id="pricing">
+  <div class="section-eyebrow">SIMPLE PRICING</div>
+  <h2 class="section-title">START FREE. <span class="gold">UPGRADE WHEN READY.</span></h2>
+  <p class="section-sub">No contracts. No commitments. Cancel any time.</p>
+
+  <div class="price-cards-row">
+    <a class="price-mini free" href="pricing.html">
+      <div class="pm-tier">FREE</div>
+      <div class="pm-price">$0</div>
+      <div class="pm-mo">/MONTH</div>
+    </a>
+    <a class="price-mini std" href="pricing.html">
+      <div class="pm-tier">STANDARD</div>
+      <div class="pm-price">$9.99</div>
+      <div class="pm-mo">/MONTH</div>
+    </a>
+    <a class="price-mini pro" href="pricing.html">
+      <div class="pm-tier">⚡ PRO</div>
+      <div class="pm-price">$19.99</div>
+      <div class="pm-mo">/MONTH</div>
+    </a>
+    <a class="price-mini elite" href="pricing.html">
+      <div class="pm-tier">ELITE</div>
+      <div class="pm-price">$29.99</div>
+      <div class="pm-mo">/MONTH</div>
+    </a>
+  </div>
+
+  <a class="btn-primary" href="pricing.html">SEE FULL PLAN DETAILS →</a>
+</section>
+
+<!-- ── FINAL CTA ── -->
+<section class="final-cta" id="signup">
+  <h2 class="final-cta-title">
+    READY TO<br><span class="gold">WIN MORE?</span>
+  </h2>
+  <p class="final-cta-sub">Join free. No credit card required. Upgrade when you're ready.</p>
+  <a class="btn-primary" href="https://csfi-index.github.io/DFSLINEUP/index.html#signup">
+    ⚡ CREATE FREE ACCOUNT
+  </a>
+</section>
+
+<!-- ── FOOTER ── */
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="name"><span class="sp">SPORTS</span><span class="op">OPTIMIZER</span></div>
+      <div class="sub">POWERED BY NEURALSTITCH™ · SPORTSOPTIMIZER.COM</div>
+    </div>
+    <div class="footer-links-col">
+      <h4>PRODUCT</h4>
+      <a href="https://csfi-index.github.io/DFSLINEUP/index.html">Yahoo DFS</a>
+      <a href="https://csfi-index.github.io/DFSLINEUP/Draftkings.html">DraftKings</a>
+      <a href="pricing.html">Pricing</a>
+    </div>
+    <div class="footer-links-col">
+      <h4>COMPANY</h4>
+      <a href="https://neuralstitch.ai">NeuralStitch™</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 NEURALSTITCH LLC · ALL RIGHTS RESERVED</span>
+    <span>NOT AFFILIATED WITH DRAFTKINGS OR YAHOO · PLEASE GAMBLE RESPONSIBLY</span>
+  </div>
+</footer>
+
+</body>
+</html>
