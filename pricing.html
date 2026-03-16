@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<!-- DFSLINEUPAI | Pricing Page | build 2026-03-15 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="images/nsbrainlogo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DFSLINEUPAI — Pricing &amp; Plans</title>
+  <meta name="description" content="Choose your DFSLINEUPAI plan. Free, Standard, Pro, and Elite tiers powered by the NeuralStitch™ AI engine.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Exo+2:wght@300;400;500;600;700;800;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    :root {
+      --primary: #7B2FFF;
+      --gold: #FFB800;
+      --green: #00FF88;
+      --cyan: #00d4ff;
+      --red: #FF3B5C;
+      --bg: #06000e;
+      --bg2: #12003a;
+      --text: #E8EDF5;
+      --text-muted: #a0aec0;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Exo 2', sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 32px;
+      background: rgba(6,0,14,0.95);
+      border-bottom: 1px solid rgba(123,47,255,0.2);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+    }
+    .nav-logo {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 900;
+      font-size: 1.5em;
+      letter-spacing: 3px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .nav-logo .dfs  { color: var(--cyan); }
+    .nav-logo .line { color: #fff; }
+    .nav-logo .up   { color: var(--primary); }
+    .nav-logo .ai   { color: var(--gold); }
+    .nav-links { display: flex; gap: 24px; align-items: center; }
+    .nav-links a {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 700;
+      font-size: 0.9em;
+      letter-spacing: 2px;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: #fff; }
+    .nav-links a.active { color: var(--gold); }
+    .nav-cta {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 900;
+      font-size: 0.85em;
+      letter-spacing: 2px;
+      padding: 8px 20px;
+      border-radius: 8px;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: opacity 0.2s;
+    }
+    .nav-cta:hover { opacity: 0.85; }
+
+    /* ── HERO ── */
+    .hero {
+      text-align: center;
+      padding: 80px 24px 48px;
+      position: relative;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 50%;
+      transform: translateX(-50%);
+      width: 600px; height: 300px;
+      background: radial-gradient(ellipse, rgba(123,47,255,0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-eyebrow {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.75em;
+      letter-spacing: 5px;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+    .hero-title {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 900;
+      font-size: clamp(2.4em, 6vw, 4em);
+      letter-spacing: 4px;
+      line-height: 1.05;
+      margin-bottom: 16px;
+    }
+    .hero-title .ns { color: var(--primary); }
+    .hero-title .gold { color: var(--gold); }
+    .hero-sub {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.9em;
+      color: var(--text-muted);
+      max-width: 560px;
+      margin: 0 auto 32px;
+      line-height: 1.6;
+    }
+    .toggle-wrap {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 30px;
+      padding: 6px 18px;
+      margin-bottom: 48px;
+    }
+    .toggle-label {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 700;
+      font-size: 0.85em;
+      letter-spacing: 2px;
+      color: var(--text-muted);
+    }
+    .toggle-label.active { color: #fff; }
+    .toggle-switch {
+      width: 46px; height: 24px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 12px;
+      position: relative;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .toggle-switch.on { background: var(--primary); }
+    .toggle-switch::after {
+      content: '';
+      position: absolute;
+      top: 3px; left: 3px;
+      width: 18px; height: 18px;
+      border-radius: 50%;
+      background: #fff;
+      transition: left 0.2s;
+    }
+    .toggle-switch.on::after { left: 25px; }
+    .save-badge {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.65em;
+      letter-spacing: 2px;
+      background: var(--gold);
+      color: #000;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 900;
+    }
+
+    /* ── PRICING GRID ── */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 20px;
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    .plan-card {
+      background: #0C1020;
+      border-radius: 18px;
+      padding: 32px 28px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .plan-card:hover { transform: translateY(-4px); }
+    .plan-card.free    { border: 1px solid rgba(136,136,136,0.25); }
+    .plan-card.standard{ border: 2px solid rgba(0,212,255,0.4);    box-shadow: 0 0 40px rgba(0,212,255,0.06); }
+    .plan-card.pro     { border: 2px solid rgba(255,184,0,0.45);   box-shadow: 0 0 50px rgba(255,184,0,0.08); }
+    .plan-card.elite   { border: 2px solid rgba(0,255,65,0.4);     box-shadow: 0 0 60px rgba(0,255,65,0.08); }
+    .plan-card.pro     { transform: scale(1.02); }
+    .plan-card.pro:hover { transform: scale(1.02) translateY(-4px); }
+
+    .popular-badge {
+      position: absolute;
+      top: -13px; left: 50%;
+      transform: translateX(-50%);
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 900;
+      font-size: 0.7em;
+      letter-spacing: 3px;
+      background: var(--gold);
+      color: #000;
+      padding: 3px 14px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+
+    .plan-tier {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 900;
+      font-size: 0.75em;
+      letter-spacing: 4px;
+      margin-bottom: 10px;
+    }
+    .plan-card.free     .plan-tier { color: #888; }
+    .plan-card.standard .plan-tier { color: #00d4ff; }
+    .plan-card.pro      .plan-tier { color: var(--gold); }
+    .plan-card.elite    .plan-tier { color: #00FF41; }
+
+    .plan-price {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 3em;
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 4px;
+      color: #fff;
+    }
+    .plan-price-mo {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.65em;
+      color: #666;
+      margin-bottom: 20px;
+    }
+    .plan-price-annual {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.65em;
+      color: var(--gold);
+      margin-bottom: 20px;
+      display: none;
+    }
+
+    .plan-desc {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.7em;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      line-height: 1.5;
+      min-height: 48px;
+    }
+
+    .plan-features {
+      list-style: none;
+      margin-bottom: 28px;
+      flex: 1;
+    }
+    .plan-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.72em;
+      color: #c8d0dc;
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      line-height: 1.4;
+    }
+    .plan-features li:last-child { border-bottom: none; }
+    .feat-check { font-size: 1em; flex-shrink: 0; margin-top: 1px; }
+    .feat-check.yes { color: #00FF41; }
+    .feat-check.no  { color: #333; }
+    .feat-locked    { color: #555; }
+
+    .plan-btn {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 900;
+      font-size: 1em;
+      letter-spacing: 3px;
+      padding: 14px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      border: none;
+      width: 100%;
+      transition: opacity 0.2s, transform 0.1s;
+    }
+    .plan-btn:hover  { opacity: 0.88; transform: scale(0.99); }
+    .plan-btn:active { transform: scale(0.97); }
+    .plan-btn.free-btn {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.12);
+      color: #888;
+    }
+    .plan-btn.standard-btn { background: #00d4ff; color: #000; }
+    .plan-btn.pro-btn      { background: var(--gold); color: #000; }
+    .plan-btn.elite-btn    { background: #00FF41; color: #000; }
+
+    /* ── FEATURE COMPARISON TABLE ── */
+    .compare-section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+    .compare-title {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 900;
+      font-size: 1.8em;
+      letter-spacing: 3px;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.78em;
+    }
+    .compare-table th {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 900;
+      letter-spacing: 3px;
+      font-size: 0.9em;
+      padding: 12px 16px;
+      text-align: center;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .compare-table th:first-child { text-align: left; }
+    .compare-table th.col-std  { color: #00d4ff; }
+    .compare-table th.col-pro  { color: var(--gold); }
+    .compare-table th.col-eli  { color: #00FF41; }
+    .compare-table td {
+      padding: 11px 16px;
+      text-align: center;
+      color: var(--text-muted);
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+    .compare-table td:first-child { text-align: left; color: var(--text); }
+    .compare-table tr:hover td { background: rgba(255,255,255,0.02); }
+    .compare-table .section-row td {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 900;
+      letter-spacing: 3px;
+      font-size: 0.85em;
+      color: var(--primary);
+      background: rgba(123,47,255,0.06);
+      padding-top: 14px;
+      padding-bottom: 6px;
+      text-transform: uppercase;
+    }
+    .chk-yes { color: #00FF41; }
+    .chk-no  { color: #2a2a3a; }
+    .chk-lim {
+      color: var(--gold);
+      font-size: 0.85em;
+    }
+
+    /* ── FAQ ── */
+    .faq-section {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+    .faq-title {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 900;
+      font-size: 1.8em;
+      letter-spacing: 3px;
+      text-align: center;
+      margin-bottom: 32px;
+      color: #fff;
+    }
+    .faq-item {
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 10px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .faq-q {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 700;
+      font-size: 1em;
+      letter-spacing: 1px;
+      color: #fff;
+      padding: 16px 20px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(255,255,255,0.03);
+      user-select: none;
+    }
+    .faq-q:hover { background: rgba(255,255,255,0.05); }
+    .faq-q .arrow { transition: transform 0.2s; color: var(--primary); }
+    .faq-q.open .arrow { transform: rotate(180deg); }
+    .faq-a {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.8em;
+      color: var(--text-muted);
+      padding: 0 20px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.2s;
+      line-height: 1.6;
+    }
+    .faq-a.open { max-height: 300px; padding: 12px 20px 16px; }
+
+    /* ── FOOTER ── */
+    .footer {
+      text-align: center;
+      padding: 40px 24px 32px;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+    .footer-logo {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 900;
+      font-size: 1.4em;
+      letter-spacing: 3px;
+      margin-bottom: 10px;
+    }
+    .footer-logo .dfs  { color: var(--cyan); }
+    .footer-logo .line { color: #fff; }
+    .footer-logo .up   { color: var(--primary); }
+    .footer-logo .ai   { color: var(--gold); }
+    .footer-sub {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.7em;
+      color: #444;
+      letter-spacing: 2px;
+    }
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      margin: 16px 0;
+    }
+    .footer-links a {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.7em;
+      color: #555;
+      text-decoration: none;
+      letter-spacing: 1px;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: #aaa; }
+
+    /* ── MOBILE ── */
+    @media (max-width: 768px) {
+      .nav { padding: 12px 16px; }
+      .nav-links { display: none; }
+      .hero { padding: 48px 16px 32px; }
+      .pricing-grid { padding: 0 12px 48px; gap: 14px; }
+      .plan-card.pro { transform: none; }
+      .plan-card.pro:hover { transform: translateY(-4px); }
+      .compare-section { overflow-x: auto; }
+      .compare-table { min-width: 560px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav class="nav">
+  <a class="nav-logo" href="index.html">
+    <span class="dfs">DFS</span><span class="line">LINEUP</span><span class="up">AI</span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">YAHOO DFS</a>
+    <a href="Draftkings.html">DRAFTKINGS</a>
+    <a href="pricing.html" class="active">PRICING</a>
+  </div>
+  <a class="nav-cta" href="index.html#signup">GET STARTED FREE</a>
+</nav>
+
+<!-- ── HERO ── -->
+<div class="hero">
+  <div class="hero-eyebrow">NEURALSTITCH™ POWERED</div>
+  <h1 class="hero-title">
+    WIN MORE.<br><span class="ns">SMARTER</span> <span class="gold">LINEUPS.</span>
+  </h1>
+  <div class="hero-sub">
+    AI-driven DFS projections for Yahoo &amp; DraftKings. Pick your tier — upgrade or cancel anytime.
+  </div>
+
+  <div class="toggle-wrap">
+    <span class="toggle-label active" id="lbl-monthly">MONTHLY</span>
+    <div class="toggle-switch" id="billingToggle" onclick="toggleBilling()"></div>
+    <span class="toggle-label" id="lbl-annual">ANNUAL</span>
+    <span class="save-badge">SAVE 20%</span>
+  </div>
+</div>
+
+<!-- ── PRICING CARDS ── -->
+<div class="pricing-grid">
+
+  <!-- FREE -->
+  <div class="plan-card free">
+    <div class="plan-tier">FREE</div>
+    <div class="plan-price">$0</div>
+    <div class="plan-price-mo">/MONTH · ALWAYS FREE</div>
+    <div class="plan-price-annual">/MONTH BILLED ANNUALLY</div>
+    <div class="plan-desc">Get started with live player pools, game totals, and NS rankings.</div>
+    <ul class="plan-features">
+      <li><span class="feat-check yes">✓</span> Live Player Pool (Yahoo &amp; DK)</li>
+      <li><span class="feat-check yes">✓</span> Game Totals &amp; Schedules</li>
+      <li><span class="feat-check yes">✓</span> NS Rankings View</li>
+      <li><span class="feat-check yes">✓</span> Top Daily Picks Preview</li>
+      <li><span class="feat-check no">—</span> <span class="feat-locked">Prop Builder</span></li>
+      <li><span class="feat-check no">—</span> <span class="feat-locked">Lineup Builder</span></li>
+      <li><span class="feat-check no">—</span> <span class="feat-locked">CSV Export</span></li>
+      <li><span class="feat-check no">—</span> <span class="feat-locked">POWER BOOST Projections</span></li>
+    </ul>
+    <button class="plan-btn free-btn" onclick="window.location.href='index.html#signup'">START FREE</button>
+  </div>
+
+  <!-- STANDARD -->
+  <div class="plan-card standard">
+    <div class="plan-tier">STANDARD</div>
+    <div class="plan-price" id="price-standard">$9.99</div>
+    <div class="plan-price-mo" id="mo-standard">/MONTH</div>
+    <div class="plan-price-annual" id="ann-standard">$7.99/MO · BILLED $95.88/YEAR</div>
+    <div class="plan-desc">Props, projections, accuracy tracking. The serious player's foundation.</div>
+    <ul class="plan-features">
+      <li><span class="feat-check yes">✓</span> Everything in Free</li>
+      <li><span class="feat-check yes">✓</span> Prop Builder (PTS/REB/AST/STL/BLK)</li>
+      <li><span class="feat-check yes">✓</span> NS Projections Engine</li>
+      <li><span class="feat-check yes">✓</span> Prop Accuracy Tracker</li>
+      <li><span class="feat-check yes">✓</span> Prop Slip Builder</li>
+      <li><span class="feat-check no">—</span> <span class="feat-locked">Lineup Builder</span></li>
+      <li><span class="feat-check no">—</span> <span class="feat-locked">CSV Export</span></li>
+      <li><span class="feat-check no">—</span> <span class="feat-locked">POWER BOOST</span></li>
+    </ul>
+    <button class="plan-btn standard-btn" id="btn-standard" onclick="openStripeCheckout('standard')">⚡ GET STANDARD</button>
+  </div>
+
+  <!-- PRO -->
+  <div class="plan-card pro">
+    <div class="popular-badge">⚡ MOST POPULAR</div>
+    <div class="plan-tier">PRO</div>
+    <div class="plan-price" id="price-pro">$19.99</div>
+    <div class="plan-price-mo" id="mo-pro">/MONTH</div>
+    <div class="plan-price-annual" id="ann-pro">$15.99/MO · BILLED $191.88/YEAR</div>
+    <div class="plan-desc">Full lineup optimization for Yahoo &amp; DraftKings with AI POWER BOOST.</div>
+    <ul class="plan-features">
+      <li><span class="feat-check yes">✓</span> Everything in Standard</li>
+      <li><span class="feat-check yes">✓</span> Lineup Builder — Yahoo &amp; DraftKings</li>
+      <li><span class="feat-check yes">✓</span> NS POWER BOOST Projections</li>
+      <li><span class="feat-check yes">✓</span> CSV Export (direct DK/Yahoo upload)</li>
+      <li><span class="feat-check yes">✓</span> MEDIAN / CEILING / MAXIMUM Modes</li>
+      <li><span class="feat-check yes">✓</span> Injury Impact Adjustments</li>
+      <li><span class="feat-check no">—</span> <span class="feat-locked">Weekly Email Reports</span></li>
+      <li><span class="feat-check no">—</span> <span class="feat-locked">Early Slate Access</span></li>
+    </ul>
+    <button class="plan-btn pro-btn" id="btn-pro" onclick="openStripeCheckout('pro')">⚡ GET PRO</button>
+  </div>
+
+  <!-- ELITE -->
+  <div class="plan-card elite">
+    <div class="plan-tier">ELITE</div>
+    <div class="plan-price" id="price-elite">$29.99</div>
+    <div class="plan-price-mo" id="mo-elite">/MONTH</div>
+    <div class="plan-price-annual" id="ann-elite">$23.99/MO · BILLED $287.88/YEAR</div>
+    <div class="plan-desc">Maximum edge. Weekly intel, early slates, and favorite team deep dives.</div>
+    <ul class="plan-features">
+      <li><span class="feat-check yes">✓</span> Everything in Pro</li>
+      <li><span class="feat-check yes">✓</span> Weekly Email Reports (every Monday)</li>
+      <li><span class="feat-check yes">✓</span> Favorite Team Deep Projections</li>
+      <li><span class="feat-check yes">✓</span> Early Slate Access (game-day morning)</li>
+      <li><span class="feat-check yes">✓</span> Priority Feature Updates</li>
+      <li><span class="feat-check yes">✓</span> All Future Sports (NFL, MLB, NHL)</li>
+      <li><span class="feat-check yes">✓</span> Elite-Only Discord Channel</li>
+      <li><span class="feat-check yes">✓</span> Founding Member Status</li>
+    </ul>
+    <button class="plan-btn elite-btn" id="btn-elite" onclick="openStripeCheckout('elite')">⚡ GET ELITE</button>
+  </div>
+
+</div>
+
+<!-- ── FEATURE COMPARISON ── -->
+<div class="compare-section">
+  <div class="compare-title">FULL FEATURE BREAKDOWN</div>
+  <div style="overflow-x:auto;">
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>FEATURE</th>
+          <th>FREE</th>
+          <th class="col-std">STD</th>
+          <th class="col-pro">PRO</th>
+          <th class="col-eli">ELITE</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="section-row"><td colspan="5">PROJECTIONS &amp; ANALYSIS</td></tr>
+        <tr><td>Live Player Pool (Yahoo + DK)</td>  <td class="chk-yes">✓</td><td class="chk-yes">✓</td><td class="chk-yes">✓</td><td class="chk-yes">✓</td></tr>
+        <tr><td>Game Totals &amp; Schedules</td>    <td class="chk-yes">✓</td><td class="chk-yes">✓</td><td class="chk-yes">✓</td><td class="chk-yes">✓</td></tr>
+        <tr><td>NS Rankings</td>                    <td class="chk-yes">✓</td><td class="chk-yes">✓</td><td class="chk-yes">✓</td><td class="chk-yes">✓</td></tr>
+        <tr><td>Top Daily Picks</td>                <td class="chk-lim">PREVIEW</td><td class="chk-yes">✓</td><td class="chk-yes">✓</td><td class="chk-yes">✓</td></tr>
+        <tr><td>NS Projections Engine</td>          <td class="chk-no">—</td><td class="chk-yes">✓</td><td class="chk-yes">✓</td><td class="chk-yes">✓</td></tr>
+        <tr><td>NS POWER BOOST</td>                 <td class="chk-no">—</td><td class="chk-no">—</td><td class="chk-yes">✓</td><td class="chk-yes">✓</td></tr>
+        <tr><td>Injury Impact Adjustments</td>      <td class="chk-no">—</td><td class="chk-no">—</td><td class="chk-yes">✓</td><td class="chk-yes">✓</td></tr>
+        <tr><td>Favorite Team Deep Dive</td>        <td class="chk-no">—</td><td class="chk-no">—</td><td class="chk-no">—</td><td class="chk-yes">✓</td></tr>
+        <tr><td>Early Slate Access</td>             <td class="chk-no">—</td><td class="chk-no">—</td><td class="chk-no">—</td><td class="chk-yes">✓</td></tr>
+
+        <tr class="section-row"><td colspan="5">PROP TOOLS</td></tr>
+        <tr><td>Prop Builder</td>                   <td class="chk-no">—</td><td class="chk-yes">✓</td><td class="chk-yes">✓</td><td class="chk-yes">✓</td></tr>
+        <tr><td>Prop Accuracy Tracker</td>          <td class="chk-no">—</td><td class="chk-yes">✓</td><td class="chk-yes">✓</td><td class="chk-yes">✓</td></tr>
+        <tr><td>Prop Slip Builder</td>              <td class="chk-no">—</td><td class="chk-yes">✓</td><td class="chk-yes">✓</td><td class="chk-yes">✓</td></tr>
+
+        <tr class="section-row"><td colspan="5">LINEUP BUILDER</td></tr>
+        <tr><td>Yahoo Lineup Builder</td>           <td class="chk-no">—</td><td class="chk-no">—</td><td class="chk-yes">✓</td><td class="chk-yes">✓</td></tr>
+        <tr><td>DraftKings Lineup Builder</td>      <td class="chk-no">—</td><td class="chk-no">—</td><td class="chk-yes">✓</td><td class="chk-yes">✓</td></tr>
+        <tr><td>MEDIAN / CEILING / MAXIMUM Modes</td><td class="chk-no">—</td><td class="chk-no">—</td><td class="chk-yes">✓</td><td class="chk-yes">✓</td></tr>
+        <tr><td>CSV Export (direct platform upload)</td><td class="chk-no">—</td><td class="chk-no">—</td><td class="chk-yes">✓</td><td class="chk-yes">✓</td></tr>
+
+        <tr class="section-row"><td colspan="5">REPORTS &amp; EXTRAS</td></tr>
+        <tr><td>Weekly Email Reports</td>           <td class="chk-no">—</td><td class="chk-no">—</td><td class="chk-no">—</td><td class="chk-yes">✓</td></tr>
+        <tr><td>All Future Sports (NFL, MLB, NHL)</td><td class="chk-no">—</td><td class="chk-no">—</td><td class="chk-no">—</td><td class="chk-yes">✓</td></tr>
+        <tr><td>Elite Discord Channel</td>          <td class="chk-no">—</td><td class="chk-no">—</td><td class="chk-no">—</td><td class="chk-yes">✓</td></tr>
+        <tr><td>Founding Member Status</td>         <td class="chk-no">—</td><td class="chk-no">—</td><td class="chk-no">—</td><td class="chk-yes">✓</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ── FAQ ── -->
+<div class="faq-section">
+  <div class="faq-title">QUESTIONS</div>
+
+  <div class="faq-item">
+    <div class="faq-q" onclick="toggleFaq(this)">
+      Can I cancel at any time?
+      <span class="arrow">▼</span>
+    </div>
+    <div class="faq-a">
+      Yes. All plans are month-to-month (or annual if you selected annual billing). Cancel from your account settings and you will keep access until the end of your billing period. No questions asked.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q" onclick="toggleFaq(this)">
+      How is DFSLINEUPAI different from other DFS tools?
+      <span class="arrow">▼</span>
+    </div>
+    <div class="faq-a">
+      Our NeuralStitch™ engine uses recency-weighted projections (not flat season averages), injury impact adjustments, and three lineup optimization modes — MEDIAN for cash games, CEILING for GPP tournaments, and MAXIMUM for high-variance situations. The projections update daily before each slate.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q" onclick="toggleFaq(this)">
+      What sports are supported?
+      <span class="arrow">▼</span>
+    </div>
+    <div class="faq-a">
+      NBA is fully supported at launch (April 1, 2026). NFL, MLB, and NHL are in development and will be available to Elite members first. Yahoo Fantasy and DraftKings are both supported for NBA.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q" onclick="toggleFaq(this)">
+      How does the CSV export work?
+      <span class="arrow">▼</span>
+    </div>
+    <div class="faq-a">
+      After building your lineup in the Pro or Elite plan, click Export CSV. The downloaded file is already formatted to DraftKings' or Yahoo's exact upload spec — position headers in row 1, player IDs in row 2. Upload directly to the platform with one click.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q" onclick="toggleFaq(this)">
+      Is there a free trial for paid plans?
+      <span class="arrow">▼</span>
+    </div>
+    <div class="faq-a">
+      The Free tier gives you full access to the player pool, rankings, and top pick previews — no credit card required. Paid tiers unlock immediately after checkout and there is no separate trial period.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q" onclick="toggleFaq(this)">
+      When does my tier upgrade after I pay?
+      <span class="arrow">▼</span>
+    </div>
+    <div class="faq-a">
+      Tier upgrades are processed automatically via Stripe webhook — typically within 30 seconds of successful payment. If your tier has not updated after 5 minutes, sign out and back in, or contact support.
+    </div>
+  </div>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="footer-logo">
+    <span class="dfs">DFS</span><span class="line">LINEUP</span><span class="up">AI</span>
+  </div>
+  <div class="footer-links">
+    <a href="index.html">YAHOO DFS</a>
+    <a href="Draftkings.html">DRAFTKINGS</a>
+    <a href="pricing.html">PRICING</a>
+  </div>
+  <div class="footer-sub">
+    POWERED BY NEURALSTITCH™ · SPORTSOPTIMIZER.COM · &copy; 2026
+  </div>
+  <div class="footer-sub" style="margin-top:8px;font-size:0.6em;">
+    NOT AFFILIATED WITH DRAFTKINGS OR YAHOO. FOR ENTERTAINMENT PURPOSES. PLEASE GAMBLE RESPONSIBLY.
+  </div>
+</footer>
+
+<script src="js/membership.js"></script>
+<script src="js/stripe-config.js"></script>
+<script>
+  // ── Billing toggle (Monthly ↔ Annual) ──────────────────────────
+  let isAnnual = false;
+
+  function toggleBilling() {
+    isAnnual = !isAnnual;
+    const tog = document.getElementById('billingToggle');
+    tog.classList.toggle('on', isAnnual);
+    document.getElementById('lbl-monthly').classList.toggle('active', !isAnnual);
+    document.getElementById('lbl-annual').classList.toggle('active', isAnnual);
+
+    const plans = [
+      { id: 'standard', monthly: 9.99,  annual: 7.99  },
+      { id: 'pro',      monthly: 19.99, annual: 15.99 },
+      { id: 'elite',    monthly: 29.99, annual: 23.99 },
+    ];
+
+    plans.forEach(p => {
+      document.getElementById('price-' + p.id).textContent =
+        '$' + (isAnnual ? p.annual : p.monthly).toFixed(2);
+      document.getElementById('mo-' + p.id).style.display    = isAnnual ? 'none'  : 'block';
+      document.getElementById('ann-' + p.id).style.display   = isAnnual ? 'block' : 'none';
+    });
+  }
+
+  // ── FAQ accordion ──────────────────────────────────────────────
+  function toggleFaq(el) {
+    const answer = el.nextElementSibling;
+    const isOpen = answer.classList.contains('open');
+    // Close all
+    document.querySelectorAll('.faq-a.open').forEach(a => a.classList.remove('open'));
+    document.querySelectorAll('.faq-q.open').forEach(q => q.classList.remove('open'));
+    if (!isOpen) {
+      answer.classList.add('open');
+      el.classList.add('open');
+    }
+  }
+</script>
+</body>
+</html>

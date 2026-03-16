@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<!-- DFSLINEUP.AI | NeuralStitch™ Engine | DK MODE | build 2026-03-12 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="images/nsbrainlogo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <title>NEURALSTITCH™ DK — Slate Builder AI Engine | DFSLINEUP.AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Exo+2:wght@300;400;500;600;700;800;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary:    #f6861f;
+      --primary-glow: rgba(246,134,31,0.45);
+      --gold:       #FFB800;
+      --gold-glow:  rgba(255,184,0,0.4);
+      --neural:     #7B2FFF;
+      --neural-glow: rgba(123,47,255,0.4);
+      --green:      #00FF88;
+      --red:        #FF3B5C;
+      --bg:         #4a5580;
+      --bg2:        #1a2130;
+      --bg3:        #111827;
+      --border:     rgba(246,134,31,0.18);
+      --border-gold: rgba(255,184,0,0.2);
+      --text:       #E8EDF5;
+      --text-muted: #7a8599;
+      --cyan:       #00d4ff;
+      --dk-orange:  #f6861f;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Exo 2', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    body::before {
+      content:'';
+      position:fixed; inset:0;
+      background-image:
+        linear-gradient(rgba(246,134,31,0.025) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(246,134,31,0.025) 1px,transparent 1px);
+      background-size:40px 40px;
+      pointer-events:none; z-index:0;
+    }
+    body::after {
+      content:'';
+      position:fixed; inset:0;
+      background:
+        radial-gradient(ellipse at 15% 0%,rgba(246,134,31,0.07) 0%,transparent 45%),
+        radial-gradient(ellipse at 85% 20%,rgba(123,47,255,0.06) 0%,transparent 40%),
+        radial-gradient(ellipse at 50% 100%,rgba(255,184,0,0.04) 0%,transparent 50%);
+      pointer-events:none; z-index:0;
+    }
+
+    /* ── TOPBAR ── */
+    .topbar {
+      position:sticky; top:0; z-index:100;
+      background:#1a2130;
+      border-bottom:2px solid rgba(246,134,31,0.35);
+      padding:0 24px;
+    }
+    .topbar-inner {
+      max-width:1600px; margin:0 auto;
+      display:flex; align-items:center;
+      justify-content:space-between;
+      height:70px; gap:16px;
+    }
+    .logo { display:flex; align-items:center; gap:10px; flex-shrink:0; cursor:pointer; }
+    .logo-main { font-family:'Rajdhani',sans-serif; font-weight:700; font-size:2.2em; letter-spacing:2px; }
+    .logo-main .dfs    { color:#00d4ff; }
+    .logo-main .lineup { color:#fff; }
+    .logo-main .ai     { background:var(--gold); color:#000; font-size:0.55em; padding:1px 5px; border-radius:4px; vertical-align:middle; font-weight:900; }
+    .back-btn {
+      font-family:'Rajdhani',sans-serif; font-weight:700; font-size:0.9em; letter-spacing:2px;
+      padding:8px 20px; border-radius:8px; cursor:pointer;
+      background:rgba(246,134,31,0.1); border:1px solid rgba(246,134,31,0.4); color:var(--dk-orange);
+      transition:all 0.2s; text-decoration:none; display:inline-flex; align-items:center; gap:6px;
+    }
+    .back-btn:hover { background:rgba(246,134,31,0.2); box-shadow:0 0 14px rgba(246,134,31,0.3); }
+
+    /* ── TICKER ── */
+    .ticker-wrap {
+      background:rgba(0,0,0,0.4); border-bottom:1px solid var(--border);
+      overflow:hidden; white-space:nowrap; padding:6px 0; position:relative; z-index:99;
+    }
+    .ticker-track {
+      display:inline-flex; gap:40px;
+      animation:tickerScroll 60s linear infinite;
+    }
+    @keyframes tickerScroll { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+    .ticker-label { font-family:'Share Tech Mono',monospace; font-size:0.68em; color:var(--dk-orange); letter-spacing:3px; }
+    .ticker-item  { font-family:'Share Tech Mono',monospace; font-size:0.68em; color:var(--text-muted); letter-spacing:1px; }
+    .ticker-name  { color:var(--gold); font-weight:700; }
+    .ns-neural { color:#ffffff; font-weight:700; }
+    .ns-stitch { color:#00d4ff; font-weight:700; }
+
+    /* ── MAIN ── */
+    .main { position:relative; z-index:1; padding:32px 24px 80px; max-width:1400px; margin:0 auto; }
+
+    /* ── WELCOME HEADER ── */
+    .ns-welcome-wrap { text-align:center; margin-bottom:36px; }
+    .ns-welcome-title {
+      font-family:'Rajdhani',sans-serif; font-weight:900; font-size:2.6em; letter-spacing:5px;
+      margin-bottom:10px; line-height:1.1;
+    }
+    .ns-welcome-select {
+      font-family:'Share Tech Mono',monospace; font-size:0.85em; color:rgba(255,255,255,0.6); letter-spacing:2px; margin-bottom:14px;
+    }
+    .ns-welcome-desc {
+      font-family:'Exo 2',sans-serif; font-size:1.05em; color:rgba(255,255,255,0.75);
+      max-width:680px; margin:0 auto; line-height:1.6;
+    }
+    .ns-welcome-desc strong { color:var(--dk-orange); }
+
+    .ns-how-to-use {
+      background:rgba(0,212,255,0.05); border:1px solid rgba(0,212,255,0.15); border-radius:12px;
+      padding:16px 24px; max-width:680px; margin:14px auto 0; text-align:left;
+    }
+    .ns-how-title {
+      font-family:'Rajdhani',sans-serif; font-weight:900; font-size:1.1em; letter-spacing:3px;
+      color:var(--gold); margin-bottom:10px;
+    }
+    .ns-how-steps { display:flex; flex-direction:column; gap:6px; }
+    .ns-how-step {
+      font-family:'Share Tech Mono',monospace; font-size:0.72em; color:rgba(255,255,255,0.75); letter-spacing:1px;
+    }
+
+    /* ── GAME BOXES ── */
+    .ns-games-row {
+      display:flex; gap:12px; flex-wrap:wrap; justify-content:center;
+      margin-bottom:28px;
+    }
+    .ns-game-box {
+      min-width:185px; max-width:215px; flex-shrink:0;
+      background:var(--bg2); border:2px solid var(--border);
+      border-radius:12px; padding:12px 14px; cursor:pointer;
+      transition:all 0.25s; text-align:center; user-select:none;
+      position:relative;
+    }
+    .ns-game-box:hover { border-color:rgba(246,134,31,0.5); transform:translateY(-2px); }
+    .ns-game-box.selected {
+      border-color:var(--dk-orange); background:rgba(246,134,31,0.08);
+      box-shadow:0 0 20px rgba(246,134,31,0.2);
+    }
+    .ns-game-box.selected::after {
+      content:'✓ ADDED';
+      position:absolute; top:6px; right:8px;
+      font-family:'Share Tech Mono',monospace; font-size:0.6em;
+      color:var(--green); letter-spacing:1px; font-weight:700;
+    }
+    .ngb-time { font-family:'Share Tech Mono',monospace; font-size:0.62em; color:var(--gold); letter-spacing:1px; margin-bottom:5px; }
+    .ngb-teams { display:flex; align-items:center; justify-content:center; gap:8px; margin-bottom:5px; }
+    .ngb-team  { display:flex; flex-direction:column; align-items:center; gap:2px; }
+    .ngb-team img { width:30px; height:30px; object-fit:contain; }
+    .ngb-team span { font-family:'Rajdhani',sans-serif; font-weight:700; font-size:0.95em; color:#fff; letter-spacing:1px; }
+    .ngb-at    { font-family:'Share Tech Mono',monospace; font-size:0.8em; color:var(--text-muted); }
+    .ngb-odds  { font-family:'Share Tech Mono',monospace; font-size:0.6em; color:var(--gold); letter-spacing:1px; }
+    .ns-games-note { text-align:center; font-family:'Share Tech Mono',monospace; font-size:0.7em; color:var(--text-muted); letter-spacing:2px; margin-bottom:20px; }
+    #nsSelectedCount { color:var(--dk-orange); font-weight:700; }
+
+    /* ── GENERATE BUTTON ── */
+    .ns-generate-wrap { text-align:center; margin-bottom:40px; }
+    #nsGenerateBtn {
+      font-family:'Rajdhani',sans-serif; font-weight:900; font-size:1.4em; letter-spacing:4px;
+      padding:18px 52px; border-radius:12px; cursor:pointer; transition:all 0.3s;
+      background:linear-gradient(135deg,rgba(246,134,31,0.2),rgba(123,47,255,0.12));
+      border:2px solid rgba(246,134,31,0.6); color:#fff;
+      position:relative; overflow:hidden;
+    }
+    #nsGenerateBtn:not(:disabled):hover {
+      background:linear-gradient(135deg,rgba(246,134,31,0.4),rgba(123,47,255,0.25));
+      border-color:var(--dk-orange); box-shadow:0 0 40px rgba(246,134,31,0.45),0 0 20px rgba(123,47,255,0.2);
+      transform:translateY(-2px);
+    }
+    #nsGenerateBtn:disabled { opacity:0.45; cursor:not-allowed; }
+    #nsGenerateBtn.gold-ready {
+      background:linear-gradient(135deg,rgba(255,184,0,0.3),rgba(255,184,0,0.15));
+      border-color:var(--gold); color:var(--gold);
+      box-shadow:0 0 30px rgba(255,184,0,0.4);
+    }
+
+    /* ── THINKING OVERLAY ── */
+    #nsThinkingOverlay {
+      display:none; position:fixed; inset:0; z-index:9500;
+      background:rgba(4,7,18,0.82); backdrop-filter:blur(4px);
+      align-items:center; justify-content:center;
+    }
+    #nsThinkingOverlay.active { display:flex; }
+    .ns-weaving-box {
+      background:linear-gradient(145deg,rgba(26,33,48,0.98),rgba(18,24,38,0.98));
+      border:2px solid rgba(246,134,31,0.6); border-radius:18px;
+      padding:36px 48px; text-align:center; max-width:480px; width:90%;
+      box-shadow:0 0 60px rgba(246,134,31,0.3),0 0 120px rgba(123,47,255,0.15);
+      animation:weaveBoxIn 0.4s cubic-bezier(0.34,1.56,0.64,1);
+    }
+    @keyframes weaveBoxIn { from{transform:scale(0.85) translateY(20px);opacity:0} to{transform:scale(1) translateY(0);opacity:1} }
+    .ns-weaving-label { font-family:'Share Tech Mono',monospace; font-size:0.72em; color:var(--text-muted); letter-spacing:3px; margin-bottom:14px; }
+    .ns-weaving-title { font-family:'Rajdhani',sans-serif; font-weight:900; font-size:1.5em; letter-spacing:3px; margin-bottom:8px; }
+    .ns-weaving-pos {
+      font-family:'Rajdhani',sans-serif; font-weight:900; font-size:3.2em; letter-spacing:6px;
+      color:var(--dk-orange); text-shadow:0 0 20px rgba(246,134,31,0.6);
+      min-width:140px; display:inline-block;
+      animation:posPulse 0.15s ease-out;
+    }
+    @keyframes posPulse { from{transform:scale(1.3);opacity:0.5} to{transform:scale(1);opacity:1} }
+    .ns-weaving-sub { font-family:'Share Tech Mono',monospace; font-size:0.68em; color:rgba(246,134,31,0.5); letter-spacing:2px; margin-top:14px; }
+    .ns-weaving-dots span { animation:dotBlink 1.2s infinite; display:inline-block; }
+    .ns-weaving-dots span:nth-child(2) { animation-delay:0.4s; }
+    .ns-weaving-dots span:nth-child(3) { animation-delay:0.8s; }
+    @keyframes dotBlink { 0%,100%{opacity:0.2} 50%{opacity:1} }
+    .ns-weaving-bar {
+      width:100%; height:3px; background:rgba(255,255,255,0.08); border-radius:2px; margin-top:20px; overflow:hidden;
+    }
+    .ns-weaving-bar-fill {
+      height:100%; background:linear-gradient(90deg,#7b2fff,#f6861f); border-radius:2px;
+      animation:barFill 3.6s linear forwards;
+    }
+    @keyframes barFill { from{width:0%} to{width:100%} }
+
+    /* ── LINEUP SLOTS ── */
+    .ns-slots-section { margin-bottom:40px; }
+    .ns-slots-header {
+      text-align:center; font-family:'Share Tech Mono',monospace; font-size:0.72em;
+      color:var(--text-muted); letter-spacing:3px; margin-bottom:16px;
+    }
+    .ns-slots-row {
+      display:flex; justify-content:center; gap:10px; flex-wrap:wrap;
+    }
+    .ns-slot-wrap { display:flex; flex-direction:column; align-items:center; gap:4px; }
+    .ns-slot-pos-label { font-family:'Share Tech Mono',monospace; font-size:0.85em; color:var(--gold); letter-spacing:2px; font-weight:700; }
+    .ns-slot {
+      width:140px; min-height:120px; border-radius:12px;
+      border:1px solid var(--border); background:var(--bg2);
+      display:flex; flex-direction:column; align-items:center;
+      justify-content:center; text-align:center; padding:10px;
+      position:relative; transition:all 0.4s; overflow:hidden;
+    }
+    .ns-slot.thinking {
+      border-color:rgba(246,134,31,0.5);
+      background:linear-gradient(135deg,#1a2130,#131d35,#1a2130);
+    }
+    .ns-slot.thinking::before {
+      content:'';
+      position:absolute; inset:0;
+      background:linear-gradient(90deg,transparent 0%,rgba(246,134,31,0.1) 30%,rgba(123,47,255,0.14) 50%,rgba(246,134,31,0.1) 70%,transparent 100%);
+      background-size:200% 100%;
+      animation:neuronSweep 0.8s linear infinite;
+    }
+    @keyframes neuronSweep { from{background-position:200% 0} to{background-position:-200% 0} }
+    .ns-slot.thinking .ns-slot-num { animation:neuronPulse 0.8s ease-in-out infinite; }
+    @keyframes neuronPulse { 0%,100%{opacity:0.3;transform:scale(1)} 50%{opacity:1;transform:scale(1.1)} }
+    .ns-slot.filled {
+      border-color:rgba(0,255,136,0.5); background:rgba(0,255,136,0.06);
+      animation:slotReveal 0.5s cubic-bezier(0.34,1.56,0.64,1);
+    }
+    @keyframes slotReveal { from{transform:scale(0.9);opacity:0} to{transform:scale(1);opacity:1} }
+    .ns-slot.locked { border-color:var(--gold)!important; background:rgba(255,184,0,0.08)!important; box-shadow:0 0 16px rgba(255,184,0,0.25); }
+    .ns-slot.removed-slot { border-color:rgba(255,59,92,0.4)!important; background:rgba(255,59,92,0.05)!important; }
+
+    .ns-slot-num { font-family:'Share Tech Mono',monospace; font-size:1.5em; color:var(--text-muted); font-weight:700; }
+    .ns-slot-empty { font-family:'Share Tech Mono',monospace; font-size:0.72em; color:var(--text-muted); letter-spacing:1px; margin-top:4px; }
+    .ns-slot-headshot {
+      width:44px; height:44px; border-radius:8px; object-fit:cover;
+      background:rgba(255,255,255,0.05); margin-bottom:5px; flex-shrink:0;
+    }
+    .ns-slot-headshot-init {
+      width:44px; height:44px; border-radius:8px;
+      background:rgba(246,134,31,0.1); border:1px solid rgba(246,134,31,0.3);
+      display:flex; align-items:center; justify-content:center;
+      font-family:'Rajdhani',sans-serif; font-weight:900; font-size:1em; color:var(--dk-orange);
+      flex-shrink:0; margin-bottom:5px;
+    }
+    .ns-slot-name { font-family:'Rajdhani',sans-serif; font-weight:700; font-size:0.95em; color:#fff; line-height:1.2; margin-bottom:2px; }
+    .ns-slot-meta { font-family:'Share Tech Mono',monospace; font-size:0.6em; color:var(--text-muted); }
+    .ns-slot-proj { font-family:'Share Tech Mono',monospace; font-size:0.82em; color:var(--dk-orange); font-weight:700; margin-top:3px; }
+    .ns-slot-lock-btn {
+      position:absolute; top:5px; left:6px;
+      background:none; border:none; cursor:pointer; font-size:0.85em;
+      color:rgba(255,184,0,0.4); transition:all 0.15s; padding:2px;
+    }
+    .ns-slot-lock-btn:hover { color:var(--gold); }
+    .ns-slot-lock-btn.locked { color:var(--gold); }
+    .ns-slot-remove-btn {
+      position:absolute; top:5px; right:6px;
+      background:none; border:none; cursor:pointer; font-size:0.9em;
+      color:rgba(255,59,92,0.5); transition:all 0.15s; padding:2px;
+    }
+    .ns-slot-remove-btn:hover { color:var(--red); }
+
+    /* ── NS POWER BOOST LINEUP TABLE ── */
+    #nsLineupTable {
+      max-width:920px; margin:0 auto 40px;
+      animation:fadeInUp 0.6s ease;
+    }
+    @keyframes fadeInUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+    .ns-table-header {
+      text-align:center; padding:20px 0 16px;
+      border-bottom:1px solid var(--border-gold); margin-bottom:18px;
+    }
+    .ns-table-brand {
+      font-family:'Rajdhani',sans-serif; font-weight:900; font-size:2.4em; letter-spacing:6px;
+      margin-bottom:8px;
+    }
+    .ns-table-stats {
+      font-family:'Share Tech Mono',monospace; font-size:0.8em; letter-spacing:2px;
+      display:flex; gap:24px; justify-content:center; flex-wrap:wrap;
+    }
+    .ns-table-stat-item { display:flex; align-items:center; gap:6px; }
+    .ns-table-stat-label { color:var(--text-muted); }
+    .ns-table-stat-val { color:var(--dk-orange); font-weight:700; font-size:1.1em; }
+    .ns-table-stat-val.gold { color:var(--gold); }
+
+    .ns-lineup-table {
+      width:100%; border-collapse:collapse;
+      background:var(--bg2); border-radius:12px; overflow:hidden;
+    }
+    .ns-lineup-table thead tr { border-bottom:1px solid rgba(255,184,0,0.3); }
+    .ns-lineup-table th {
+      font-family:'Share Tech Mono',monospace; font-size:0.68em; color:var(--gold);
+      letter-spacing:2px; padding:10px 12px; text-align:left;
+    }
+    .ns-lineup-row {
+      border-bottom:1px solid rgba(255,255,255,0.05); transition:background 0.15s;
+    }
+    .ns-lineup-row:hover { background:rgba(246,134,31,0.04); }
+    .ns-lineup-row.locked-row { background:rgba(255,184,0,0.04); }
+    .ns-lineup-row.removed-row { opacity:0.4; }
+    .ns-lineup-row td { padding:6px 10px; vertical-align:middle; }
+    .ns-lr-pos {
+      font-family:'Share Tech Mono',monospace; font-size:0.75em; font-weight:700;
+      color:var(--dk-orange); letter-spacing:1px; min-width:36px;
+    }
+    .ns-lr-name { font-family:'Rajdhani',sans-serif; font-weight:700; font-size:1.05em; color:#fff; cursor:pointer; }
+    .ns-lr-name:hover { color:var(--dk-orange); text-decoration:underline; }
+    .ns-lr-team { font-family:'Share Tech Mono',monospace; font-size:0.7em; color:var(--text-muted); }
+    .ns-lr-fppg { font-family:'Share Tech Mono',monospace; font-size:0.85em; color:var(--text-muted); text-align:right; }
+    .ns-lr-boost { font-family:'Share Tech Mono',monospace; font-size:1em; color:var(--dk-orange); font-weight:700; text-align:center; }
+    .ns-lr-sal  { font-family:'Share Tech Mono',monospace; font-size:0.85em; color:var(--gold); font-weight:700; text-align:right; }
+    .ns-lr-opp  { text-align:center; }
+    .ns-lr-opp img { width:24px; height:24px; object-fit:contain; vertical-align:middle; }
+    .ns-lr-actions { text-align:center; white-space:nowrap; }
+    .ns-lock-btn {
+      background:none; border:1px solid rgba(255,184,0,0.3); color:rgba(255,184,0,0.6);
+      font-size:1em; width:28px; height:28px; border-radius:6px;
+      cursor:pointer; transition:all 0.15s; margin-right:4px;
+    }
+    .ns-lock-btn:hover, .ns-lock-btn.locked { background:rgba(255,184,0,0.15); border-color:var(--gold); color:var(--gold); }
+    .ns-remove-btn {
+      background:none; border:1px solid rgba(255,59,92,0.3); color:rgba(255,59,92,0.6);
+      font-size:0.85em; padding:4px 8px; border-radius:6px; letter-spacing:1px;
+      cursor:pointer; transition:all 0.15s; font-family:'Share Tech Mono',monospace;
+    }
+    .ns-remove-btn:hover { background:rgba(255,59,92,0.15); border-color:var(--red); color:var(--red); }
+
+    /* ── REPLACEMENT PLAYER POOL ── */
+    #nsReplacementPool {
+      max-width:920px; margin:0 auto 40px;
+      background:var(--bg2); border:1px solid var(--border); border-radius:14px; padding:24px;
+    }
+    .ns-repl-title {
+      font-family:'Rajdhani',sans-serif; font-weight:900; font-size:1.4em; letter-spacing:4px;
+      color:var(--gold); margin-bottom:6px;
+    }
+    .ns-repl-sub { font-family:'Share Tech Mono',monospace; font-size:0.7em; color:var(--text-muted); letter-spacing:2px; margin-bottom:16px; }
+    .ns-repl-cap { font-family:'Share Tech Mono',monospace; font-size:0.78em; color:var(--dk-orange); letter-spacing:2px; margin-bottom:14px; }
+    .ns-repl-tabs { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:16px; }
+    .ns-repl-tab {
+      font-family:'Rajdhani',sans-serif; font-weight:700; font-size:0.9em; letter-spacing:2px;
+      padding:7px 18px; border-radius:7px; cursor:pointer; transition:all 0.2s;
+      background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); color:var(--text-muted);
+    }
+    .ns-repl-tab.active { background:rgba(246,134,31,0.12); border-color:var(--dk-orange); color:var(--dk-orange); }
+    .ns-repl-table { width:100%; border-collapse:collapse; }
+    .ns-repl-table thead tr { border-bottom:1px solid rgba(255,184,0,0.25); }
+    .ns-repl-table th { font-family:'Share Tech Mono',monospace; font-size:0.65em; color:var(--gold); letter-spacing:2px; padding:8px 10px; text-align:left; }
+    .ns-repl-player-row {
+      border-bottom:1px solid rgba(255,255,255,0.04); cursor:pointer;
+      transition:background 0.15s; font-family:'Share Tech Mono',monospace;
+    }
+    .ns-repl-player-row:hover { background:rgba(246,134,31,0.08); }
+    .ns-repl-player-row.in-lineup { cursor:default; opacity:0.5; }
+    .ns-repl-player-row.prev-removed { color:var(--red); }
+    .ns-repl-player-row td { padding:9px 10px; font-size:0.78em; vertical-align:middle; }
+    .ns-repl-rank { color:var(--text-muted); min-width:28px; }
+    .ns-repl-name { color:#fff; font-family:'Rajdhani',sans-serif; font-weight:700; font-size:1.05em; }
+    .ns-repl-pos-badge {
+      display:inline-block; background:rgba(246,134,31,0.1); border:1px solid rgba(246,134,31,0.3);
+      color:var(--dk-orange); font-size:0.65em; padding:1px 6px; border-radius:4px; margin-left:5px;
+    }
+    .ns-repl-in-tag { display:inline-block; background:rgba(0,255,136,0.1); border:1px solid rgba(0,255,136,0.3); color:var(--green); font-size:0.65em; padding:1px 6px; border-radius:4px; margin-left:5px; }
+    .ns-repl-boost { color:var(--dk-orange); font-weight:700; text-align:right; }
+    .ns-repl-sal   { color:var(--gold); font-weight:700; text-align:right; }
+    .ns-repl-fppg  { color:var(--text-muted); text-align:right; }
+
+    /* ── SAVE SECTION ── */
+    .ns-save-section { text-align:center; margin-bottom:60px; }
+    #nsSaveBtn {
+      font-family:'Rajdhani',sans-serif; font-weight:900; font-size:1.3em; letter-spacing:4px;
+      padding:16px 48px; border-radius:12px; cursor:pointer; transition:all 0.4s;
+      background:rgba(255,255,255,0.05); border:2px solid rgba(255,255,255,0.15); color:var(--text-muted);
+    }
+    #nsSaveBtn.ready {
+      background:rgba(0,255,136,0.12); border-color:var(--green); color:var(--green);
+      box-shadow:0 0 24px rgba(0,255,136,0.25); cursor:pointer;
+    }
+    #nsSaveBtn.ready:hover { background:rgba(0,255,136,0.2); box-shadow:0 0 40px rgba(0,255,136,0.4); transform:translateY(-2px); }
+    #nsSaveBtn.saved { background:rgba(255,184,0,0.12); border-color:var(--gold); color:var(--gold); }
+
+    /* ── TOAST ── */
+    #nsToast {
+      position:fixed; bottom:28px; left:50%; transform:translateX(-50%) translateY(20px);
+      background:rgba(26,33,48,0.96); border:1px solid rgba(246,134,31,0.5); border-radius:10px;
+      padding:12px 28px; font-family:'Share Tech Mono',monospace; font-size:0.82em;
+      color:var(--dk-orange); letter-spacing:1px; z-index:9999;
+      opacity:0; transition:all 0.3s; pointer-events:none;
+      box-shadow:0 0 20px rgba(246,134,31,0.2); text-align:center; max-width:90vw;
+    }
+    #nsToast.show { opacity:1; transform:translateX(-50%) translateY(0); }
+
+    /* ── PHONE FRAME ── */
+    .phone-frame-outer {
+      position:relative; max-width:900px; margin:24px auto;
+      background:rgba(255,255,255,0.06);
+      border:3px solid rgba(255,255,255,0.18);
+      border-radius:48px;
+      padding:8px;
+      box-shadow:0 0 0 2px rgba(0,212,255,0.12), 0 0 40px rgba(0,0,0,0.5), inset 0 0 0 1px rgba(255,255,255,0.08);
+    }
+    .phone-frame-inner {
+      background:var(--bg3);
+      border-radius:40px;
+      border:2px solid rgba(0,212,255,0.15);
+      overflow:hidden;
+      box-shadow:inset 0 0 30px rgba(0,0,0,0.4);
+      padding:0 0 20px;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width:768px) {
+      .main { padding:20px 12px 60px; }
+      .ns-welcome-title { font-size:1.8em; letter-spacing:2px; }
+      .ns-slot { width:110px; min-height:100px; }
+      .ns-slots-row { gap:6px; }
+      .ns-lineup-table th, .ns-lineup-table td { padding:8px 8px; }
+    }
+    @media (max-width:480px) {
+      .ns-slot { width:90px; min-height:90px; }
+      .ns-slot-name { font-size:0.78em; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── TOPBAR ── -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="logo" onclick="window.location='Draftkings.html'">
+      <div class="logo-text">
+        <div class="logo-main"><span class="dfs">DFS</span><span class="lineup">LINEUP</span><span class="ai">AI</span></div>
+      </div>
+    </div>
+    <div style="display:flex;gap:10px;align-items:center;justify-content:center;flex:1;">
+      <a href="Draftkings.html#builder" class="back-btn" style="display:inline-flex;align-items:center;gap:8px;">
+        <span style="background:#fff;font-size:0.85em;padding:2px 7px;border-radius:4px;font-weight:900;display:inline-flex;align-items:center;gap:0;"><span style="color:#00FF41;font-family:'Rajdhani',sans-serif;font-weight:900;">D</span><span style="color:#f6861f;font-family:'Rajdhani',sans-serif;font-weight:900;">K</span></span>
+        SLATE BUILDER
+      </a>
+      <a href="neuralstitch.html" class="back-btn" style="background:rgba(123,47,255,0.12);border-color:rgba(123,47,255,0.4);color:#a855f7;display:inline-flex;align-items:center;gap:8px;">
+        <span style="background:#7B00FF;color:#fff;font-size:0.85em;padding:2px 6px;border-radius:4px;font-weight:900;font-style:italic;">Y!</span>
+        SLATE BUILDER
+      </a>
+    </div>
+    <span id="userBadge" onclick="firebaseSignOut()" title="Sign Out" style="display:none;background:rgba(0,255,136,0.1);border:1.5px solid #00FF88;border-radius:8px;padding:5px 14px;font-family:'Share Tech Mono',monospace;font-weight:700;font-size:0.72em;letter-spacing:1px;color:#00FF88;cursor:pointer;box-shadow:0 0 8px rgba(0,255,136,0.3);flex-shrink:0;"></span>
+  </div>
+</header>
+
+<!-- ── TICKER ── -->
+<div class="ticker-wrap">
+  <div class="ticker-track" id="tickerTrack">
+    <span class="ticker-label"><span class="ns-neural">NEURAL</span><span class="ns-stitch">STITCH</span>™ DK PROJECTIONS</span>
+    <span class="ticker-item"><span class="ticker-name">Loading DK players...</span></span>
+  </div>
+</div>
+
+<!-- ── MAIN ── -->
+<div class="phone-frame-outer">
+<div class="phone-frame-inner">
+<div class="main">
+
+  <!-- WELCOME HEADER -->
+  <div class="ns-welcome-wrap">
+    <div class="ns-welcome-title">
+      WELCOME TO <span style="background:#fff;font-size:0.85em;padding:2px 8px;border-radius:4px;font-weight:900;vertical-align:middle;margin-right:6px;display:inline-flex;align-items:center;gap:0;"><span style="color:#00FF41;font-family:'Rajdhani',sans-serif;font-weight:900;">D</span><span style="color:#f6861f;font-family:'Rajdhani',sans-serif;font-weight:900;">K</span></span><span style="color:var(--gold);">SLATE BUILDER</span>
+      <div style="font-size:0.65em;font-weight:700;margin-top:6px;letter-spacing:3px;">
+        <span style="color:var(--gold);font-size:1.1em;">w/</span>
+        <span style="color:#fff;"> NEURAL</span><span style="color:#00d4ff;">STITCH</span>®
+      </div>
+    </div>
+    <div style="display:inline-block;background:rgba(246,134,31,0.12);border:1px solid rgba(246,134,31,0.4);border-radius:8px;padding:4px 18px;margin:6px auto 10px;font-family:'Share Tech Mono',monospace;font-size:0.7em;color:var(--dk-orange);letter-spacing:2px;">
+      DK MODE · $50,000 SALARY CAP
+    </div>
+    <div class="ns-how-to-use" style="text-align:left;">
+      <div class="ns-how-title">HOW TO USE DK SLATE BUILDER:</div>
+      <div class="ns-how-steps">
+        <div class="ns-how-step"><span style="color:var(--gold);font-weight:700;">1.</span> SELECT ANY COMBINATION OF TONIGHT'S GAMES BY SIMPLY CLICKING ON THE GAME(S) YOU WANT, or SELECT <strong>"ALL GAMES"</strong> TO BE INCLUDED IN YOUR <span class="ns-neural">NEURAL</span><span class="ns-stitch">STITCH</span>® DK LINEUP.</div>
+        <div class="ns-how-step"><span style="color:var(--gold);font-weight:700;">2.</span> Click <strong>"Generate My DK <span class="ns-neural">NEURAL</span><span class="ns-stitch">STITCH</span>® Lineup"</strong></div>
+        <div class="ns-how-step"><span style="color:var(--gold);font-weight:700;">3.</span> <span style="color:var(--gold);font-weight:700;">That's it!</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GAME BOXES -->
+  <div class="ns-games-note" style="color:var(--gold);font-size:0.9em;font-weight:700;letter-spacing:2px;">TONIGHT'S DK SLATE — CLICK TO SELECT GAMES &nbsp;|&nbsp; <span id="nsSelectedCount">0</span> SELECTED</div>
+  <div id="nsGamesRow" class="ns-games-row"></div>
+
+  <!-- GENERATE BUTTON -->
+  <div class="ns-generate-wrap">
+    <button id="nsGenerateBtn" onclick="nsGenerate()">
+      Generate My DK <span style="color:#fff;">NEURAL</span><span style="color:#00d4ff;">STITCH</span>® Lineup
+    </button>
+    <div style="display:none;" id="nsGenerateHint"></div>
+  </div>
+
+  <!-- LINEUP SLOTS (filled by NS engine) -->
+  <div class="ns-slots-section" id="nsSlotsSection">
+    <div class="ns-slots-header">TONIGHT'S <span style="color:#00d4ff;">DFS</span><span style="color:#fff;">LINEUP</span> <span style="background:#FFB800;color:#000;font-size:0.7em;padding:0 4px;border-radius:3px;font-weight:900;vertical-align:middle;margin:0 2px;">AI</span> SLATE PLAYER SELECTIONS</div>
+    <div class="ns-slots-row" id="nsSlotsRow">
+      <!-- rendered by JS -->
+    </div>
+  </div>
+
+  <!-- NS POWER BOOST LINEUP TABLE -->
+  <div id="nsLineupTable" style="display:none;">
+    <div class="ns-table-header">
+      <div class="ns-table-stats">
+        <div class="ns-table-stat-item">
+          <span style="font-family:'Rajdhani',sans-serif;font-weight:900;font-size:1.1em;letter-spacing:2px;"><span style="color:#00d4ff;">DFS</span><span style="color:#fff;">LINEUP</span><span style="background:#FFB800;color:#000;font-size:0.75em;padding:0 4px;border-radius:3px;font-weight:900;margin-left:2px;">AI</span></span>
+          <span style="color:#fff;"> W/ </span>
+          <span style="color:#fff;">NEURAL</span><span style="color:#00d4ff;">STITCH</span>® ⚡ BOOST
+        </div>
+        <div style="width:1px;height:24px;background:rgba(255,255,255,0.25);margin:0 4px;"></div>
+        <div class="ns-table-stat-item">
+          <span class="ns-table-stat-label" style="color:#fff;">PROJ:</span>
+          <span class="ns-table-stat-val" id="nsTableTotalProj" style="color:var(--green);">—</span>
+        </div>
+        <div style="width:1px;height:24px;background:rgba(255,255,255,0.25);margin:0 4px;"></div>
+        <div class="ns-table-stat-item">
+          <span class="ns-table-stat-label" style="color:#fff;">SALARY:</span>
+          <span class="ns-table-stat-val gold" id="nsTableSalary">—</span>
+        </div>
+      </div>
+    </div>
+    <div style="overflow-x:auto;">
+      <table class="ns-lineup-table">
+        <thead>
+          <tr>
+            <th>POS</th>
+            <th>PLAYER</th>
+            <th style="text-align:right;"><img src="NBA - SIM/NBA POWER RANKINGS SIMULATOR/assets/images/dk_logo.png" style="width:16px;height:16px;object-fit:contain;vertical-align:middle;" onerror="this.outerHTML='DK'"> FPPG</th>
+            <th style="text-align:center;"><span style="color:#fff;font-weight:900;">N</span><span style="color:#f6861f;font-weight:900;">S</span> ⚡ BOOST</th>
+            <th style="text-align:right;">SAL</th>
+            <th style="text-align:center;">OPP</th>
+            <th style="text-align:center;">ACTIONS</th>
+          </tr>
+        </thead>
+        <tbody id="nsLineupTBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- STEPS BELOW LINEUP TABLE -->
+  <div id="nsStepsSection" style="display:none;max-width:920px;margin:0 auto 28px;padding:20px 24px;background:rgba(0,212,255,0.04);border:1px solid rgba(0,212,255,0.12);border-radius:12px;">
+    <div style="font-family:'Rajdhani',sans-serif;font-weight:900;font-size:1.15em;letter-spacing:3px;color:#fff;margin-bottom:12px;">YOUR LINEUP IS READY — HERE'S WHAT TO DO NEXT:</div>
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      <div style="font-family:'Share Tech Mono',monospace;font-size:0.78em;color:#fff;letter-spacing:1px;">
+        <span style="color:var(--gold);font-weight:700;">STEP 1:</span> REVIEW YOUR LINEUP <em style="color:rgba(255,255,255,0.6);font-style:italic;">(CLICK ON EACH PLAYER FOR STAT HISTORY)</em>
+      </div>
+      <div style="font-family:'Share Tech Mono',monospace;font-size:0.78em;color:#fff;letter-spacing:1px;">
+        <span style="color:var(--gold);font-weight:700;">STEP 2:</span> LOCK IN A PLAYER or REMOVE A PLAYER
+        <div style="color:rgba(255,255,255,0.6);font-style:italic;margin-top:4px;font-size:0.92em;">
+          * If you remove a PLAYER, a player list for that position will appear and you may select a new player for that position. This is perfect when teams update a player's status throughout the day, or you have your own lineup strategy — weave in the perfect lineup for you.
+        </div>
+      </div>
+      <div style="font-family:'Share Tech Mono',monospace;font-size:0.78em;color:#fff;letter-spacing:1px;">
+        <span style="color:var(--gold);font-weight:700;">STEP 3:</span> REVIEW PLAYER SELECTIONS &amp; WHEN YOU ARE READY —
+        <span style="color:var(--green);font-weight:700;"> PRESS SAVE YOUR LINEUP NS ⚡ BOOST LINEUP</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- REPLACEMENT POOL -->
+  <div id="nsReplacementPool" style="display:none;">
+    <div class="ns-repl-title">REPLACEMENT PLAYER POOL</div>
+    <div class="ns-repl-sub">SELECT A PLAYER TO FILL THE EMPTY SLOT · SORTED BY DK ⚡ PROJ</div>
+    <div class="ns-repl-cap" id="nsReplCapLine"></div>
+    <div class="ns-repl-tabs" id="nsReplTabs"></div>
+    <div style="overflow-x:auto;">
+      <table class="ns-repl-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>PLAYER</th>
+            <th style="text-align:right;">DK ⚡ PROJ</th>
+            <th style="text-align:right;">FPPG</th>
+            <th style="text-align:right;">SALARY</th>
+          </tr>
+        </thead>
+        <tbody id="nsReplBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- SAVE BUTTON -->
+  <div class="ns-save-section">
+    <button id="nsSaveBtn" onclick="nsSaveLineup()">SAVE DK NS POWER BOOST LINEUP</button>
+    <div style="font-family:'Share Tech Mono',monospace;font-size:0.68em;color:var(--text-muted);letter-spacing:2px;margin-top:8px;" id="nsSaveHint">
+      FILL ALL 8 POSITIONS TO UNLOCK SAVE
+    </div>
+  </div>
+
+</div><!-- /main -->
+</div><!-- /phone-frame-inner -->
+</div><!-- /phone-frame-outer -->
+
+<!-- ── THINKING OVERLAY ── -->
+<div id="nsThinkingOverlay">
+  <div class="ns-weaving-box">
+    <div class="ns-weaving-label"><span class="ns-neural">NEURAL</span><span class="ns-stitch">STITCH</span>® <span style="color:#fff;font-weight:900;">IS WORKING</span></div>
+    <div class="ns-weaving-title">WEAVING IN:</div>
+    <div>
+      <span class="ns-weaving-pos" id="nsWeavingPos">PG</span>
+    </div>
+    <div class="ns-weaving-sub">
+      OPTIMIZING DK SLATE<span class="ns-weaving-dots"><span>.</span><span>.</span><span>.</span></span>
+    </div>
+    <div class="ns-weaving-bar"><div class="ns-weaving-bar-fill" id="nsWeavingBarFill"></div></div>
+  </div>
+</div>
+
+<!-- ── TOAST ── -->
+<!-- ── SAVE MODAL ── -->
+<div id="nsSaveModal" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.75);align-items:center;justify-content:center;" onclick="if(event.target===this)this.style.display='none'">
+  <div style="background:#1c1e30;border:2px solid #f6861f;border-radius:18px;padding:40px 48px;max-width:520px;width:90%;text-align:center;box-shadow:0 0 60px rgba(246,134,31,0.3);">
+    <div style="font-family:'Rajdhani',sans-serif;font-weight:900;font-size:2em;letter-spacing:4px;margin-bottom:8px;">
+      <span style="color:#00d4ff;">DFS</span><span style="color:#fff;">LINEUP</span><span style="background:#FFB800;color:#000;font-size:0.75em;padding:0 4px;border-radius:3px;font-weight:900;margin-left:2px;">AI</span>
+    </div>
+    <div style="font-family:'Rajdhani',sans-serif;font-weight:900;font-size:1.1em;letter-spacing:3px;margin-bottom:18px;">
+      W/ <span style="color:#fff;">NEURAL</span><span style="color:#00d4ff;">STITCH</span>® ⚡ BOOST
+    </div>
+    <div style="font-size:2.5em;margin-bottom:12px;">✅</div>
+    <div style="font-family:'Rajdhani',sans-serif;font-weight:900;font-size:1.5em;letter-spacing:3px;color:#fff;margin-bottom:10px;">DK LINEUP SAVED!</div>
+    <div style="font-family:'Share Tech Mono',monospace;font-size:0.78em;color:rgba(255,255,255,0.7);letter-spacing:2px;line-height:1.7;margin-bottom:24px;">
+      YOUR <span style="color:#fff;">NEURAL</span><span style="color:#00d4ff;">STITCH</span>® DK NS POWER BOOST LINEUP<br>
+      HAS BEEN SAVED SUCCESSFULLY.<br><br>
+      TO VIEW YOUR SAVED LINEUPS, GO TO THE<br>
+      <span style="color:#FFB800;font-weight:700;">PERFORMANCE PAGE</span> FROM THE MAIN MENU.
+    </div>
+    <button onclick="document.getElementById('nsSaveModal').style.display='none'" style="font-family:'Rajdhani',sans-serif;font-weight:900;font-size:1.1em;letter-spacing:3px;padding:14px 40px;border-radius:10px;cursor:pointer;background:rgba(246,134,31,0.15);border:2px solid #f6861f;color:#fff;transition:all 0.2s;">OK — GOT IT</button>
+  </div>
+</div>
+
+<div id="nsToast"></div>
+
+<script>
+  // ══════════════════════════════════════════════════════════════
+  // NS DK DATA & STATE
+  // ══════════════════════════════════════════════════════════════
+  const NS = {
+    players: [],
+    lineup: new Array(8).fill(null),
+    lockedSlots: new Set(),
+    removedNames: new Set(),
+    selectedGames: new Set(),
+    replActivePos: null,
+    generated: false,
+    SALARY_CAP: 50000,
+    // DK positions: PG, SG, SF, PF, C, G (flex guard), F (flex forward), UTIL
+    POSITIONS: ['PG','SG','SF','PF','C','G','F','UTIL'],
+    LOGO_PATH: 'NBA - SIM/NBA POWER RANKINGS SIMULATOR/assets/images/'
+  };
+
+  const TEAM_LOGO_MAP = {
+    'ATL':'HAWKS',    'BKN':'NETS',         'BOS':'CELTICS',      'CHA':'HORNETS',
+    'CHI':'BULLS',    'CLE':'CAVALIERS',    'DAL':'MAVERICKS',    'DEN':'NUGGETS',
+    'DET':'PISTONS',  'HOU':'ROCKETS',      'IND':'PACERS',       'LAC':'CLIPPERS',
+    'LAL':'LAKERS',   'MEM':'GRIZZLIES',    'MIA':'HEAT',         'MIL':'BUCKS',
+    'MIN':'TIMBERWOLVES','NYK':'KNICKS',    'OKC':'THUNDER',      'ORL':'MAGIC',
+    'PHI':'76ERS',    'POR':'TRAILBLAZERS', 'SAC':'KINGS',        'SAS':'SPURS',
+    'TOR':'RAPTORS',  'UTA':'JAZZ',         'WAS':'WIZARDS',
+    'GS':'WARRIORS',  'GSW':'WARRIORS',
+    'NO':'PELICANS',  'NOP':'PELICANS',
+    'PHO':'SUNS',     'PHX':'SUNS',
+    'NY':'KNICKS',    'SA':'SPURS',
+  };
+
+  function teamLogo(abbr) {
+    const f = TEAM_LOGO_MAP[(abbr||'').toUpperCase()];
+    return f ? `${NS.LOGO_PATH}${f}.png` : '';
+  }
+  function logoImg(abbr, sz) {
+    const src = teamLogo(abbr);
+    sz = sz || 28;
+    return src ? `<img src="${src}" style="width:${sz}px;height:${sz}px;object-fit:contain;" onerror="this.style.display='none'">` : '';
+  }
+
+  // DK fantasy points scoring
+  function calcDKFP(p) {
+    const pts = parseFloat(p.projPTS||p.avgPTS||0);
+    const reb = parseFloat(p.projREB||p.avgREB||0);
+    const ast = parseFloat(p.projAST||p.avgAST||0);
+    const stl = parseFloat(p.projSTL||p.avgSTL||0);
+    const blk = parseFloat(p.projBLK||p.avgBLK||0);
+    const tov = parseFloat(p.projTO||p.avgTO||0);
+    const threes = parseFloat(p.proj3PM||p.avg3PM||0);
+    const fp = pts*1.0 + threes*0.5 + reb*1.25 + ast*1.5 + stl*2.0 + blk*2.0 + tov*(-0.5);
+    // Double-double / triple-double bonuses
+    const cats = [pts>=10?1:0, reb>=10?1:0, ast>=10?1:0, stl>=10?1:0, blk>=10?1:0];
+    const dbls = cats.reduce((s,v)=>s+v,0);
+    const bonus = dbls >= 3 ? 3.0 : dbls >= 2 ? 1.5 : 0;
+    return fp + bonus;
+  }
+
+  // ── TOAST ──
+  function nsToast(msg) {
+    const el = document.getElementById('nsToast');
+    el.textContent = msg; el.classList.add('show');
+    clearTimeout(el._t);
+    el._t = setTimeout(() => el.classList.remove('show'), 3200);
+  }
+
+  // ══════════════════════════════════════════════════════════════
+  // DATA LOAD — dk_players.json
+  // ══════════════════════════════════════════════════════════════
+  function loadData() {
+    fetch('data/dk_players.json?_=' + Date.now())
+      .then(r => r.json())
+      .then(data => {
+        NS.players = Array.isArray(data) ? data : (data.players || []);
+        buildGameBoxes();
+        buildSlots();
+        buildTicker();
+      })
+      .catch(() => {
+        document.getElementById('nsGamesRow').innerHTML =
+          '<div style="color:var(--text-muted);font-family:\'Share Tech Mono\',monospace;font-size:0.8em;padding:20px;text-align:center;">NO DK PLAYER DATA — RUN python run.py FIRST</div>';
+        buildSlots();
+      });
+  }
+
+  // ══════════════════════════════════════════════════════════════
+  // TICKER
+  // ══════════════════════════════════════════════════════════════
+  function buildTicker() {
+    if (!NS.players.length) return;
+    const top = NS.players
+      .filter(p => p.powerBoostIndex || p.projectedScore)
+      .sort((a,b) => (b.powerBoostIndex||b.projectedScore||0)-(a.powerBoostIndex||a.projectedScore||0))
+      .slice(0, 20);
+    const items = top.map(p =>
+      `<span class="ticker-item"><span class="ticker-name">${p.name}</span> · ${p.team||''} · DK ⚡ ${parseFloat(p.powerBoostIndex||p.projectedScore||0).toFixed(1)} · $${(p.salary||0).toLocaleString()}</span>`
+    ).join('');
+    const doubled = items + items;
+    document.getElementById('tickerTrack').innerHTML =
+      `<span class="ticker-label"><span class="ns-neural">NEURAL</span><span class="ns-stitch">STITCH</span>™ DK ⚡ PROJECTIONS</span>${doubled}`;
+  }
+
+  // ══════════════════════════════════════════════════════════════
+  // GAME BOXES
+  // ══════════════════════════════════════════════════════════════
+  function buildGameBoxes() {
+    const row = document.getElementById('nsGamesRow');
+    const gameMap = {};
+    NS.players.forEach(p => {
+      const g = (p.game || '').replace(/\s/g,'');
+      const atIdx = g.indexOf('@');
+      if (atIdx < 1) return;
+      const away = g.substring(0, atIdx).toUpperCase();
+      const home = g.substring(atIdx+1).toUpperCase();
+      const key = away + '@' + home;
+      if (!gameMap[key]) gameMap[key] = { away, home, time: p.time || p.gameTime || 'TBD' };
+    });
+    // Enrich with odds if available
+    NS.players.forEach(p => {
+      const g = (p.game || '').replace(/\s/g,'');
+      const atIdx = g.indexOf('@');
+      if (atIdx < 1) return;
+      const away = g.substring(0, atIdx).toUpperCase();
+      const home = g.substring(atIdx+1).toUpperCase();
+      const key = away + '@' + home;
+      if (gameMap[key]) {
+        if (p.overUnder && !gameMap[key].overUnder) gameMap[key].overUnder = p.overUnder;
+        if (p.spread != null && !gameMap[key].awaySpread) {
+          const spreadVal = parseFloat(p.spread);
+          if (!isNaN(spreadVal)) {
+            gameMap[key].awaySpread = spreadVal;
+            gameMap[key].homeSpread = -spreadVal;
+          }
+        }
+      }
+    });
+    const games = Object.entries(gameMap).sort((a, b) => {
+      // Sort by time (earliest first)
+      const timeA = a[1].time || 'ZZZ';
+      const timeB = b[1].time || 'ZZZ';
+      return timeA.localeCompare(timeB);
+    });
+    if (!games.length) {
+      row.innerHTML = '<div style="color:var(--text-muted);font-family:\'Share Tech Mono\',monospace;font-size:0.8em;padding:20px;text-align:center;">NO GAMES FOUND IN DK PLAYER DATA</div>';
+      return;
+    }
+    row.innerHTML = games.map(([key, g]) => {
+      const awaySpread = g.awaySpread != null ? g.awaySpread : null;
+      const homeSpread = g.homeSpread != null ? g.homeSpread : null;
+      const awaySpreadStr = awaySpread != null ? `<span style="color:${awaySpread > 0 ? 'var(--green)' : 'var(--red)'};">${awaySpread > 0 ? '+' : ''}${awaySpread}</span>` : '';
+      const homeSpreadStr = homeSpread != null ? `<span style="color:${homeSpread > 0 ? 'var(--green)' : 'var(--red)'};">${homeSpread > 0 ? '+' : ''}${homeSpread}</span>` : '';
+      const ouStr = g.overUnder ? `O/U: ${parseFloat(g.overUnder).toFixed(1)}` : 'O/U: TBD';
+      return `
+      <div class="ns-game-box" id="ngb-${key}" onclick="toggleGame('${key}')">
+        <div class="ngb-time">${g.time}</div>
+        <div class="ngb-teams">
+          <div class="ngb-team">${awaySpreadStr}${logoImg(g.away,28)}<span>${g.away}</span></div>
+          <div class="ngb-at">@</div>
+          <div class="ngb-team">${logoImg(g.home,28)}<span>${g.home}</span>${homeSpreadStr}</div>
+        </div>
+        <div class="ngb-odds">${ouStr}</div>
+      </div>`;
+    }).join('');
+  }
+
+  function toggleGame(key) {
+    const box = document.getElementById('ngb-' + key);
+    if (NS.selectedGames.has(key)) {
+      NS.selectedGames.delete(key);
+      box.classList.remove('selected');
+    } else {
+      NS.selectedGames.add(key);
+      box.classList.add('selected');
+    }
+    const cnt = NS.selectedGames.size;
+    document.getElementById('nsSelectedCount').textContent = cnt;
+    document.getElementById('nsGenerateHint').textContent = cnt === 0
+      ? 'SELECT AT LEAST 1 GAME ABOVE — OR LEAVE ALL UNSELECTED FOR FULL DK SLATE'
+      : cnt + ' GAME' + (cnt > 1 ? 'S' : '') + ' SELECTED FOR YOUR CUSTOM DK SLATE';
+    const genBtn = document.getElementById('nsGenerateBtn');
+    if (cnt >= 2) genBtn.classList.add('gold-ready');
+    else genBtn.classList.remove('gold-ready');
+  }
+
+  // ══════════════════════════════════════════════════════════════
+  // LINEUP SLOTS
+  // ══════════════════════════════════════════════════════════════
+  function buildSlots() {
+    const row = document.getElementById('nsSlotsRow');
+    row.innerHTML = NS.POSITIONS.map((pos, i) => `
+      <div class="ns-slot-wrap">
+        <div class="ns-slot-pos-label">${pos}</div>
+        <div class="ns-slot" id="nsslot-${i}">
+          <div class="ns-slot-num">${i+1}</div>
+          <div class="ns-slot-empty">+ ADD</div>
+        </div>
+      </div>`).join('');
+  }
+
+  function renderSlot(i) {
+    const el = document.getElementById('nsslot-' + i);
+    if (!el) return;
+    const p = NS.lineup[i];
+    const isLocked = NS.lockedSlots.has(i);
+    if (!p) {
+      el.className = 'ns-slot removed-slot';
+      el.innerHTML = `<div class="ns-slot-num">${i+1}</div><div class="ns-slot-empty">EMPTY</div>`;
+      return;
+    }
+    const initials = (p.name||'??').split(' ').map(n=>n[0]).join('').substring(0,2).toUpperCase();
+    const imgSrc = p.headshotUrl || p.image || p.imageUrl || '';
+    const avatarHTML = imgSrc
+      ? `<img class="ns-slot-headshot" src="${imgSrc}" onerror="this.style.display='none'" alt="">`
+      : `<div class="ns-slot-headshot-init">${initials}</div>`;
+    const boost = parseFloat(p.powerBoostIndex||p.projectedScore||0).toFixed(1);
+    const sal = '$' + parseFloat(p.salary||0).toLocaleString();
+    el.className = 'ns-slot filled' + (isLocked ? ' locked' : '');
+    el.innerHTML = `
+      <button class="ns-slot-lock-btn${isLocked?' locked':''}" onclick="toggleSlotLock(${i},event)" title="${isLocked?'Unlock':'Lock'} player">🔒</button>
+      <button class="ns-slot-remove-btn" onclick="removeSlotPlayer(${i},event)" title="Remove player">✕</button>
+      ${avatarHTML}
+      <div class="ns-slot-name">${p.name}</div>
+      <div class="ns-slot-meta" style="color:#fff;font-weight:700;">${p.team||''} · ${p.position||''}</div>
+      <div class="ns-slot-proj"><span style="color:#fff;font-weight:900;font-size:1em;">N</span><span style="color:#00d4ff;font-weight:900;font-size:1em;">S</span> PROJ: <span style="color:var(--cyan);">${boost}</span></div>`;
+  }
+
+  function toggleSlotLock(i, e) {
+    e && e.stopPropagation();
+    if (NS.lockedSlots.has(i)) NS.lockedSlots.delete(i);
+    else NS.lockedSlots.add(i);
+    renderSlot(i);
+    renderLineupTable();
+  }
+
+  function removeSlotPlayer(i, e) {
+    e && e.stopPropagation();
+    if (NS.lockedSlots.has(i)) { nsToast('🔒 PLAYER IS LOCKED — UNLOCK FIRST'); return; }
+    const p = NS.lineup[i];
+    if (!p) return;
+    NS.removedNames.add(p.name);
+    NS.lineup[i] = null;
+    renderSlot(i);
+    renderLineupTable();
+    updateSaveBtn();
+    showReplacementPool();
+  }
+
+  // ══════════════════════════════════════════════════════════════
+  // INJURY CHECK — blocks OUT / INJ / O / IR and any non-healthy status
+  // ══════════════════════════════════════════════════════════════
+  function isInjured(p) {
+    const inj = (p.injuryStatus || '').toUpperCase().trim();
+    if (inj === '' || inj === 'GTD' || inj === 'HEALTHY') return false;
+    const OUT_FLAGS = new Set(['OUT','O','INJ','INJURED','IR','INACTIVE','SUSPENDED','DND']);
+    return OUT_FLAGS.has(inj) || (inj !== '' && inj !== 'GTD' && inj !== 'HEALTHY');
+  }
+
+  // ══════════════════════════════════════════════════════════════
+  // DK POSITION ELIGIBILITY
+  // ══════════════════════════════════════════════════════════════
+  function posEligible(playerPos, slot) {
+    const pp = (playerPos||'').toUpperCase();
+    if (slot === 'UTIL') return true;
+    if (slot === 'G')    return ['PG','SG'].includes(pp);     // DK Guard flex: PG or SG
+    if (slot === 'F')    return ['SF','PF'].includes(pp);     // DK Forward flex: SF or PF
+    return pp === slot;
+  }
+
+  // ══════════════════════════════════════════════════════════════
+  // DK OPTIMIZER ($50,000 cap)
+  // ══════════════════════════════════════════════════════════════
+  function runOptimizer(playerPool) {
+    const cap = NS.SALARY_CAP;  // $50,000
+    const MIN_SAL_PER_SLOT = 3000; // DK minimum ~$3K per slot
+    const POSITIONS = NS.POSITIONS;
+    const available = playerPool
+      .filter(p => p.game && p.game !== '—' && !isInjured(p))
+      .map(p => ({
+        ...p,
+        nsBoostScore: parseFloat(p.powerBoostIndex||p.projectedScore||0),
+        sal: parseFloat(p.salary||0)
+      }))
+      .filter(p => p.nsBoostScore > 0 && p.sal > 0)
+      .sort((a,b) => b.nsBoostScore - a.nsBoostScore);
+
+    const lockedPlayers = new Set();
+    NS.POSITIONS.forEach((pos, i) => {
+      if (NS.lockedSlots.has(i) && NS.lineup[i]) lockedPlayers.add(NS.lineup[i].name);
+    });
+
+    const SLOT_CANDIDATES = 8;
+    const slotPools = POSITIONS.map(slot =>
+      available.filter(p => posEligible(p.position, slot) && !lockedPlayers.has(p.name)).slice(0, SLOT_CANDIDATES)
+    );
+
+    let bestAssigned = null, bestScore = -1;
+
+    function solve(si, usedNames, assigned, salUsed, score) {
+      if (si === POSITIONS.length) {
+        if (score > bestScore) { bestScore = score; bestAssigned = { ...assigned }; }
+        return;
+      }
+      if (NS.lockedSlots.has(si) && NS.lineup[si]) {
+        const lp = NS.lineup[si];
+        usedNames.add(lp.name);
+        assigned[POSITIONS[si]] = lp;
+        solve(si+1, usedNames, assigned, salUsed + parseFloat(lp.salary||0), score + parseFloat(lp.powerBoostIndex||lp.projectedScore||0));
+        usedNames.delete(lp.name);
+        delete assigned[POSITIONS[si]];
+        return;
+      }
+      const slotsLeft = POSITIONS.length - si;
+      for (const p of slotPools[si]) {
+        if (usedNames.has(p.name)) continue;
+        if (salUsed + p.sal > cap - (slotsLeft-1) * MIN_SAL_PER_SLOT) continue;
+        usedNames.add(p.name);
+        assigned[POSITIONS[si]] = p;
+        solve(si+1, usedNames, assigned, salUsed + p.sal, score + p.nsBoostScore);
+        usedNames.delete(p.name);
+        delete assigned[POSITIONS[si]];
+      }
+    }
+    solve(0, new Set(), {}, 0, 0);
+
+    // Greedy fallback
+    if (!bestAssigned) {
+      bestAssigned = {};
+      let usedFB = new Set(), salFB = 0;
+      for (let si = 0; si < POSITIONS.length; si++) {
+        if (NS.lockedSlots.has(si) && NS.lineup[si]) {
+          bestAssigned[POSITIONS[si]] = NS.lineup[si];
+          usedFB.add(NS.lineup[si].name);
+          salFB += parseFloat(NS.lineup[si].salary||0);
+          continue;
+        }
+        const slotsLeft = POSITIONS.filter((_, j) => !bestAssigned[POSITIONS[j]]).length;
+        const c = available.find(p =>
+          !usedFB.has(p.name) && posEligible(p.position, POSITIONS[si]) &&
+          p.sal <= (cap - salFB - (slotsLeft-1) * MIN_SAL_PER_SLOT)
+        );
+        if (c) { bestAssigned[POSITIONS[si]] = c; usedFB.add(c.name); salFB += c.sal; }
+      }
+    }
+    return bestAssigned;
+  }
+
+  // ══════════════════════════════════════════════════════════════
+  // GENERATE
+  // ══════════════════════════════════════════════════════════════
+  function nsGenerate() {
+    let playerPool = NS.players;
+    if (NS.selectedGames.size > 0) {
+      playerPool = NS.players.filter(p => {
+        const g = (p.game||'').replace(/\s/g,'');
+        const atIdx = g.indexOf('@');
+        if (atIdx < 1) return false;
+        const away = g.substring(0, atIdx).toUpperCase();
+        const home = g.substring(atIdx+1).toUpperCase();
+        const key = away + '@' + home;
+        return NS.selectedGames.has(key);
+      });
+    }
+    if (!playerPool.length) { nsToast('⚠ NO DK PLAYERS FOUND FOR SELECTED GAMES'); return; }
+
+    NS.POSITIONS.forEach((pos, i) => {
+      if (!NS.lockedSlots.has(i)) NS.lineup[i] = null;
+    });
+    NS.removedNames.clear();
+    document.getElementById('nsReplacementPool').style.display = 'none';
+
+    startThinkingAnimation(() => {
+      const assigned = runOptimizer(playerPool);
+      let slotIdx = 0;
+      for (const slot of NS.POSITIONS) {
+        if (assigned && assigned[slot]) NS.lineup[slotIdx] = assigned[slot];
+        slotIdx++;
+      }
+      waveRevealSlots(() => {
+        // Auto-lock all filled slots after generation
+        NS.POSITIONS.forEach((pos, i) => {
+          if (NS.lineup[i]) NS.lockedSlots.add(i);
+        });
+        renderLineupTable();
+        updateSaveBtn();
+        NS.generated = true;
+        nsToast('NEURALSTITCH® LINEUP GENERATED');
+      });
+    });
+  }
+
+  // ══════════════════════════════════════════════════════════════
+  // THINKING ANIMATION
+  // ══════════════════════════════════════════════════════════════
+  function startThinkingAnimation(onComplete) {
+    const overlay = document.getElementById('nsThinkingOverlay');
+    const posEl   = document.getElementById('nsWeavingPos');
+    const barFill = document.getElementById('nsWeavingBarFill');
+
+    barFill.style.animation = 'none';
+    barFill.offsetHeight;
+    barFill.style.animation = 'barFill 3.6s linear forwards';
+
+    for (let i = 0; i < 8; i++) {
+      const el = document.getElementById('nsslot-' + i);
+      if (el) {
+        el.className = 'ns-slot thinking';
+        el.innerHTML = `<div class="ns-slot-num">${i+1}</div>`;
+      }
+    }
+    overlay.classList.add('active');
+
+    const shufflePositions = ['PG','SG','SF','PF','C','F','G','UTIL'];
+    let frame = 0;
+    const totalFrames = 24;
+    let colorToggle = false;
+    const shuffleInterval = setInterval(() => {
+      frame++;
+      colorToggle = !colorToggle;
+      posEl.style.color = colorToggle ? '#00d4ff' : '#ffffff';
+      posEl.style.textShadow = colorToggle ? '0 0 20px rgba(0,212,255,0.6)' : '0 0 20px rgba(255,255,255,0.4)';
+      if (frame < totalFrames - 1) {
+        const nonUtil = shufflePositions.slice(0, -1);
+        const rand = nonUtil[Math.floor(Math.random() * nonUtil.length)];
+        posEl.style.animation = 'none'; posEl.offsetHeight;
+        posEl.style.animation = 'posPulse 0.15s ease-out';
+        posEl.textContent = rand;
+      } else {
+        posEl.style.animation = 'none'; posEl.offsetHeight;
+        posEl.style.animation = 'posPulse 0.15s ease-out';
+        posEl.textContent = 'UTIL';
+        clearInterval(shuffleInterval);
+        setTimeout(() => {
+          overlay.classList.remove('active');
+          onComplete();
+        }, 400);
+      }
+    }, 150);
+  }
+
+  // ══════════════════════════════════════════════════════════════
+  // WAVE REVEAL
+  // ══════════════════════════════════════════════════════════════
+  function waveRevealSlots(onComplete) {
+    NS.POSITIONS.forEach((pos, i) => {
+      setTimeout(() => {
+        renderSlot(i);
+        if (i === NS.POSITIONS.length - 1 && onComplete) onComplete();
+      }, i * 200);
+    });
+  }
+
+  // ══════════════════════════════════════════════════════════════
+  // LINEUP TABLE
+  // ══════════════════════════════════════════════════════════════
+  function renderLineupTable() {
+    const table = document.getElementById('nsLineupTable');
+    const tbody = document.getElementById('nsLineupTBody');
+    if (!NS.generated && NS.lineup.every(x => !x)) { table.style.display = 'none'; document.getElementById('nsStepsSection').style.display = 'none'; return; }
+    table.style.display = 'block';
+    document.getElementById('nsStepsSection').style.display = 'block';
+
+    let totalProj = 0, totalSal = 0;
+    NS.lineup.forEach(p => {
+      if (p) {
+        totalProj += parseFloat(p.powerBoostIndex||p.projectedScore||0);
+        totalSal  += parseFloat(p.salary||0);
+      }
+    });
+    document.getElementById('nsTableTotalProj').textContent = totalProj.toFixed(1);
+    document.getElementById('nsTableSalary').textContent    = '$' + totalSal.toLocaleString() + '/$50,000';
+
+    tbody.innerHTML = NS.POSITIONS.map((pos, i) => {
+      const p = NS.lineup[i];
+      const isLocked = NS.lockedSlots.has(i);
+      if (!p) return `
+        <tr class="ns-lineup-row">
+          <td class="ns-lr-pos">${pos}</td>
+          <td colspan="5" style="color:var(--red);font-family:'Share Tech Mono',monospace;font-size:0.78em;letter-spacing:1px;">— EMPTY —</td>
+          <td class="ns-lr-actions"></td>
+        </tr>`;
+      const boost   = parseFloat(p.powerBoostIndex||p.projectedScore||0).toFixed(1);
+      const fppg    = parseFloat(p.fppg||0).toFixed(1);
+      const sal     = '$' + parseFloat(p.salary||0).toLocaleString();
+      const opp     = (p.opponent||p.opp||'').toUpperCase();
+      const name    = (p.name||'').replace(/'/g,"&#39;");
+      // Determine if player is home or away
+      const gameStr = (p.game||'').replace(/\s/g,'');
+      const gameAtIdx = gameStr.indexOf('@');
+      let isAway = false;
+      if (gameAtIdx > 0) {
+        const awayTeam = gameStr.substring(0, gameAtIdx).toUpperCase();
+        isAway = (p.team||'').toUpperCase() === awayTeam;
+      }
+      return `
+        <tr class="ns-lineup-row${isLocked?' locked-row':''}">
+          <td class="ns-lr-pos">${pos}</td>
+          <td>
+            <div class="ns-lr-name" onclick="nsOpenPlayerCard('${name}')">${p.name}</div>
+            <div class="ns-lr-team">${p.team||''} · ${p.position||''}</div>
+          </td>
+          <td class="ns-lr-fppg">${fppg}</td>
+          <td class="ns-lr-boost">${boost}</td>
+          <td class="ns-lr-sal">${sal}</td>
+          <td class="ns-lr-opp">${isAway ? '<span style="color:var(--text-muted);font-family:\'Share Tech Mono\',monospace;font-size:0.7em;margin-right:2px;">@</span>' : ''}${logoImg(opp, 24)}</td>
+          <td class="ns-lr-actions">
+            <button class="ns-lock-btn${isLocked?' locked':''}" onclick="toggleSlotLock(${i})" title="${isLocked?'Unlock':'Lock'}">🔒</button>
+            <button class="ns-remove-btn" onclick="removeSlotPlayer(${i})">✕ Remove</button>
+          </td>
+        </tr>`;
+    }).join('');
+  }
+
+  // ══════════════════════════════════════════════════════════════
+  // REPLACEMENT POOL
+  // ══════════════════════════════════════════════════════════════
+  function showReplacementPool() {
+    const emptySlots = NS.POSITIONS.filter((pos, i) => !NS.lineup[i]);
+    if (!emptySlots.length) {
+      document.getElementById('nsReplacementPool').style.display = 'none';
+      return;
+    }
+    const pool = document.getElementById('nsReplacementPool');
+    pool.style.display = 'block';
+
+    const usedSal = NS.lineup.reduce((s, p) => s + (p ? parseFloat(p.salary||0) : 0), 0);
+    const remaining = NS.SALARY_CAP - usedSal;
+    document.getElementById('nsReplCapLine').textContent =
+      'USED: $' + usedSal.toLocaleString() + ' / $50,000 · REMAINING: $' + remaining.toLocaleString();
+
+    const tabs = document.getElementById('nsReplTabs');
+    tabs.innerHTML = emptySlots.map(pos => `
+      <button class="ns-repl-tab${NS.replActivePos === pos ? ' active' : ''}" onclick="nsReplSelectTab('${pos}')">${pos}</button>`
+    ).join('');
+
+    if (!NS.replActivePos || !emptySlots.includes(NS.replActivePos)) {
+      NS.replActivePos = emptySlots[0];
+      tabs.innerHTML = emptySlots.map(pos => `
+        <button class="ns-repl-tab${NS.replActivePos === pos ? ' active' : ''}" onclick="nsReplSelectTab('${pos}')">${pos}</button>`
+      ).join('');
+    }
+    renderReplBody(remaining);
+  }
+
+  function nsReplSelectTab(pos) {
+    NS.replActivePos = pos;
+    showReplacementPool();
+  }
+
+  function renderReplBody(remaining) {
+    const pos = NS.replActivePos;
+    const usedNames = new Set(NS.lineup.filter(Boolean).map(p => p.name));
+    const usedSal   = NS.lineup.reduce((s, p) => s + (p ? parseFloat(p.salary||0) : 0), 0);
+    const avail     = NS.SALARY_CAP - usedSal;
+
+    const eligible = NS.players
+      .filter(p => {
+        if (!posEligible(p.position, pos)) return false;
+        if (parseFloat(p.salary||0) > avail) return false;
+        if (isInjured(p)) return false;
+        return true;
+      })
+      .sort((a,b) => (b.powerBoostIndex||b.projectedScore||0)-(a.powerBoostIndex||a.projectedScore||0));
+
+    document.getElementById('nsReplBody').innerHTML = eligible.slice(0, 100).map((p, idx) => {
+      const inLineup   = usedNames.has(p.name);
+      const wasRemoved = NS.removedNames.has(p.name);
+      const boost = parseFloat(p.powerBoostIndex||p.projectedScore||0).toFixed(1);
+      const fppg  = parseFloat(p.fppg||0).toFixed(1);
+      const sal   = '$' + parseFloat(p.salary||0).toLocaleString();
+      const name  = (p.name||'').replace(/'/g,"&#39;");
+      const cls   = 'ns-repl-player-row' + (inLineup ? ' in-lineup' : '') + (wasRemoved ? ' prev-removed' : '');
+      const tag   = inLineup ? '<span class="ns-repl-in-tag">IN LINEUP</span>' : '';
+      const onclick = inLineup ? '' : `onclick="nsReplSelectPlayer('${name}')"`;
+      return `
+        <tr class="${cls}" ${onclick}>
+          <td class="ns-repl-rank">${idx+1}</td>
+          <td>
+            <span class="ns-repl-name">${p.name}${tag}</span>
+            <span class="ns-repl-pos-badge">${p.position||''}</span>
+          </td>
+          <td class="ns-repl-boost">⚡ ${boost}</td>
+          <td class="ns-repl-fppg">${fppg}</td>
+          <td class="ns-repl-sal">${sal}</td>
+        </tr>`;
+    }).join('');
+  }
+
+  function nsReplSelectPlayer(playerName) {
+    const p = NS.players.find(pl => pl.name === playerName || pl.name === playerName.replace(/&#39;/g,"'"));
+    if (!p) return;
+    if (isInjured(p)) {
+      nsToast('⚠ ' + p.name + ' IS ' + (p.injuryStatus||'').toUpperCase() + ' — NOT ELIGIBLE');
+      return;
+    }
+    const slotIdx = NS.POSITIONS.findIndex((pos, i) => pos === NS.replActivePos && !NS.lineup[i]);
+    if (slotIdx === -1) {
+      const utilIdx = NS.POSITIONS.indexOf('UTIL');
+      if (utilIdx !== -1 && !NS.lineup[utilIdx]) {
+        NS.lineup[utilIdx] = p;
+        renderSlot(utilIdx);
+      } else { nsToast('⚠ NO OPEN SLOT FOR ' + NS.replActivePos); return; }
+    } else {
+      NS.lineup[slotIdx] = p;
+      renderSlot(slotIdx);
+    }
+    renderLineupTable();
+    updateSaveBtn();
+    showReplacementPool();
+    nsToast('✓ ' + p.name + ' ADDED TO DK LINEUP');
+  }
+
+  // ══════════════════════════════════════════════════════════════
+  // PLAYER CARD
+  // ══════════════════════════════════════════════════════════════
+  function nsOpenPlayerCard(playerName) {
+    const p = (NS.players||[]).find(x => x.name === playerName || x.fullName === playerName);
+    if (!p) { try { sessionStorage.setItem('ns_open_player', playerName); } catch(e){} window.open('Draftkings.html#players','_blank'); return; }
+    const nbaId = (window.NS_NBA_ID_MAP||{})[p.name];
+    const headshotUrl = nbaId ? `https://cdn.nba.com/headshots/nba/latest/1040x760/${nbaId}.png` : '';
+    const initials = (p.name||'??').split(' ').map(n=>n[0]).join('').substring(0,2).toUpperCase();
+    const boost  = parseFloat(p.powerBoostIndex||p.projectedScore||0).toFixed(1);
+    const proj   = parseFloat(p.projectedScore||0).toFixed(1);
+    const salary = parseFloat(p.salary||0).toFixed(0);
+    const pos    = (p.position||p.pos||'').toUpperCase();
+    const team   = (p.team||'').toUpperCase();
+    const game   = (p.game||p.matchup||'').toUpperCase();
+    const projPTS = parseFloat(p.PROJ_PTS||p.proj_pts||0).toFixed(1);
+    const projREB = parseFloat(p.PROJ_REB||p.proj_reb||0).toFixed(1);
+    const projAST = parseFloat(p.PROJ_AST||p.proj_ast||0).toFixed(1);
+    const projSTL = parseFloat(p.PROJ_STL||p.proj_stl||0).toFixed(1);
+    const projBLK = parseFloat(p.PROJ_BLK||p.proj_blk||0).toFixed(1);
+    const projTOV = parseFloat(p.PROJ_TOV||p.proj_tov||0).toFixed(1);
+    const projMIN = parseFloat(p.PROJ_MIN||p.proj_min||0).toFixed(1);
+    const statRow = (val, lbl) => `<div style="background:rgba(246,134,31,0.06);border:1px solid rgba(246,134,31,0.2);border-radius:8px;padding:10px 8px;text-align:center;flex:1;min-width:60px;"><div style="font-family:'Share Tech Mono',monospace;font-size:1.05em;font-weight:900;color:#f6861f;">${val}</div><div style="font-family:'Share Tech Mono',monospace;font-size:0.58em;color:rgba(255,255,255,0.45);letter-spacing:1px;margin-top:2px;">${lbl}</div></div>`;
+    const posPlayers = (NS.players||[]).filter(x=>(x.position||x.pos||'')===(p.position||p.pos||'')).sort((a,b)=>parseFloat(b.powerBoostIndex||b.projectedScore||0)-parseFloat(a.powerBoostIndex||a.projectedScore||0));
+    const rank = posPlayers.findIndex(x=>x.name===p.name);
+    const modal = document.createElement('div');
+    modal.id = 'nsDKPlayerCardModal';
+    modal.style.cssText = 'position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.88);display:flex;align-items:center;justify-content:center;padding:16px;';
+    modal.innerHTML = `
+      <div style="background:#1c1e30;border:2px solid rgba(246,134,31,0.45);border-radius:16px;max-width:520px;width:100%;max-height:90vh;overflow-y:auto;position:relative;box-shadow:0 0 40px rgba(246,134,31,0.15);">
+        <button onclick="document.getElementById('nsDKPlayerCardModal').remove()" style="position:absolute;top:12px;right:12px;background:rgba(255,59,92,0.15);border:1px solid rgba(255,59,92,0.4);color:#ff3b5c;border-radius:8px;padding:6px 12px;cursor:pointer;font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1em;z-index:1;">✕</button>
+        <div style="display:flex;gap:0;border-bottom:1px solid rgba(246,134,31,0.2);">
+          <div style="width:80px;min-width:80px;background:rgba(246,134,31,0.08);border-radius:14px 0 0 0;display:flex;align-items:center;justify-content:center;padding:16px 8px;">
+            ${headshotUrl ? `<img src="${headshotUrl}" style="width:64px;height:64px;border-radius:50%;object-fit:cover;object-position:top;" onerror="this.outerHTML='<div style=\"width:64px;height:64px;border-radius:50%;background:rgba(246,134,31,0.15);display:flex;align-items:center;justify-content:center;font-family:Rajdhani,sans-serif;font-weight:900;font-size:1.4em;color:#f6861f;\">${initials}</div>'">`
+            : `<div style="width:64px;height:64px;border-radius:50%;background:rgba(246,134,31,0.15);display:flex;align-items:center;justify-content:center;font-family:'Rajdhani',sans-serif;font-weight:900;font-size:1.4em;color:#f6861f;">${initials}</div>`}
+          </div>
+          <div style="flex:1;padding:16px 12px 16px 16px;">
+            <div style="font-family:'Rajdhani',sans-serif;font-weight:900;font-size:1.3em;color:#fff;letter-spacing:1px;">${p.name}</div>
+            <div style="font-family:'Share Tech Mono',monospace;font-size:0.68em;color:rgba(255,255,255,0.5);letter-spacing:1px;margin-top:2px;">${pos} · ${team} · ${game}</div>
+            <div style="margin-top:6px;display:flex;gap:8px;flex-wrap:wrap;">
+              <span style="background:#fff;font-size:0.85em;padding:2px 6px;border-radius:4px;font-weight:900;display:inline-flex;align-items:center;gap:0;"><span style="color:#00FF41;font-family:'Rajdhani',sans-serif;font-weight:900;">D</span><span style="color:#f6861f;font-family:'Rajdhani',sans-serif;font-weight:900;">K</span><span style="color:#000;font-family:'Share Tech Mono',monospace;font-weight:700;font-size:0.85em;margin-left:3px;"> $${salary}</span></span>
+              <span style="font-family:'Share Tech Mono',monospace;font-size:0.68em;color:rgba(255,255,255,0.5);">FPPG <span style="color:#fff;">${parseFloat(p.fppg||0).toFixed(1)}</span></span>
+            </div>
+          </div>
+          <div style="padding:16px 16px 16px 8px;text-align:center;min-width:80px;border-left:1px solid rgba(246,134,31,0.15);">
+            <div style="font-family:'Share Tech Mono',monospace;font-size:0.58em;color:rgba(255,255,255,0.4);letter-spacing:1px;">${pos} RANK</div>
+            <div style="font-family:'Rajdhani',sans-serif;font-weight:900;font-size:2em;color:#FFB800;">#${rank >= 0 ? rank+1 : '—'}</div>
+          </div>
+        </div>
+        <div style="padding:10px 16px 6px;border-bottom:1px solid rgba(246,134,31,0.12);background:rgba(246,134,31,0.02);">
+          <span style="font-family:'Share Tech Mono',monospace;font-size:0.7em;font-weight:700;letter-spacing:2px;">
+            <span style="color:#fff;">NEURAL</span><span style="color:#00d4ff;">STITCH</span>
+            <span style="color:rgba(246,134,31,0.7);"> STATS FORECAST — ${p.name}</span>
+          </span>
+        </div>
+        <div style="padding:12px 16px;border-bottom:1px solid rgba(246,134,31,0.08);background:rgba(246,134,31,0.02);">
+          <div style="margin-bottom:8px;">
+            <span style="color:#00d4ff;font-family:'Rajdhani',sans-serif;font-weight:900;font-size:0.9em;">DFS</span><span style="color:#fff;font-family:'Rajdhani',sans-serif;font-weight:900;font-size:0.9em;">LINEUP</span><span style="background:#FFB800;color:#000;font-size:0.6em;padding:0 3px;border-radius:3px;font-weight:900;margin-left:2px;">AI</span>
+            <span style="font-family:'Share Tech Mono',monospace;font-size:0.6em;color:rgba(255,255,255,0.45);margin-left:6px;">SLATE BUILDER W/ NEURALSTITCH · FANTASY PROJ LINE</span>
+          </div>
+          <div style="display:flex;gap:5px;flex-wrap:wrap;">${statRow(projPTS,'PTS')}${statRow(projREB,'REB')}${statRow(projAST,'AST')}${statRow(projSTL,'STL')}${statRow(projBLK,'BLK')}${statRow(projTOV,'TO')}${statRow(projMIN,'MIN')}</div>
+          <div style="margin-top:8px;display:flex;align-items:center;gap:6px;">
+            <span style="color:rgba(246,134,31,0.7);">→</span>
+            <span style="font-family:'Share Tech Mono',monospace;font-size:1.3em;font-weight:900;color:#f6861f;">${proj}</span>
+            <span style="font-family:'Share Tech Mono',monospace;font-size:0.6em;color:rgba(255,255,255,0.35);">TONIGHT'S FORECAST</span>
+          </div>
+        </div>
+        <div style="padding:12px 16px 16px;background:rgba(0,255,65,0.02);">
+          <div style="margin-bottom:8px;">
+            <span style="color:#00d4ff;font-family:'Rajdhani',sans-serif;font-weight:900;font-size:0.9em;">DFS</span><span style="color:#fff;font-family:'Rajdhani',sans-serif;font-weight:900;font-size:0.9em;">LINEUP</span><span style="background:#FFB800;color:#000;font-size:0.6em;padding:0 3px;border-radius:3px;font-weight:900;margin-left:2px;">AI</span>
+            <span style="font-family:'Share Tech Mono',monospace;font-size:0.6em;color:rgba(255,255,255,0.45);margin-left:6px;">SLATE BUILDER W/ NEURALSTITCH POWER BOOST · FANTASY PROJ LINE</span>
+          </div>
+          <div style="display:flex;gap:5px;flex-wrap:wrap;">${statRow(projPTS,'PTS')}${statRow(projREB,'REB')}${statRow(projAST,'AST')}${statRow(projSTL,'STL')}${statRow(projBLK,'BLK')}${statRow(projTOV,'TO')}${statRow(projMIN,'MIN')}</div>
+          <div style="margin-top:8px;display:flex;align-items:center;gap:6px;">
+            <span style="color:#00FF41;">→</span>
+            <span style="font-family:'Share Tech Mono',monospace;font-size:1.3em;font-weight:900;color:#00FF41;">⚡${boost}</span>
+            <span style="font-family:'Share Tech Mono',monospace;font-size:0.6em;color:rgba(255,255,255,0.35);">TONIGHT'S FORECAST</span>
+          </div>
+        </div>
+      </div>`;
+    modal.addEventListener('click', e => { if (e.target === modal) modal.remove(); });
+    document.body.appendChild(modal);
+  }
+
+  // ══════════════════════════════════════════════════════════════
+  // SAVE BUTTON
+  // ══════════════════════════════════════════════════════════════
+  function updateSaveBtn() {
+    const btn  = document.getElementById('nsSaveBtn');
+    const hint = document.getElementById('nsSaveHint');
+    const filled = NS.lineup.filter(Boolean).length;
+    if (filled === 8) {
+      btn.className = 'ready';
+      hint.textContent = 'ALL 8 DK POSITIONS FILLED — CLICK TO SAVE YOUR NS POWER BOOST LINEUP';
+    } else {
+      btn.className = '';
+      hint.textContent = 'FILL ALL 8 POSITIONS TO UNLOCK SAVE (' + filled + '/8 FILLED)';
+    }
+  }
+
+  function nsSaveLineup() {
+    const filled = NS.lineup.filter(Boolean);
+    if (filled.length < 8) { nsToast('⚠ FILL ALL 8 POSITIONS FIRST'); return; }
+
+    const now = new Date();
+    const dateStr = now.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
+    const timeStr = now.toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit'});
+    const totalBoost = filled.reduce((s,p) => s + parseFloat(p.powerBoostIndex||p.projectedScore||0), 0).toFixed(1);
+    const totalSal   = filled.reduce((s,p) => s + parseFloat(p.salary||0), 0);
+
+    const entry = {
+      id: Date.now(),
+      date: dateStr,
+      salary: totalSal,
+      totalBoost: totalBoost,
+      totalSal: totalSal,
+      isNSBoost: true,
+      source: 'neuralstitch_dk',
+      selectedGames: Array.from(NS.selectedGames),
+      players: NS.POSITIONS.map((pos, i) => {
+        const p = NS.lineup[i];
+        if (!p) return { slot:pos, name:'—', team:'', position:pos, salary:0, fppg:'0.0', boost:'0.0', dkFP:'0.0', opponent:'' };
+        return {
+          slot: pos,
+          name: p.name, team: p.team, position: p.position, salary: p.salary,
+          fppg: parseFloat(p.fppg||0).toFixed(1),
+          boost: parseFloat(p.powerBoostIndex||p.projectedScore||0).toFixed(1),
+          powerBoost: parseFloat(p.powerBoostIndex||p.projectedScore||0).toFixed(1),
+          dkFP: calcDKFP(p).toFixed(1),
+          opponent: p.opponent || p.opp || '', game: p.game || ''
+        };
+      })
+    };
+
+    try {
+      const raw = localStorage.getItem('dkSavedLineups');
+      const arr = raw ? JSON.parse(raw) : [];
+      arr.unshift(entry);
+      localStorage.setItem('dkSavedLineups', JSON.stringify(arr));
+    } catch(e) {}
+
+    const btn = document.getElementById('nsSaveBtn');
+    btn.className = 'saved';
+    btn.textContent = '✅ DK NS POWER BOOST LINEUP SAVED';
+    btn.disabled = true;
+    document.getElementById('nsSaveHint').innerHTML = '<a href="Draftkings.html#performance" style="color:#f6861f;text-decoration:underline;font-weight:700;letter-spacing:1px;">VIEW ON DK PERFORMANCE PAGE</a>';
+
+    // Show save confirmation modal
+    const modal = document.getElementById('nsSaveModal');
+    modal.style.display = 'flex';
+  }
+
+  // ══════════════════════════════════════════════════════════════
+  // INIT
+  // ══════════════════════════════════════════════════════════════
+  document.addEventListener('DOMContentLoaded', () => {
+    loadData();
+    buildSlots();
+  });
+</script>
+  <!-- ══ FIREBASE AUTH ══ -->
+  <script type="module">
+    import { initializeApp }                    from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
+    import { getAuth, onAuthStateChanged,
+             signOut }                          from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js';
+    import { getFirestore, doc, getDoc }        from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
+
+    const firebaseConfig = {
+      apiKey:            "AIzaSyA3zvNveo5iTJepc7locosTFDbtRUwkyWE",
+      authDomain:        "sportsoptimizercom.firebaseapp.com",
+      projectId:         "sportsoptimizercom",
+      storageBucket:     "sportsoptimizercom.firebasestorage.app",
+      messagingSenderId: "795101945410",
+      appId:             "1:795101945410:web:2447b8f41815869b9bd7db"
+    };
+
+    const app  = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db   = getFirestore(app);
+
+    onAuthStateChanged(auth, async (user) => {
+      const badge = document.getElementById('userBadge');
+      if (user) {
+        try {
+          const snap  = await getDoc(doc(db, 'users', user.uid));
+          const alias = snap.exists() ? (snap.data().alias || snap.data().firstName || user.email) : user.email;
+          if (badge) { badge.textContent = '⚡ ' + alias.toUpperCase(); badge.style.display = 'inline-block'; }
+        } catch(e) {
+          if (badge) { badge.textContent = '⚡ ' + user.email; badge.style.display = 'inline-block'; }
+        }
+      } else {
+        if (badge) { badge.textContent = ''; badge.style.display = 'none'; }
+      }
+    });
+
+    window.firebaseSignOut = async function() {
+      await signOut(auth);
+      window.location.href = 'index.html';
+    };
+  </script>
+
+</body>
+</html>

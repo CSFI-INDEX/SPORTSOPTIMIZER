@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEURALSTITCH™ Projection Pipeline Chart</title>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #06000f;
+    color: #fff;
+    font-family: 'Share Tech Mono', monospace;
+    padding: 32px 20px 60px;
+    min-height: 100vh;
+  }
+  .page-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .page-title .dfs { color: #00d4ff; }
+  .page-title .lineup { color: #fff; }
+  .page-title .ai-badge {
+    background: #FFB800; color: #000;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 900; font-size: 0.55em;
+    padding: 2px 8px; border-radius: 4px;
+    vertical-align: middle; margin: 0 4px;
+  }
+  .page-title h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 900; font-size: 2.2em;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+  }
+  .page-title .sub {
+    color: rgba(255,255,255,0.5);
+    font-size: 0.8em;
+    letter-spacing: 2px;
+  }
+
+  /* ─── PIPELINE SECTIONS ─── */
+  .pipeline {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .stage {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    margin-bottom: 0;
+  }
+  .stage-label {
+    width: 180px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 0.78em;
+    letter-spacing: 2px;
+    color: rgba(255,255,255,0.45);
+    text-align: right;
+  }
+  .stage-arrow {
+    width: 40px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0,212,255,0.5);
+    font-size: 1.4em;
+  }
+  .stage-content {
+    flex: 1;
+  }
+
+  /* Arrow connectors between stages */
+  .connector {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 220px;
+    height: 28px;
+    color: rgba(0,212,255,0.4);
+    font-size: 1.6em;
+  }
+
+  /* ─── CARDS ─── */
+  .card {
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin: 6px 0;
+    border: 1px solid;
+  }
+  .card-source {
+    background: rgba(0,212,255,0.06);
+    border-color: rgba(0,212,255,0.3);
+  }
+  .card-process {
+    background: rgba(123,47,255,0.1);
+    border-color: rgba(123,47,255,0.35);
+  }
+  .card-output {
+    background: rgba(0,255,136,0.06);
+    border-color: rgba(0,255,136,0.3);
+  }
+  .card-score {
+    background: rgba(255,184,0,0.07);
+    border-color: rgba(255,184,0,0.35);
+  }
+  .card-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 900;
+    font-size: 1.05em;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  .card-title .cyan  { color: #00d4ff; }
+  .card-title .gold  { color: #FFB800; }
+  .card-title .green { color: #00FF88; }
+  .card-title .white { color: #fff; }
+  .card-title .purple { color: #a855f7; }
+
+  /* ─── STAT GRID ─── */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 8px;
+    margin-top: 8px;
+  }
+  .stat-row {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    padding: 6px 10px;
+    background: rgba(255,255,255,0.04);
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+  .stat-label {
+    font-size: 0.72em;
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    min-width: 40px;
+  }
+  .stat-value {
+    font-size: 0.78em;
+    color: #fff;
+  }
+  .stat-source {
+    font-size: 0.65em;
+    color: rgba(0,212,255,0.7);
+    margin-left: auto;
+  }
+
+  /* ─── FORMULA BLOCK ─── */
+  .formula-block {
+    background: rgba(0,0,0,0.4);
+    border: 1px solid rgba(255,184,0,0.25);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-top: 10px;
+    font-size: 0.82em;
+    line-height: 2;
+  }
+  .formula-block .var  { color: #00d4ff; }
+  .formula-block .mult { color: #FFB800; }
+  .formula-block .plus { color: rgba(255,255,255,0.4); margin: 0 6px; }
+  .formula-block .neg  { color: #ff4d4d; }
+  .formula-block .result { color: #00FF88; font-weight: 700; }
+  .formula-block .comment {
+    color: rgba(255,255,255,0.3);
+    font-size: 0.85em;
+    display: block;
+    margin-top: 2px;
+  }
+
+  /* ─── WEIGHT TABLE ─── */
+  .weight-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 0.8em;
+  }
+  .weight-table th {
+    background: rgba(255,255,255,0.06);
+    padding: 7px 12px;
+    text-align: left;
+    color: rgba(255,255,255,0.5);
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .weight-table td {
+    padding: 7px 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    vertical-align: top;
+  }
+  .weight-table tr:last-child td { border-bottom: none; }
+  .w-label  { color: #00d4ff; font-weight: 700; }
+  .w-pct    { color: #FFB800; font-weight: 700; }
+  .w-source { color: rgba(255,255,255,0.6); }
+  .w-note   { color: rgba(255,255,255,0.35); font-size: 0.85em; }
+
+  /* ─── SCORE OUTPUT BOXES ─── */
+  .score-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 12px;
+    margin-top: 10px;
+  }
+  .score-box {
+    border-radius: 8px;
+    padding: 14px 16px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.03);
+  }
+  .score-box-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 900;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+  .score-box-desc {
+    font-size: 0.72em;
+    color: rgba(255,255,255,0.5);
+    line-height: 1.6;
+  }
+  .score-box-formula {
+    font-size: 0.75em;
+    color: #00FF88;
+    margin-top: 6px;
+    padding: 4px 8px;
+    background: rgba(0,255,136,0.06);
+    border-radius: 4px;
+    border: 1px solid rgba(0,255,136,0.15);
+  }
+  .tag-green { color: #00FF88; }
+  .tag-cyan  { color: #00d4ff; }
+  .tag-gold  { color: #FFB800; }
+  .tag-orange{ color: #f6861f; }
+
+  /* ─── INJURY SECTION ─── */
+  .inj-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+  }
+  .inj-pill {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: rgba(255,77,77,0.15);
+    border: 1px solid rgba(255,77,77,0.4);
+    color: #ff4d4d;
+  }
+  .inj-pill.ok {
+    background: rgba(0,255,136,0.1);
+    border-color: rgba(0,255,136,0.3);
+    color: #00FF88;
+  }
+  .inj-pill.warn {
+    background: rgba(255,184,0,0.1);
+    border-color: rgba(255,184,0,0.35);
+    color: #FFB800;
+  }
+
+  /* ─── SECTION DIVIDER ─── */
+  .section-divider {
+    max-width: 1100px;
+    margin: 36px auto 28px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .section-divider span {
+    background: #06000f;
+    padding: 0 12px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 0.8em;
+    letter-spacing: 3px;
+    color: rgba(255,255,255,0.3);
+    white-space: nowrap;
+  }
+
+  @media (max-width: 700px) {
+    .stage-label { width: 80px; font-size: 0.65em; }
+    .connector { padding-left: 100px; }
+    .stage-arrow { width: 24px; font-size: 1em; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<div class="page-title">
+  <h1>
+    <span class="dfs">DFS</span><span class="lineup">LINEUP</span><span class="ai-badge">AI</span>
+    <span style="color:#fff;">W/</span>
+    <span style="color:#fff;"> NEURAL</span><span style="color:#00d4ff;">STITCH</span><span style="color:rgba(255,255,255,0.4);font-size:0.6em;vertical-align:super;">™</span>
+  </h1>
+  <div class="sub">PROJECTION PIPELINE — HOW PLAYER STATS ARE COMPUTED FROM RAW NBA API DATA</div>
+</div>
+
+<div class="pipeline">
+
+  <!-- ══ STAGE 1: DATA SOURCES ══ -->
+  <div class="stage">
+    <div class="stage-label">DATA SOURCES</div>
+    <div class="stage-arrow">▶</div>
+    <div class="stage-content">
+      <div class="card card-source">
+        <div class="card-title"><span class="cyan">STAGE 1</span> &nbsp;—&nbsp; RAW INPUT DATA</div>
+        <div class="stat-grid">
+          <div class="stat-row">
+            <span class="stat-label">SOURCE A</span>
+            <span class="stat-value">Yahoo Fantasy CSV Export</span>
+            <span class="stat-source">manual</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">SOURCE B</span>
+            <span class="stat-value">NBA.com Stats API</span>
+            <span class="stat-source">auto</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">FROM CSV</span>
+            <span class="stat-value">FPPG, Salary, Position, Team, Game, Injury Status</span>
+            <span class="stat-source">yahoo</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">FROM API</span>
+            <span class="stat-value">Full Season Gamelog: PTS, REB, AST, STL, BLK, TOV, FGM, FGA, FG3M, FG3A, FTM, FTA, MIN</span>
+            <span class="stat-source">nba api</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">CACHE</span>
+            <span class="stat-value">Player cache files (30-day TTL) — avoids redundant API calls</span>
+            <span class="stat-source">local</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector">↓</div>
+
+  <!-- ══ STAGE 2: MINUTES PROJECTION ══ -->
+  <div class="stage">
+    <div class="stage-label">STEP 1<br>MINUTES</div>
+    <div class="stage-arrow">▶</div>
+    <div class="stage-content">
+      <div class="card card-process">
+        <div class="card-title"><span class="purple">get_projected_stat_line()</span> — Minutes Projection</div>
+        <div class="formula-block">
+          <span>min_weights = [<span class="mult">0.40</span>, <span class="mult">0.20</span>, <span class="mult">0.20</span>, <span class="mult">0.10</span>, <span class="mult">0.10</span>]</span>
+          <span class="comment">// 5-game recency weighting: most recent game = 40%, then 20/20/10/10</span>
+          <br>
+          <span><span class="var">recent_min_avg</span> = weighted average of last 5 games MIN</span>
+          <br><br>
+          <span>If player salary ≥ $18 OR recent_min_avg ≥ 28:</span>
+          <span class="comment">// Starter tier</span>
+          <span>&nbsp;&nbsp;<span class="var">proj_min</span> = max(recent_min_avg, <span class="mult">28.0</span>)</span>
+          <span class="comment">// Floor 28 minutes for starters</span>
+          <br>
+          <span>Else: <span class="var">proj_min</span> = recent_min_avg</span>
+          <span class="comment">// Role players: use their actual recent average</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector">↓</div>
+
+  <!-- ══ STAGE 3: STAT PROJECTIONS ══ -->
+  <div class="stage">
+    <div class="stage-label">STEP 2<br>STAT LINE</div>
+    <div class="stage-arrow">▶</div>
+    <div class="stage-content">
+      <div class="card card-process">
+        <div class="card-title"><span class="purple">get_projected_stat_line()</span> — Per-Stat Projections</div>
+        <p style="font-size:0.78em;color:rgba(255,255,255,0.5);margin-bottom:10px;">Each stat is projected using last-3-game per-minute efficiency, scaled to tonight's projected minutes.</p>
+        <div class="formula-block">
+          <span><span class="var">per_min_rate</span> = SUM(last 3 games stat) / SUM(last 3 games MIN)</span>
+          <span class="comment">// How many points/rebounds/etc. per minute over last 3 games</span>
+          <br><br>
+          <span class="result">PROJ_PTS = per_min_rate(PTS) × proj_min</span>
+          <br>
+          <span class="result">PROJ_REB = per_min_rate(REB) × proj_min</span>
+          <br>
+          <span class="result">PROJ_AST = per_min_rate(AST) × proj_min</span>
+          <br>
+          <span class="result">PROJ_STL = per_min_rate(STL) × proj_min</span>
+          <br>
+          <span class="result">PROJ_BLK = per_min_rate(BLK) × proj_min</span>
+          <br>
+          <span class="result">PROJ_TOV = per_min_rate(TOV) × proj_min</span>
+          <br>
+          <span class="result">PROJ_3PM = per_min_rate(FG3M) × proj_min</span>
+        </div>
+        <div style="margin-top:12px;font-size:0.76em;color:rgba(255,184,0,0.7);">
+          ⚠ If Back-to-Back game detected → 7% reduction applied to final projected score
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector">↓</div>
+
+  <!-- ══ STAGE 4: TONIGHT'S RAW FP ══ -->
+  <div class="stage">
+    <div class="stage-label">STEP 3<br>RAW FP</div>
+    <div class="stage-arrow">▶</div>
+    <div class="stage-content">
+      <div class="card card-process">
+        <div class="card-title"><span class="purple">Yahoo Fantasy Points Formula</span></div>
+        <div class="formula-block">
+          <span><span class="var">tonight_FP</span> =</span>
+          <br>
+          &nbsp;&nbsp;<span class="var">PROJ_PTS</span> <span class="mult">× 1.0</span>
+          <span class="plus">+</span> <span class="var">PROJ_REB</span> <span class="mult">× 1.2</span>
+          <span class="plus">+</span> <span class="var">PROJ_AST</span> <span class="mult">× 1.5</span>
+          <br>
+          &nbsp;&nbsp;<span class="plus">+</span> <span class="var">PROJ_STL</span> <span class="mult">× 3.0</span>
+          <span class="plus">+</span> <span class="var">PROJ_BLK</span> <span class="mult">× 3.0</span>
+          <span class="plus">+</span> <span class="var">PROJ_TOV</span> <span class="neg">× −1.0</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector">↓</div>
+
+  <!-- ══ STAGE 5: FINAL PROJECTED SCORE ══ -->
+  <div class="stage">
+    <div class="stage-label">STEP 4<br>PROJ SCORE</div>
+    <div class="stage-arrow">▶</div>
+    <div class="stage-content">
+      <div class="card card-score">
+        <div class="card-title"><span class="gold">Projected Fantasy Score</span> — Weighted 30/50/20 Blend</div>
+        <table class="weight-table">
+          <thead>
+            <tr>
+              <th>WEIGHT</th>
+              <th>INPUT</th>
+              <th>SOURCE</th>
+              <th>WHY</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="w-pct">30%</span></td>
+              <td><span class="w-label">tonight_FP</span></td>
+              <td><span class="w-source">Last-3-game efficiency × proj_min</span></td>
+              <td><span class="w-note">Tonight's per-minute rate (most responsive)</span></td>
+            </tr>
+            <tr>
+              <td><span class="w-pct">50%</span></td>
+              <td><span class="w-label">seven_day_avg</span></td>
+              <td><span class="w-source">Actual FP from games in last 7 days</span></td>
+              <td><span class="w-note">Largest weight — recent form, not distorted by one game</span></td>
+            </tr>
+            <tr>
+              <td><span class="w-pct">20%</span></td>
+              <td><span class="w-label">FPPG (CSV)</span></td>
+              <td><span class="w-source">Yahoo's season fantasy points per game</span></td>
+              <td><span class="w-note">Season baseline — anchors against streaks/slumps</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="formula-block" style="margin-top:12px;">
+          <span class="result">Projected_Fantasy_Score =
+            (tonight_FP × 0.30) + (seven_day_avg × 0.50) + (FPPG × 0.20)</span>
+          <span class="comment">// B2B penalty: × 0.93 if playing back-to-back</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector">↓</div>
+
+  <!-- ══ STAGE 6: VALUE SCORE / CFSI ══ -->
+  <div class="stage">
+    <div class="stage-label">STEP 5<br>VALUE</div>
+    <div class="stage-arrow">▶</div>
+    <div class="stage-content">
+      <div class="card card-score">
+        <div class="card-title"><span class="gold">VALUE_SCORE / CFSI_INDEX</span> — Salary Efficiency</div>
+        <div class="stat-grid">
+          <div class="stat-row">
+            <span class="stat-label">INPUT</span>
+            <span class="stat-value">Projected_Fantasy_Score ÷ Salary</span>
+            <span class="stat-source">efficiency</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">ALSO</span>
+            <span class="stat-value">Usage %, min projection, 7-day avg, floor/ceiling variance</span>
+            <span class="stat-source">factors</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">PURPOSE</span>
+            <span class="stat-value">Ranks players by bang-for-buck — optimizer uses this for MEDIAN/CASH lineups</span>
+            <span class="stat-source">cash</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector">↓</div>
+
+  <!-- ══ STAGE 7: POWER BOOST ══ -->
+  <div class="stage">
+    <div class="stage-label">STEP 6<br>NS BOOST</div>
+    <div class="stage-arrow">▶</div>
+    <div class="stage-content">
+      <div class="card card-score">
+        <div class="card-title"><span class="gold">POWER BOOST INDEX</span> — NeuralStitch™ Premium Score</div>
+        <div class="formula-block">
+          <span>Inputs: <span class="var">proj_score</span>, <span class="var">seven_day_avg</span>, <span class="var">cfsi_index</span>, <span class="var">min_proj</span>, <span class="var">season_fppg</span></span>
+          <br><br>
+          <span class="comment">// calculate_powerboost_score() in scoring.py</span>
+          <span class="comment">// Blends all projection signals into a single ranking number</span>
+          <span class="comment">// Higher = better GPP / NS Power Boost lineup candidate</span>
+          <br><br>
+          <span class="result">powerBoostIndex → used by NS POWER BOOST pages to rank and auto-fill lineups</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector">↓</div>
+
+  <!-- ══ STAGE 8: OUTPUTS ══ -->
+  <div class="stage">
+    <div class="stage-label">OUTPUT</div>
+    <div class="stage-arrow">▶</div>
+    <div class="stage-content">
+      <div class="card card-output">
+        <div class="card-title"><span class="green">STAGE 8</span> — DATA WRITTEN TO players.json</div>
+        <div class="score-boxes">
+          <div class="score-box">
+            <div class="score-box-title tag-cyan">PROJ STAT LINE</div>
+            <div class="score-box-desc">Per-player per-game projections written to players.json</div>
+            <div class="score-box-formula">projPTS / projREB / projAST / projSTL / projBLK / projTO / projMIN</div>
+          </div>
+          <div class="score-box">
+            <div class="score-box-title tag-cyan">PROJ SCORE</div>
+            <div class="score-box-desc">Tonight's weighted fantasy projection</div>
+            <div class="score-box-formula">projectedScore = 30/50/20 blend</div>
+          </div>
+          <div class="score-box">
+            <div class="score-box-title tag-gold">POWER BOOST</div>
+            <div class="score-box-desc">NS premium ranking score — drives auto-lineup generation</div>
+            <div class="score-box-formula">powerBoostIndex = calculate_powerboost_score()</div>
+          </div>
+          <div class="score-box">
+            <div class="score-box-title tag-green">CACHE AVERAGES</div>
+            <div class="score-box-desc">Full-season and last-3 averages from player cache</div>
+            <div class="score-box-formula">avgPTS / avgREB / avgAST / last3PTS / last3REB ...</div>
+          </div>
+          <div class="score-box">
+            <div class="score-box-title tag-cyan">VARIANCE</div>
+            <div class="score-box-desc">Ceiling, floor, standard deviation — for GPP vs cash decisions</div>
+            <div class="score-box-formula">simCeiling / simFloor / fpStd / volatility</div>
+          </div>
+          <div class="score-box">
+            <div class="score-box-title" style="color:#ff4d4d;">INJURY STATUS</div>
+            <div class="score-box-desc">Written as-is from Yahoo CSV — drives lineup eligibility on all 4 pages</div>
+            <div class="score-box-formula">injuryStatus → blocks OUT / INJ / O / IR / INACTIVE ...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /pipeline -->
+
+<!-- ── DIVIDER: INJURY REFERENCE ── -->
+<div class="section-divider">
+  <span>INJURY STATUS REFERENCE</span>
+</div>
+<div style="max-width:1100px;margin:0 auto;">
+  <div class="card" style="background:rgba(255,77,77,0.05);border-color:rgba(255,77,77,0.3);">
+    <div class="card-title" style="color:#ff4d4d;">INJURY STATUS — WHAT EACH VALUE MEANS IN THE LINEUP ENGINE</div>
+    <p style="font-size:0.76em;color:rgba(255,255,255,0.5);margin-bottom:14px;">Any of these statuses block the player from appearing in auto-generated lineups or manual slot adds. Case-insensitive — "out", "OUT", "Out", "O" all blocked.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px;">
+      <div class="inj-pill">OUT — not playing</div>
+      <div class="inj-pill">O — shorthand OUT</div>
+      <div class="inj-pill">INJ — injured</div>
+      <div class="inj-pill">INJURED — injured</div>
+      <div class="inj-pill">IR — injured reserve</div>
+      <div class="inj-pill">INACTIVE — inactive list</div>
+      <div class="inj-pill">SUSPENDED — suspended</div>
+      <div class="inj-pill">DND — did not dress</div>
+      <div class="inj-pill warn">GTD — game-time decision (ALLOWED)</div>
+      <div class="inj-pill ok">HEALTHY — playing (ALLOWED)</div>
+      <div class="inj-pill ok">(blank) — assumed healthy (ALLOWED)</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── DIVIDER: LINEUP SCORING TABLE ── -->
+<div class="section-divider">
+  <span>YAHOO FANTASY SCORING WEIGHTS</span>
+</div>
+<div style="max-width:1100px;margin:0 auto;">
+  <div class="card card-score">
+    <div class="card-title"><span class="gold">YAHOO FANTASY SCORING — FULL REFERENCE</span></div>
+    <table class="weight-table">
+      <thead>
+        <tr>
+          <th>STAT</th>
+          <th>POINTS</th>
+          <th>NOTES</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="w-label">PTS (Points)</td><td><span class="w-pct">× 1.0</span></td><td class="w-note">1 fantasy point per point scored</td></tr>
+        <tr><td class="w-label">REB (Rebounds)</td><td><span class="w-pct">× 1.2</span></td><td class="w-note">Offensive + defensive</td></tr>
+        <tr><td class="w-label">AST (Assists)</td><td><span class="w-pct">× 1.5</span></td><td class="w-note">Premium over rebounds</td></tr>
+        <tr><td class="w-label">STL (Steals)</td><td><span class="w-pct">× 3.0</span></td><td class="w-note">Highest-value positive stat</td></tr>
+        <tr><td class="w-label">BLK (Blocks)</td><td><span class="w-pct">× 3.0</span></td><td class="w-note">Highest-value positive stat</td></tr>
+        <tr><td class="w-label">TO (Turnovers)</td><td><span class="tag-green" style="color:#ff4d4d;">× −1.0</span></td><td class="w-note">Negative — only penalty stat</td></tr>
+        <tr><td class="w-label">3PM, FGM, FTM</td><td><span class="w-pct">× 0</span></td><td class="w-note">Not scored in Yahoo standard — tracked for prop predictions only</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ── DIVIDER: LINEUP MODES ── -->
+<div class="section-divider">
+  <span>3 LINEUP OPTIMIZATION MODES</span>
+</div>
+<div style="max-width:1100px;margin:0 auto;margin-bottom:40px;">
+  <div class="score-boxes">
+    <div class="score-box" style="border-color:rgba(0,212,255,0.3);">
+      <div class="score-box-title tag-cyan">MEDIAN MODE (CASH)</div>
+      <div class="score-box-desc">Maximizes VALUE_SCORE (salary efficiency). Best for Head-to-Head and 50/50 contests. Selects consistent, floor-safe players.</div>
+      <div class="score-box-formula">Sort by: VALUE_SCORE = Projected_FP ÷ Salary</div>
+    </div>
+    <div class="score-box" style="border-color:rgba(255,184,0,0.3);">
+      <div class="score-box-title tag-gold">CEILING MODE (GPP)</div>
+      <div class="score-box-desc">Targets high-variance, boom-bust players. Optimizes for maximum ceiling FP. Best for tournaments where you need to win big.</div>
+      <div class="score-box-formula">Sort by: FP_MAX (ceiling) with 1.60× multiplier cap</div>
+    </div>
+    <div class="score-box" style="border-color:rgba(246,134,31,0.3);">
+      <div class="score-box-title tag-orange">MAXIMUM MODE (HAIL MARY)</div>
+      <div class="score-box-desc">Highest-usage, highest-floor studs only. USG ≥ 20% AND 7-day avg ≥ 15 FP required. Uses Projected_Fantasy_Score as optimizer metric.</div>
+      <div class="score-box-formula">Filter: usage_pct ≥ 20% + 7-day avg ≥ 15 FP → max Projected_FP</div>
+    </div>
+    <div class="score-box" style="border-color:rgba(0,255,136,0.3);">
+      <div class="score-box-title tag-green">NS POWER BOOST</div>
+      <div class="score-box-desc">NeuralStitch premium mode. Auto-fills 8 slots using powerBoostIndex (multi-signal blend). Salary cap enforced. No injured players.</div>
+      <div class="score-box-formula">Sort by: powerBoostIndex → greedy backtrack solver</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

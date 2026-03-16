@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NS PROP LOG — Webmaster</title>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #06000f; color: #fff; font-family: 'Share Tech Mono', monospace; padding: 24px 16px 60px; }
+
+  /* ── HEADER ── */
+  .hdr { text-align: center; margin-bottom: 28px; }
+  .hdr h1 { font-family: 'Rajdhani', sans-serif; font-weight: 900; font-size: 1.8em; letter-spacing: 3px; }
+  .hdr .sub { color: rgba(255,255,255,0.35); font-size: 0.72em; letter-spacing: 2px; margin-top: 4px; }
+
+  /* ── YTD SUMMARY BAR ── */
+  .ytd-bar {
+    max-width: 860px; margin: 0 auto 28px;
+    background: rgba(0,0,0,0.5); border: 1px solid rgba(0,212,255,0.25); border-radius: 10px;
+    padding: 16px 24px; display: flex; align-items: center; justify-content: center;
+    gap: 28px; flex-wrap: wrap;
+  }
+  .ytd-item { text-align: center; }
+  .ytd-label { font-size: 0.65em; color: rgba(255,255,255,0.35); letter-spacing: 2px; margin-bottom: 3px; }
+  .ytd-val   { font-family: 'Rajdhani', sans-serif; font-weight: 900; font-size: 1.6em; }
+  .ytd-sep   { width: 1px; height: 40px; background: rgba(255,255,255,0.1); }
+
+  /* ── FILTERS ── */
+  .filters {
+    max-width: 860px; margin: 0 auto 20px;
+    display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
+  }
+  .filters select, .filters input {
+    background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.15);
+    color: #fff; font-family: 'Share Tech Mono', monospace; font-size: 0.78em;
+    padding: 7px 12px; border-radius: 6px; outline: none; letter-spacing: 1px;
+  }
+  .filters select option { background: #1a0050; }
+  .filters label { font-size: 0.72em; color: rgba(255,255,255,0.4); letter-spacing: 1px; }
+  .filter-reset {
+    padding: 7px 16px; background: rgba(255,184,0,0.1); border: 1px solid rgba(255,184,0,0.3);
+    color: #FFB800; font-family: 'Share Tech Mono', monospace; font-size: 0.75em;
+    border-radius: 6px; cursor: pointer; letter-spacing: 1px;
+  }
+  .filter-reset:hover { background: rgba(255,184,0,0.2); }
+
+  /* ── DATE SECTIONS ── */
+  .day-block { max-width: 860px; margin: 0 auto 20px; }
+  .day-header {
+    display: flex; align-items: center; justify-content: space-between;
+    background: rgba(0,212,255,0.07); border: 1px solid rgba(0,212,255,0.2);
+    border-radius: 8px 8px 0 0; padding: 10px 18px; cursor: pointer;
+    user-select: none;
+  }
+  .day-header:hover { background: rgba(0,212,255,0.12); }
+  .day-date { font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: 1.05em; letter-spacing: 2px; color: #00d4ff; }
+  .day-stats { display: flex; gap: 16px; font-size: 0.78em; }
+  .day-hits   { color: #00FF88; font-weight: 700; }
+  .day-misses { color: #ff4d4d; font-weight: 700; }
+  .day-pct    { font-weight: 700; }
+  .day-toggle { color: rgba(255,255,255,0.3); font-size: 0.9em; }
+  .day-body { border: 1px solid rgba(0,212,255,0.15); border-top: none; border-radius: 0 0 8px 8px; overflow: hidden; }
+  .day-body.collapsed { display: none; }
+
+  /* ── TABLE ── */
+  table { width: 100%; border-collapse: collapse; font-size: 0.76em; }
+  thead th {
+    background: rgba(255,255,255,0.04); padding: 7px 12px;
+    text-align: left; color: rgba(255,255,255,0.4); font-weight: 400;
+    letter-spacing: 1px; border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  tbody tr { border-bottom: 1px solid rgba(255,255,255,0.05); }
+  tbody tr:last-child { border-bottom: none; }
+  tbody tr:hover { background: rgba(255,255,255,0.03); }
+  td { padding: 7px 12px; }
+  .td-player { color: #fff; font-weight: 700; }
+  .td-cat    { color: #00d4ff; font-weight: 700; letter-spacing: 1px; }
+  .td-proj   { color: rgba(255,255,255,0.6); }
+  .td-line   { color: rgba(255,255,255,0.5); }
+  .td-actual { color: #fff; }
+  .td-hit    { font-weight: 900; letter-spacing: 1px; }
+  .td-hit.yes   { color: #00FF88; }
+  .td-hit.no    { color: #ff4d4d; }
+  .td-hit.open  { color: rgba(255,255,255,0.25); font-size: 0.85em; }
+  .td-margin.pos { color: #00FF88; }
+  .td-margin.neg { color: #ff4d4d; }
+  .td-margin.neu { color: rgba(255,255,255,0.35); }
+
+  /* ── EMPTY STATE ── */
+  .empty { max-width: 860px; margin: 40px auto; text-align: center; color: rgba(255,255,255,0.3); font-size: 0.85em; line-height: 2; }
+  .empty strong { color: rgba(255,184,0,0.7); display: block; font-size: 1.2em; margin-bottom: 8px; }
+
+  /* ── CAT BADGE ── */
+  .cat-badge {
+    display: inline-block; padding: 1px 7px; border-radius: 4px; font-size: 0.82em;
+    font-weight: 900; letter-spacing: 1px;
+  }
+  .cat-PTS { background: rgba(255,184,0,0.15); color: #FFB800; border: 1px solid rgba(255,184,0,0.3); }
+  .cat-REB { background: rgba(0,212,255,0.1); color: #00d4ff; border: 1px solid rgba(0,212,255,0.25); }
+  .cat-AST { background: rgba(123,47,255,0.15); color: #a855f7; border: 1px solid rgba(123,47,255,0.3); }
+  .cat-STL { background: rgba(0,255,136,0.1); color: #00FF88; border: 1px solid rgba(0,255,136,0.25); }
+  .cat-BLK { background: rgba(246,134,31,0.12); color: #f6861f; border: 1px solid rgba(246,134,31,0.3); }
+
+  /* ── PAGER ── */
+  #loadMore {
+    display: block; margin: 20px auto 0; padding: 10px 32px;
+    background: rgba(0,212,255,0.08); border: 1px solid rgba(0,212,255,0.25);
+    color: #00d4ff; font-family: 'Share Tech Mono', monospace; font-size: 0.78em;
+    letter-spacing: 2px; border-radius: 8px; cursor: pointer;
+  }
+  #loadMore:hover { background: rgba(0,212,255,0.15); }
+</style>
+</head>
+<body>
+
+<div class="hdr">
+  <h1>
+    <span style="color:#fff;">NEURAL</span><span style="color:#00d4ff;">STITCH</span>
+    <span style="color:rgba(255,255,255,0.3);font-size:0.7em;">™</span>
+    <span style="color:#FFB800;"> PROP LOG</span>
+  </h1>
+  <div class="sub">WEBMASTER VIEW — DAILY PROP FORECAST RESULTS</div>
+</div>
+
+<!-- YTD summary -->
+<div class="ytd-bar" id="ytdBar">
+  <div class="ytd-item"><div class="ytd-label">START DATE</div><div class="ytd-val" id="ytdStart" style="color:#00d4ff;">—</div></div>
+  <div class="ytd-sep"></div>
+  <div class="ytd-item"><div class="ytd-label">TOTAL FORECASTS</div><div class="ytd-val" id="ytdTotal" style="color:#fff;">—</div></div>
+  <div class="ytd-sep"></div>
+  <div class="ytd-item"><div class="ytd-label">SETTLED</div><div class="ytd-val" id="ytdSettled" style="color:rgba(255,255,255,0.6);">—</div></div>
+  <div class="ytd-sep"></div>
+  <div class="ytd-item"><div class="ytd-label">HITS</div><div class="ytd-val" id="ytdHits" style="color:#00FF88;">—</div></div>
+  <div class="ytd-sep"></div>
+  <div class="ytd-item"><div class="ytd-label">MISSES</div><div class="ytd-val" id="ytdMisses" style="color:#ff4d4d;">—</div></div>
+  <div class="ytd-sep"></div>
+  <div class="ytd-item"><div class="ytd-label">OVERALL HIT %</div><div class="ytd-val" id="ytdPct">—</div></div>
+</div>
+
+<!-- Filters -->
+<div class="filters">
+  <label>DATE</label>
+  <select id="filterDate"><option value="">ALL DATES</option></select>
+  <label>CATEGORY</label>
+  <select id="filterCat">
+    <option value="">ALL</option>
+    <option>PTS</option><option>REB</option><option>AST</option><option>STL</option><option>BLK</option>
+  </select>
+  <label>RESULT</label>
+  <select id="filterResult">
+    <option value="">ALL</option>
+    <option value="1">HITS ONLY</option>
+    <option value="0">MISSES ONLY</option>
+    <option value="open">OPEN</option>
+  </select>
+  <label>PLAYER</label>
+  <input type="text" id="filterPlayer" placeholder="search name…" style="width:160px;">
+  <button class="filter-reset" onclick="resetFilters()">RESET</button>
+</div>
+
+<div id="content"></div>
+<button id="loadMore" style="display:none;" onclick="showMore()">LOAD MORE DAYS ↓</button>
+
+<script>
+  let ALL_LOG = [];
+  let VISIBLE_DAYS = 7;
+
+  function pctColor(pct) {
+    const p = Math.max(0, Math.min(100, parseFloat(pct)));
+    let r, g, b;
+    if (p <= 50) {
+      const t = p / 50;
+      r = 255; g = Math.round(77 + (184 - 77) * t); b = Math.round(77 * (1 - t));
+    } else {
+      const t = (p - 50) / 50;
+      r = Math.round(255 * (1 - t)); g = Math.round(184 + (255 - 184) * t); b = Math.round(t * 136);
+    }
+    return 'rgb(' + r + ',' + g + ',' + b + ')';
+  }
+
+  function fmtDate(d) {
+    // "2026-03-15" → "03-15-2026"
+    return d ? d.replace(/(\d{4})-(\d{2})-(\d{2})/, '$2-$3-$1') : '—';
+  }
+
+  function getFilters() {
+    return {
+      date:   document.getElementById('filterDate').value,
+      cat:    document.getElementById('filterCat').value,
+      result: document.getElementById('filterResult').value,
+      player: document.getElementById('filterPlayer').value.toLowerCase().trim()
+    };
+  }
+
+  function resetFilters() {
+    document.getElementById('filterDate').value   = '';
+    document.getElementById('filterCat').value    = '';
+    document.getElementById('filterResult').value = '';
+    document.getElementById('filterPlayer').value = '';
+    VISIBLE_DAYS = 7;
+    render();
+  }
+
+  function applyFilters(entries) {
+    const f = getFilters();
+    return entries.filter(e => {
+      if (f.date   && e.date     !== f.date)                  return false;
+      if (f.cat    && e.category !== f.cat)                   return false;
+      if (f.result === '1'    && e.hit !== 1)                 return false;
+      if (f.result === '0'    && e.hit !== 0)                 return false;
+      if (f.result === 'open' && e.hit !== null)              return false;
+      if (f.player && !(e.player||'').toLowerCase().includes(f.player)) return false;
+      return true;
+    });
+  }
+
+  function showMore() {
+    VISIBLE_DAYS += 7;
+    render();
+  }
+
+  function render() {
+    const f = getFilters();
+    const filtered = applyFilters(ALL_LOG);
+
+    // Group by date descending
+    const byDate = {};
+    filtered.forEach(e => {
+      if (!byDate[e.date]) byDate[e.date] = [];
+      byDate[e.date].push(e);
+    });
+    const dates = Object.keys(byDate).sort((a,b) => b.localeCompare(a));
+
+    const content = document.getElementById('content');
+
+    if (dates.length === 0) {
+      content.innerHTML = '<div class="empty"><strong>NO DATA YET</strong>Run run.py to generate your first prop forecast log.<br>Data will appear here automatically after each run.</div>';
+      document.getElementById('loadMore').style.display = 'none';
+      return;
+    }
+
+    const visibleDates = dates.slice(0, VISIBLE_DAYS);
+    let html = '';
+
+    visibleDates.forEach(date => {
+      const entries = byDate[date];
+      const settled = entries.filter(e => e.hit !== null && e.hit !== undefined);
+      const hits    = settled.filter(e => e.hit === 1).length;
+      const misses  = settled.length - hits;
+      const pct     = settled.length > 0 ? (hits / settled.length * 100).toFixed(1) : null;
+      const col     = pct !== null ? pctColor(pct) : 'rgba(255,255,255,0.3)';
+
+      html += `
+      <div class="day-block">
+        <div class="day-header" onclick="toggleDay('d${date}')">
+          <span class="day-date">${fmtDate(date)}</span>
+          <span class="day-stats">
+            <span class="day-hits">${hits} HITS</span>
+            <span class="day-misses">${misses} MISSES</span>
+            ${pct !== null ? `<span class="day-pct" style="color:${col};">${pct}%</span>` : '<span class="day-pct" style="color:rgba(255,255,255,0.25);">PENDING</span>'}
+            <span style="color:rgba(255,255,255,0.25);font-size:0.8em;">${entries.length} props</span>
+          </span>
+          <span class="day-toggle" id="tog_d${date}">▼</span>
+        </div>
+        <div class="day-body" id="d${date}">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>PLAYER</th>
+                <th>CAT</th>
+                <th>PROJECTED</th>
+                <th>PROP LINE</th>
+                <th>ACTUAL</th>
+                <th>MARGIN</th>
+                <th>RESULT</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${entries.map((e, i) => {
+                const margin = (e.actual !== null && e.actual !== undefined)
+                  ? (parseFloat(e.actual) - parseFloat(e.propLine)).toFixed(1)
+                  : null;
+                const mCls = margin === null ? 'neu' : parseFloat(margin) > 0 ? 'pos' : parseFloat(margin) < 0 ? 'neg' : 'neu';
+                const mStr = margin !== null ? (parseFloat(margin) > 0 ? '+' + margin : margin) : '—';
+                let resultCell, resultCls;
+                if (e.hit === 1)        { resultCell = '✓ HIT';  resultCls = 'yes'; }
+                else if (e.hit === 0)   { resultCell = '✗ MISS'; resultCls = 'no'; }
+                else                    { resultCell = 'OPEN';   resultCls = 'open'; }
+
+                return `<tr>
+                  <td style="color:rgba(255,255,255,0.25);">${i+1}</td>
+                  <td class="td-player">${e.player||'—'}</td>
+                  <td><span class="cat-badge cat-${e.category||''}">${e.category||'—'}</span></td>
+                  <td class="td-proj">${e.projected !== null && e.projected !== undefined ? parseFloat(e.projected).toFixed(1) : '—'}</td>
+                  <td class="td-line">${e.propLine  !== null && e.propLine  !== undefined ? parseFloat(e.propLine).toFixed(1)  : '—'}</td>
+                  <td class="td-actual">${e.actual !== null && e.actual !== undefined ? parseFloat(e.actual).toFixed(1) : '—'}</td>
+                  <td class="td-margin ${mCls}">${mStr}</td>
+                  <td class="td-hit ${resultCls}">${resultCell}</td>
+                </tr>`;
+              }).join('')}
+            </tbody>
+          </table>
+        </div>
+      </div>`;
+    });
+
+    content.innerHTML = html;
+
+    // Load more button
+    const btn = document.getElementById('loadMore');
+    btn.style.display = dates.length > VISIBLE_DAYS ? 'block' : 'none';
+  }
+
+  function toggleDay(id) {
+    const el  = document.getElementById(id);
+    const tog = document.getElementById('tog_' + id);
+    if (!el) return;
+    const collapsed = el.classList.toggle('collapsed');
+    if (tog) tog.textContent = collapsed ? '▶' : '▼';
+  }
+
+  async function init() {
+    try {
+      const res = await fetch('./data/prop_forecast_log.json?_=' + Date.now());
+      if (!res.ok) throw new Error('not found');
+      ALL_LOG = await res.json();
+    } catch(e) {
+      ALL_LOG = [];
+    }
+
+    if (ALL_LOG.length === 0) {
+      document.getElementById('content').innerHTML =
+        '<div class="empty"><strong>NO DATA YET</strong>Run run.py to generate your first prop forecast entries.<br>Once data exists, every day\'s results appear here automatically.</div>';
+      return;
+    }
+
+    // Populate date filter
+    const dates = [...new Set(ALL_LOG.map(e => e.date).filter(Boolean))].sort((a,b) => b.localeCompare(a));
+    const sel = document.getElementById('filterDate');
+    dates.forEach(d => {
+      const o = document.createElement('option');
+      o.value = d; o.textContent = fmtDate(d);
+      sel.appendChild(o);
+    });
+
+    // YTD summary
+    const settled = ALL_LOG.filter(e => e.hit !== null && e.hit !== undefined);
+    const hits    = settled.filter(e => e.hit === 1).length;
+    const misses  = settled.length - hits;
+    const pct     = settled.length > 0 ? (hits / settled.length * 100).toFixed(1) : null;
+    const col     = pct !== null ? pctColor(pct) : '#fff';
+
+    document.getElementById('ytdStart').textContent   = fmtDate(dates[dates.length - 1]);
+    document.getElementById('ytdTotal').textContent   = ALL_LOG.length;
+    document.getElementById('ytdSettled').textContent = settled.length;
+    document.getElementById('ytdHits').textContent    = hits;
+    document.getElementById('ytdMisses').textContent  = misses;
+    const ytdPct = document.getElementById('ytdPct');
+    ytdPct.textContent = pct !== null ? pct + '%' : '—';
+    ytdPct.style.color = col;
+    ytdPct.style.textShadow = pct !== null ? '0 0 14px ' + col : 'none';
+
+    // Wire up filter listeners
+    ['filterDate','filterCat','filterResult','filterPlayer'].forEach(id => {
+      document.getElementById(id).addEventListener('input', () => { VISIBLE_DAYS = 7; render(); });
+    });
+
+    render();
+  }
+
+  init();
+</script>
+</body>
+</html>
