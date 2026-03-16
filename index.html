@@ -6719,9 +6719,10 @@
             const logo = document.getElementById('heroLogo');
             logo.classList.add('clickable');
             logo.onclick = () => triggerBrainExplode();
-            // Auto-show sign-in 2.5s after SIGN IN words + arrows appear (once per session)
+            // Auto-show mode selector 2.5s after SIGN IN words + arrows appear (once per session)
             setTimeout(() => {
-              if (sessionStorage.getItem('dfs_signin_done')) { showModeSelector(); } else { openSignin(); }
+              sessionStorage.setItem('dfs_signin_done', '1');
+              showModeSelector();
             }, 2500);
           }, arrowDelay);
         }
