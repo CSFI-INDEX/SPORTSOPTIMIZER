@@ -1,0 +1,1282 @@
+{
+  "generated": "2026-03-15",
+  "history": [
+    {
+      "date": "2026-03-15",
+      "display_date": "Mar 15, 2026",
+      "total_ns_boost": 286.2,
+      "total_actual_fp": null,
+      "total_salary": 200,
+      "players": [
+        {
+          "slot": "PG",
+          "name": "Shai Gilgeous-Alexander",
+          "team": "OKC",
+          "opponent": "MIN",
+          "game": "MIN@OKC",
+          "salary": 55,
+          "fppg": 51.5,
+          "ns_boost": 62.7,
+          "actual_fp": null
+        },
+        {
+          "slot": "SG",
+          "name": "Anthony Edwards",
+          "team": "MIN",
+          "opponent": "OKC",
+          "game": "MIN@OKC",
+          "salary": 47,
+          "fppg": 43.8,
+          "ns_boost": 43.2,
+          "actual_fp": null
+        },
+        {
+          "slot": "G",
+          "name": "Devin Carter",
+          "team": "SAC",
+          "opponent": "UTA",
+          "game": "UTA@SAC",
+          "salary": 13,
+          "fppg": 15.8,
+          "ns_boost": 30.5,
+          "actual_fp": null
+        },
+        {
+          "slot": "SF",
+          "name": "Brandon Ingram",
+          "team": "TOR",
+          "opponent": "DET",
+          "game": "DET@TOR",
+          "salary": 36,
+          "fppg": 37.3,
+          "ns_boost": 38.4,
+          "actual_fp": null
+        },
+        {
+          "slot": "PF",
+          "name": "Jalen Slawson",
+          "team": "IND",
+          "opponent": "MIL",
+          "game": "IND@MIL",
+          "salary": 10,
+          "fppg": 23.7,
+          "ns_boost": 23.2,
+          "actual_fp": null
+        },
+        {
+          "slot": "F",
+          "name": "Brice Sensabaugh",
+          "team": "UTA",
+          "opponent": "SAC",
+          "game": "UTA@SAC",
+          "salary": 18,
+          "fppg": 23.8,
+          "ns_boost": 36.0,
+          "actual_fp": null
+        },
+        {
+          "slot": "C",
+          "name": "Thomas Bryant",
+          "team": "CLE",
+          "opponent": "DAL",
+          "game": "DAL@CLE",
+          "salary": 11,
+          "fppg": 14.1,
+          "ns_boost": 22.2,
+          "actual_fp": null
+        },
+        {
+          "slot": "UTIL",
+          "name": "Cameron Payne",
+          "team": "PHI",
+          "opponent": "POR",
+          "game": "POR@PHI",
+          "salary": 10,
+          "fppg": 20.6,
+          "ns_boost": 30.0,
+          "actual_fp": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-14",
+      "display_date": "Mar 14, 2026",
+      "total_ns_boost": 284.6,
+      "total_actual_fp": 212.9,
+      "total_salary": 200,
+      "players": [
+        {
+          "slot": "PG",
+          "name": "Luka Doncic",
+          "team": "LAL",
+          "opponent": "DEN",
+          "game": "DEN@LAL",
+          "salary": 59,
+          "fppg": 56.3,
+          "ns_boost": 63.2,
+          "actual_fp": 68.7
+        },
+        {
+          "slot": "SG",
+          "name": "Desmond Bane",
+          "team": "ORL",
+          "opponent": "MIA",
+          "game": "ORL@MIA",
+          "salary": 33,
+          "fppg": 36.1,
+          "ns_boost": 46.0,
+          "actual_fp": 31.8
+        },
+        {
+          "slot": "G",
+          "name": "Cameron Payne",
+          "team": "PHI",
+          "opponent": "BKN",
+          "game": "BKN@PHI",
+          "salary": 10,
+          "fppg": 20.5,
+          "ns_boost": 33.4,
+          "actual_fp": 19.1
+        },
+        {
+          "slot": "SF",
+          "name": "LeBron James",
+          "team": "LAL",
+          "opponent": "DEN",
+          "game": "DEN@LAL",
+          "salary": 40,
+          "fppg": 41.0,
+          "ns_boost": 41.4,
+          "actual_fp": 32.7
+        },
+        {
+          "slot": "PF",
+          "name": "Tristan da Silva",
+          "team": "ORL",
+          "opponent": "MIA",
+          "game": "ORL@MIA",
+          "salary": 18,
+          "fppg": 22.2,
+          "ns_boost": 35.7,
+          "actual_fp": 29.6
+        },
+        {
+          "slot": "F",
+          "name": "Derrick Jones Jr.",
+          "team": "LAC",
+          "opponent": "SAC",
+          "game": "SAC@LAC",
+          "salary": 20,
+          "fppg": 23.6,
+          "ns_boost": 34.1,
+          "actual_fp": 11.1
+        },
+        {
+          "slot": "C",
+          "name": "E.J. Liddell",
+          "team": "BKN",
+          "opponent": "PHI",
+          "game": "BKN@PHI",
+          "salary": 10,
+          "fppg": 5.1,
+          "ns_boost": 6.8,
+          "actual_fp": 19.9
+        },
+        {
+          "slot": "UTIL",
+          "name": "Ochai Agbaji",
+          "team": "BKN",
+          "opponent": "PHI",
+          "game": "BKN@PHI",
+          "salary": 10,
+          "fppg": 10.2,
+          "ns_boost": 24.0,
+          "actual_fp": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-13",
+      "display_date": "Mar 13, 2026",
+      "total_ns_boost": 290.0,
+      "total_actual_fp": 254.2,
+      "total_salary": 200,
+      "players": [
+        {
+          "slot": "PG",
+          "name": "Jalen Brunson",
+          "team": "NY",
+          "opponent": "IND",
+          "game": "NY@IND",
+          "salary": 40,
+          "fppg": 40.8,
+          "ns_boost": 43.0,
+          "actual_fp": 49.5
+        },
+        {
+          "slot": "SG",
+          "name": "Josh Giddey",
+          "team": "CHI",
+          "opponent": "LAC",
+          "game": "CHI@LAC",
+          "salary": 42,
+          "fppg": 43.7,
+          "ns_boost": 49.2,
+          "actual_fp": 55.2
+        },
+        {
+          "slot": "G",
+          "name": "Devin Booker",
+          "team": "PHO",
+          "opponent": "TOR",
+          "game": "PHO@TOR",
+          "salary": 40,
+          "fppg": 37.9,
+          "ns_boost": 46.0,
+          "actual_fp": 32.6
+        },
+        {
+          "slot": "SF",
+          "name": "Matas Buzelis",
+          "team": "CHI",
+          "opponent": "LAC",
+          "game": "CHI@LAC",
+          "salary": 28,
+          "fppg": 29.5,
+          "ns_boost": 41.9,
+          "actual_fp": 32.2
+        },
+        {
+          "slot": "PF",
+          "name": "Taylor Hendricks",
+          "team": "MEM",
+          "opponent": "DET",
+          "game": "MEM@DET",
+          "salary": 13,
+          "fppg": 15.5,
+          "ns_boost": 29.3,
+          "actual_fp": 21.0
+        },
+        {
+          "slot": "F",
+          "name": "Gui Santos",
+          "team": "GS",
+          "opponent": "MIN",
+          "game": "MIN@GS",
+          "salary": 15,
+          "fppg": 19.8,
+          "ns_boost": 35.3,
+          "actual_fp": 34.6
+        },
+        {
+          "slot": "C",
+          "name": "Nick Richards",
+          "team": "CHI",
+          "opponent": "LAC",
+          "game": "CHI@LAC",
+          "salary": 12,
+          "fppg": 14.2,
+          "ns_boost": 23.2,
+          "actual_fp": 29.1
+        },
+        {
+          "slot": "UTIL",
+          "name": "Jalen Slawson",
+          "team": "IND",
+          "opponent": "NY",
+          "game": "NY@IND",
+          "salary": 10,
+          "fppg": 23.7,
+          "ns_boost": 22.1,
+          "actual_fp": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-12",
+      "display_date": "Mar 12, 2026",
+      "total_ns_boost": 303.0,
+      "total_actual_fp": 263.3,
+      "total_salary": 196,
+      "players": [
+        {
+          "slot": "PG",
+          "name": "Luka Doncic",
+          "team": "LAL",
+          "opponent": "CHI",
+          "game": "CHI@LAL",
+          "salary": 59,
+          "fppg": 55.7,
+          "ns_boost": 60.0,
+          "actual_fp": 87.5
+        },
+        {
+          "slot": "SG",
+          "name": "Josh Giddey",
+          "team": "CHI",
+          "opponent": "LAL",
+          "game": "CHI@LAL",
+          "salary": 42,
+          "fppg": 41.2,
+          "ns_boost": 47.6,
+          "actual_fp": 59.1
+        },
+        {
+          "slot": "G",
+          "name": "Cameron Payne",
+          "team": "PHI",
+          "opponent": "DET",
+          "game": "PHI@DET",
+          "salary": 10,
+          "fppg": 17.9,
+          "ns_boost": 35.7,
+          "actual_fp": 17.2
+        },
+        {
+          "slot": "SF",
+          "name": "Matas Buzelis",
+          "team": "CHI",
+          "opponent": "LAL",
+          "game": "CHI@LAL",
+          "salary": 28,
+          "fppg": 29.4,
+          "ns_boost": 46.2,
+          "actual_fp": 40.7
+        },
+        {
+          "slot": "PF",
+          "name": "Kyle Kuzma",
+          "team": "MIL",
+          "opponent": "MIA",
+          "game": "MIL@MIA",
+          "salary": 24,
+          "fppg": 24.3,
+          "ns_boost": 34.5,
+          "actual_fp": 14.1
+        },
+        {
+          "slot": "F",
+          "name": "Ousmane Dieng",
+          "team": "MIL",
+          "opponent": "MIA",
+          "game": "MIL@MIA",
+          "salary": 11,
+          "fppg": 11.9,
+          "ns_boost": 27.1,
+          "actual_fp": -1.0
+        },
+        {
+          "slot": "C",
+          "name": "Nick Richards",
+          "team": "CHI",
+          "opponent": "LAL",
+          "game": "CHI@LAL",
+          "salary": 12,
+          "fppg": 13.4,
+          "ns_boost": 25.9,
+          "actual_fp": 19.3
+        },
+        {
+          "slot": "UTIL",
+          "name": "Rayan Rupert",
+          "team": "MEM",
+          "opponent": "DAL",
+          "game": "DAL@MEM",
+          "salary": 10,
+          "fppg": 9.9,
+          "ns_boost": 26.0,
+          "actual_fp": 26.4
+        }
+      ]
+    },
+    {
+      "date": "2026-03-11",
+      "display_date": "Mar 11, 2026",
+      "total_ns_boost": 260.4,
+      "total_actual_fp": 168.6,
+      "total_salary": 200,
+      "players": [
+        {
+          "slot": "PG",
+          "name": "Amen Thompson",
+          "team": "HOU",
+          "opponent": "DEN",
+          "game": "HOU@DEN",
+          "salary": 38,
+          "fppg": 38.7,
+          "ns_boost": 43.4,
+          "actual_fp": 29.0
+        },
+        {
+          "slot": "SG",
+          "name": "Donovan Mitchell",
+          "team": "CLE",
+          "opponent": "ORL",
+          "game": "CLE@ORL",
+          "salary": 46,
+          "fppg": 43.1,
+          "ns_boost": 43.3,
+          "actual_fp": 38.5
+        },
+        {
+          "slot": "G",
+          "name": "Isaiah Collier",
+          "team": "UTA",
+          "opponent": "NY",
+          "game": "NY@UTA",
+          "salary": 25,
+          "fppg": 27.0,
+          "ns_boost": 40.4,
+          "actual_fp": 17.9
+        },
+        {
+          "slot": "SF",
+          "name": "Kevin Durant",
+          "team": "HOU",
+          "opponent": "DEN",
+          "game": "HOU@DEN",
+          "salary": 41,
+          "fppg": 40.1,
+          "ns_boost": 41.1,
+          "actual_fp": 20.3
+        },
+        {
+          "slot": "PF",
+          "name": "Tristan da Silva",
+          "team": "ORL",
+          "opponent": "CLE",
+          "game": "CLE@ORL",
+          "salary": 18,
+          "fppg": 18.4,
+          "ns_boost": 29.3,
+          "actual_fp": 35.3
+        },
+        {
+          "slot": "F",
+          "name": "Cody Williams",
+          "team": "UTA",
+          "opponent": "NY",
+          "game": "NY@UTA",
+          "salary": 12,
+          "fppg": 13.8,
+          "ns_boost": 29.4,
+          "actual_fp": 21.9
+        },
+        {
+          "slot": "C",
+          "name": "Mo Bamba",
+          "team": "UTA",
+          "opponent": "NY",
+          "game": "NY@UTA",
+          "salary": 10,
+          "fppg": 11.2,
+          "ns_boost": 17.2,
+          "actual_fp": null
+        },
+        {
+          "slot": "UTIL",
+          "name": "Oscar Tshiebwe",
+          "team": "UTA",
+          "opponent": "NY",
+          "game": "NY@UTA",
+          "salary": 10,
+          "fppg": 11.4,
+          "ns_boost": 16.3,
+          "actual_fp": 5.7
+        }
+      ]
+    },
+    {
+      "date": "2026-03-10",
+      "display_date": "Mar 10, 2026",
+      "total_ns_boost": 284.6,
+      "total_actual_fp": 230.6,
+      "total_salary": 200,
+      "players": [
+        {
+          "slot": "PG",
+          "name": "Luka Doncic",
+          "team": "LAL",
+          "opponent": "MIN",
+          "game": "MIN@LAL",
+          "salary": 59,
+          "fppg": 55.5,
+          "ns_boost": 57.2,
+          "actual_fp": 65.7
+        },
+        {
+          "slot": "SG",
+          "name": "Russell Westbrook",
+          "team": "SAC",
+          "opponent": "IND",
+          "game": "IND@SAC",
+          "salary": 33,
+          "fppg": 32.7,
+          "ns_boost": 44.2,
+          "actual_fp": 36.9
+        },
+        {
+          "slot": "G",
+          "name": "De'Anthony Melton",
+          "team": "GS",
+          "opponent": "CHI",
+          "game": "CHI@GS",
+          "salary": 22,
+          "fppg": 24.5,
+          "ns_boost": 37.4,
+          "actual_fp": null
+        },
+        {
+          "slot": "SF",
+          "name": "Michael Porter Jr.",
+          "team": "BKN",
+          "opponent": "DET",
+          "game": "DET@BKN",
+          "salary": 40,
+          "fppg": 39.1,
+          "ns_boost": 47.6,
+          "actual_fp": 22.9
+        },
+        {
+          "slot": "PF",
+          "name": "Olivier-Maxence Prosper",
+          "team": "MEM",
+          "opponent": "PHI",
+          "game": "MEM@PHI",
+          "salary": 13,
+          "fppg": 14.9,
+          "ns_boost": 24.0,
+          "actual_fp": 25.2
+        },
+        {
+          "slot": "F",
+          "name": "Ousmane Dieng",
+          "team": "MIL",
+          "opponent": "PHO",
+          "game": "PHO@MIL",
+          "salary": 11,
+          "fppg": 11.4,
+          "ns_boost": 21.8,
+          "actual_fp": 32.0
+        },
+        {
+          "slot": "C",
+          "name": "Nick Richards",
+          "team": "CHI",
+          "opponent": "GS",
+          "game": "CHI@GS",
+          "salary": 12,
+          "fppg": 13.0,
+          "ns_boost": 26.0,
+          "actual_fp": 28.5
+        },
+        {
+          "slot": "UTIL",
+          "name": "Rayan Rupert",
+          "team": "MEM",
+          "opponent": "PHI",
+          "game": "MEM@PHI",
+          "salary": 10,
+          "fppg": 9.7,
+          "ns_boost": 26.4,
+          "actual_fp": 19.4
+        }
+      ]
+    },
+    {
+      "date": "2026-03-09",
+      "display_date": "Mar 9, 2026",
+      "total_ns_boost": 268.2,
+      "total_actual_fp": 256.1,
+      "total_salary": 199,
+      "players": [
+        {
+          "slot": "PG",
+          "name": "Shai Gilgeous-Alexander",
+          "team": "OKC",
+          "opponent": "DEN",
+          "game": "DEN@OKC",
+          "salary": 55,
+          "fppg": 50.8,
+          "ns_boost": 42.5,
+          "actual_fp": 74.3
+        },
+        {
+          "slot": "SG",
+          "name": "Donovan Mitchell",
+          "team": "CLE",
+          "opponent": "PHI",
+          "game": "PHI@CLE",
+          "salary": 45,
+          "fppg": 43.3,
+          "ns_boost": 49.2,
+          "actual_fp": 35.6
+        },
+        {
+          "slot": "G",
+          "name": "De'Anthony Melton",
+          "team": "GS",
+          "opponent": "UTA",
+          "game": "GS@UTA",
+          "salary": 22,
+          "fppg": 24.0,
+          "ns_boost": 39.1,
+          "actual_fp": 40.4
+        },
+        {
+          "slot": "SF",
+          "name": "Gui Santos",
+          "team": "GS",
+          "opponent": "UTA",
+          "game": "GS@UTA",
+          "salary": 14,
+          "fppg": 16.6,
+          "ns_boost": 34.4,
+          "actual_fp": 38.1
+        },
+        {
+          "slot": "PF",
+          "name": "OG Anunoby",
+          "team": "NY",
+          "opponent": "LAC",
+          "game": "NY@LAC",
+          "salary": 31,
+          "fppg": 31.8,
+          "ns_boost": 34.5,
+          "actual_fp": 34.2
+        },
+        {
+          "slot": "F",
+          "name": "Cody Williams",
+          "team": "UTA",
+          "opponent": "GS",
+          "game": "GS@UTA",
+          "salary": 11,
+          "fppg": 13.6,
+          "ns_boost": 27.9,
+          "actual_fp": 24.1
+        },
+        {
+          "slot": "C",
+          "name": "Mo Bamba",
+          "team": "UTA",
+          "opponent": "GS",
+          "game": "GS@UTA",
+          "salary": 10,
+          "fppg": 11.2,
+          "ns_boost": 16.9,
+          "actual_fp": null
+        },
+        {
+          "slot": "UTIL",
+          "name": "Jabari Walker",
+          "team": "PHI",
+          "opponent": "CLE",
+          "game": "PHI@CLE",
+          "salary": 11,
+          "fppg": 10.4,
+          "ns_boost": 23.7,
+          "actual_fp": 9.4
+        }
+      ]
+    },
+    {
+      "date": "2026-03-08",
+      "display_date": "Mar 8, 2026",
+      "total_ns_boost": 280.7,
+      "total_actual_fp": 195.3,
+      "total_salary": 200,
+      "players": [
+        {
+          "slot": "PG",
+          "name": "Luka Don\u010di\u0107",
+          "team": "LAL",
+          "opponent": "NY",
+          "game": "NY@LAL",
+          "salary": 59,
+          "fppg": 55.6,
+          "ns_boost": 56.7,
+          "actual_fp": 50.6
+        },
+        {
+          "slot": "SG",
+          "name": "Reed Sheppard",
+          "team": "HOU",
+          "opponent": "SA",
+          "game": "HOU@SA",
+          "salary": 25,
+          "fppg": 25.9,
+          "ns_boost": 42.5,
+          "actual_fp": 27.1
+        },
+        {
+          "slot": "G",
+          "name": "Collin Sexton",
+          "team": "CHI",
+          "opponent": "SAC",
+          "game": "CHI@SAC",
+          "salary": 23,
+          "fppg": 23.0,
+          "ns_boost": 32.4,
+          "actual_fp": 34.9
+        },
+        {
+          "slot": "SF",
+          "name": "Jaylen Brown",
+          "team": "BOS",
+          "opponent": "CLE",
+          "game": "BOS@CLE",
+          "salary": 48,
+          "fppg": 44.0,
+          "ns_boost": 42.1,
+          "actual_fp": 41.8
+        },
+        {
+          "slot": "PF",
+          "name": "Guerschon Yabusele",
+          "team": "CHI",
+          "opponent": "SAC",
+          "game": "CHI@SAC",
+          "salary": 10,
+          "fppg": 10.7,
+          "ns_boost": 31.0,
+          "actual_fp": 13.5
+        },
+        {
+          "slot": "F",
+          "name": "Hugo Gonz\u00e1lez",
+          "team": "BOS",
+          "opponent": "CLE",
+          "game": "BOS@CLE",
+          "salary": 11,
+          "fppg": 11.6,
+          "ns_boost": 24.8,
+          "actual_fp": 2.7
+        },
+        {
+          "slot": "C",
+          "name": "Nick Richards",
+          "team": "CHI",
+          "opponent": "SAC",
+          "game": "CHI@SAC",
+          "salary": 11,
+          "fppg": 12.7,
+          "ns_boost": 27.1,
+          "actual_fp": 24.7
+        },
+        {
+          "slot": "UTIL",
+          "name": "Moussa Cisse",
+          "team": "DAL",
+          "opponent": "TOR",
+          "game": "DAL@TOR",
+          "salary": 13,
+          "fppg": 13.5,
+          "ns_boost": 24.1,
+          "actual_fp": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-07",
+      "display_date": "Mar 7, 2026",
+      "total_ns_boost": 228.8,
+      "total_actual_fp": 220.7,
+      "total_salary": 200,
+      "players": [
+        {
+          "slot": "PG",
+          "name": "Tyrese Maxey",
+          "team": "PHI",
+          "opponent": "ATL",
+          "game": "PHI@ATL",
+          "salary": 51,
+          "fppg": 48.2,
+          "ns_boost": 44.2,
+          "actual_fp": 47.9
+        },
+        {
+          "slot": "SG",
+          "name": "Anthony Edwards",
+          "team": "MIN",
+          "opponent": "ORL",
+          "game": "ORL@MIN",
+          "salary": 47,
+          "fppg": 43.6,
+          "ns_boost": 47.4,
+          "actual_fp": 52.6
+        },
+        {
+          "slot": "G",
+          "name": "Rayan Rupert",
+          "team": "MEM",
+          "opponent": "LAC",
+          "game": "LAC@MEM",
+          "salary": 10,
+          "fppg": 9.2,
+          "ns_boost": 21.5,
+          "actual_fp": null
+        },
+        {
+          "slot": "SF",
+          "name": "Michael Porter Jr.",
+          "team": "BKN",
+          "opponent": "DET",
+          "game": "BKN@DET",
+          "salary": 40,
+          "fppg": 38.8,
+          "ns_boost": 40.4,
+          "actual_fp": 54.1
+        },
+        {
+          "slot": "PF",
+          "name": "Tristan da Silva",
+          "team": "ORL",
+          "opponent": "MIN",
+          "game": "ORL@MIN",
+          "salary": 18,
+          "fppg": 18.1,
+          "ns_boost": 28.3,
+          "actual_fp": 31.4
+        },
+        {
+          "slot": "F",
+          "name": "Ochai Agbaji",
+          "team": "BKN",
+          "opponent": "DET",
+          "game": "BKN@DET",
+          "salary": 10,
+          "fppg": 9.7,
+          "ns_boost": 8.5,
+          "actual_fp": 15.8
+        },
+        {
+          "slot": "C",
+          "name": "Adem Bona",
+          "team": "PHI",
+          "opponent": "ATL",
+          "game": "PHI@ATL",
+          "salary": 14,
+          "fppg": 14.2,
+          "ns_boost": 19.3,
+          "actual_fp": 18.9
+        },
+        {
+          "slot": "UTIL",
+          "name": "MarJon Beauchamp",
+          "team": "PHI",
+          "opponent": "ATL",
+          "game": "PHI@ATL",
+          "salary": 10,
+          "fppg": 21.4,
+          "ns_boost": 19.2,
+          "actual_fp": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "display_date": "Mar 6, 2026",
+      "total_ns_boost": 259.9,
+      "total_actual_fp": 240.0,
+      "total_salary": 200,
+      "players": [
+        {
+          "slot": "PG",
+          "name": "Luka Doncic",
+          "team": "LAL",
+          "opponent": "IND",
+          "game": "IND@LAL",
+          "salary": 59,
+          "fppg": 55.2,
+          "ns_boost": 50.7,
+          "actual_fp": 74.3
+        },
+        {
+          "slot": "SG",
+          "name": "Reed Sheppard",
+          "team": "HOU",
+          "opponent": "POR",
+          "game": "POR@HOU",
+          "salary": 25,
+          "fppg": 25.7,
+          "ns_boost": 40.8,
+          "actual_fp": 37.6
+        },
+        {
+          "slot": "G",
+          "name": "Jrue Holiday",
+          "team": "POR",
+          "opponent": "HOU",
+          "game": "POR@HOU",
+          "salary": 32,
+          "fppg": 32.5,
+          "ns_boost": 40.5,
+          "actual_fp": 38.8
+        },
+        {
+          "slot": "SF",
+          "name": "Kevin Durant",
+          "team": "HOU",
+          "opponent": "POR",
+          "game": "POR@HOU",
+          "salary": 41,
+          "fppg": 40.1,
+          "ns_boost": 44.6,
+          "actual_fp": 32.1
+        },
+        {
+          "slot": "PF",
+          "name": "Kobe Brown",
+          "team": "IND",
+          "opponent": "LAL",
+          "game": "IND@LAL",
+          "salary": 11,
+          "fppg": 9.3,
+          "ns_boost": 15.7,
+          "actual_fp": 9.2
+        },
+        {
+          "slot": "F",
+          "name": "Hugo Gonzalez",
+          "team": "BOS",
+          "opponent": "DAL",
+          "game": "DAL@BOS",
+          "salary": 11,
+          "fppg": 11.5,
+          "ns_boost": 23.0,
+          "actual_fp": 14.4
+        },
+        {
+          "slot": "C",
+          "name": "Dwight Powell",
+          "team": "DAL",
+          "opponent": "BOS",
+          "game": "DAL@BOS",
+          "salary": 11,
+          "fppg": 11.3,
+          "ns_boost": 18.6,
+          "actual_fp": 9.0
+        },
+        {
+          "slot": "UTIL",
+          "name": "Kam Jones",
+          "team": "IND",
+          "opponent": "LAL",
+          "game": "IND@LAL",
+          "salary": 10,
+          "fppg": 10.0,
+          "ns_boost": 26.0,
+          "actual_fp": 24.6
+        }
+      ]
+    },
+    {
+      "date": "2026-03-05",
+      "display_date": "Mar 5, 2026",
+      "total_ns_boost": 288.5,
+      "total_actual_fp": 279.0,
+      "total_salary": 199,
+      "players": [
+        {
+          "slot": "PG",
+          "name": "Jamal Murray",
+          "team": "DEN",
+          "opponent": "LAL",
+          "game": "LAL@DEN",
+          "salary": 44,
+          "fppg": 42.5,
+          "ns_boost": 48.2,
+          "actual_fp": 41.3
+        },
+        {
+          "slot": "SG",
+          "name": "Reed Sheppard",
+          "team": "HOU",
+          "opponent": "GS",
+          "game": "GS@HOU",
+          "salary": 25,
+          "fppg": 25.5,
+          "ns_boost": 42.6,
+          "actual_fp": 39.6
+        },
+        {
+          "slot": "G",
+          "name": "Amen Thompson",
+          "team": "HOU",
+          "opponent": "GS",
+          "game": "GS@HOU",
+          "salary": 38,
+          "fppg": 38.3,
+          "ns_boost": 40.1,
+          "actual_fp": 48.5
+        },
+        {
+          "slot": "SF",
+          "name": "Kevin Durant",
+          "team": "HOU",
+          "opponent": "GS",
+          "game": "GS@HOU",
+          "salary": 41,
+          "fppg": 40.0,
+          "ns_boost": 44.1,
+          "actual_fp": 46.7
+        },
+        {
+          "slot": "PF",
+          "name": "Guerschon Yabusele",
+          "team": "CHI",
+          "opponent": "PHO",
+          "game": "CHI@PHO",
+          "salary": 10,
+          "fppg": 10.4,
+          "ns_boost": 33.3,
+          "actual_fp": 28.2
+        },
+        {
+          "slot": "F",
+          "name": "Justin Champagnie",
+          "team": "WAS",
+          "opponent": "UTA",
+          "game": "UTA@WAS",
+          "salary": 19,
+          "fppg": 20.4,
+          "ns_boost": 29.0,
+          "actual_fp": 25.9
+        },
+        {
+          "slot": "C",
+          "name": "Nick Richards",
+          "team": "CHI",
+          "opponent": "PHO",
+          "game": "CHI@PHO",
+          "salary": 11,
+          "fppg": 12.2,
+          "ns_boost": 24.6,
+          "actual_fp": 30.7
+        },
+        {
+          "slot": "UTIL",
+          "name": "Leaky Black",
+          "team": "WAS",
+          "opponent": "UTA",
+          "game": "UTA@WAS",
+          "salary": 11,
+          "fppg": 22.4,
+          "ns_boost": 26.6,
+          "actual_fp": 18.1
+        }
+      ]
+    },
+    {
+      "date": "2026-03-04",
+      "display_date": "Mar 4, 2026",
+      "total_ns_boost": 266.0,
+      "total_actual_fp": 222.3,
+      "total_salary": 199,
+      "players": [
+        {
+          "slot": "PG",
+          "name": "Shai Gilgeous-Alexander",
+          "team": "OKC",
+          "opponent": "NY",
+          "game": "OKC@NY",
+          "salary": 55,
+          "fppg": 51.2,
+          "ns_boost": 53.3,
+          "actual_fp": 41.6
+        },
+        {
+          "slot": "SG",
+          "name": "Dyson Daniels",
+          "team": "ATL",
+          "opponent": "MIL",
+          "game": "ATL@MIL",
+          "salary": 33,
+          "fppg": 33.5,
+          "ns_boost": 39.3,
+          "actual_fp": 39.5
+        },
+        {
+          "slot": "G",
+          "name": "Kris Dunn",
+          "team": "LAC",
+          "opponent": "IND",
+          "game": "IND@LAC",
+          "salary": 19,
+          "fppg": 20.8,
+          "ns_boost": 30.5,
+          "actual_fp": 18.7
+        },
+        {
+          "slot": "SF",
+          "name": "Jaylen Brown",
+          "team": "BOS",
+          "opponent": "CHA",
+          "game": "CHA@BOS",
+          "salary": 48,
+          "fppg": 44.0,
+          "ns_boost": 47.8,
+          "actual_fp": 40.7
+        },
+        {
+          "slot": "PF",
+          "name": "Olivier-Maxence Prosper",
+          "team": "MEM",
+          "opponent": "POR",
+          "game": "POR@MEM",
+          "salary": 13,
+          "fppg": 14.1,
+          "ns_boost": 22.9,
+          "actual_fp": 33.3
+        },
+        {
+          "slot": "F",
+          "name": "Hugo Gonzalez",
+          "team": "BOS",
+          "opponent": "CHA",
+          "game": "CHA@BOS",
+          "salary": 11,
+          "fppg": 11.5,
+          "ns_boost": 25.5,
+          "actual_fp": 15.7
+        },
+        {
+          "slot": "C",
+          "name": "Yanic Konan Niederhauser",
+          "team": "LAC",
+          "opponent": "IND",
+          "game": "IND@LAC",
+          "salary": 10,
+          "fppg": 10.2,
+          "ns_boost": 22.7,
+          "actual_fp": 16.8
+        },
+        {
+          "slot": "UTIL",
+          "name": "Rayan Rupert",
+          "team": "MEM",
+          "opponent": "POR",
+          "game": "POR@MEM",
+          "salary": 10,
+          "fppg": 9.1,
+          "ns_boost": 24.0,
+          "actual_fp": 16.0
+        }
+      ]
+    },
+    {
+      "date": "2026-03-03",
+      "display_date": "Mar 3, 2026",
+      "total_ns_boost": 284.6,
+      "total_actual_fp": 220.3,
+      "total_salary": 200,
+      "players": [
+        {
+          "slot": "PG",
+          "name": "Tyrese Maxey",
+          "team": "PHI",
+          "opponent": "BOS",
+          "game": "PHI@BOS",
+          "salary": 50,
+          "fppg": 48.3,
+          "ns_proj": 59.6,
+          "ns_boost": 58.4,
+          "actual_fp": 37.6,
+          "injury_status": "HEALTHY"
+        },
+        {
+          "slot": "SG",
+          "name": "Anthony Edwards",
+          "team": "MIN",
+          "opponent": "DEN",
+          "game": "MIN@DEN",
+          "salary": 47,
+          "fppg": 43.4,
+          "ns_proj": 43.7,
+          "ns_boost": 42.7,
+          "actual_fp": 67.2,
+          "injury_status": "HEALTHY"
+        },
+        {
+          "slot": "G",
+          "name": "Nique Clifford",
+          "team": "SAC",
+          "opponent": "LAL",
+          "game": "SAC@LAL",
+          "salary": 13,
+          "fppg": 15.8,
+          "ns_proj": 31.6,
+          "ns_boost": 33.9,
+          "actual_fp": 32.6,
+          "injury_status": "HEALTHY"
+        },
+        {
+          "slot": "SF",
+          "name": "Jaylen Brown",
+          "team": "BOS",
+          "opponent": "PHI",
+          "game": "PHI@BOS",
+          "salary": 48,
+          "fppg": 44.0,
+          "ns_proj": 50.1,
+          "ns_boost": 48.7,
+          "actual_fp": null,
+          "injury_status": "HEALTHY"
+        },
+        {
+          "slot": "PF",
+          "name": "Taylor Hendricks",
+          "team": "MEM",
+          "opponent": "IND",
+          "game": "MEM@IND",
+          "salary": 11,
+          "fppg": 13.2,
+          "ns_proj": 24.4,
+          "ns_boost": 26.1,
+          "actual_fp": 15.2,
+          "injury_status": "HEALTHY"
+        },
+        {
+          "slot": "F",
+          "name": "Olivier-Maxence Prosper",
+          "team": "MEM",
+          "opponent": "IND",
+          "game": "MEM@IND",
+          "salary": 11,
+          "fppg": 13.9,
+          "ns_proj": 24.6,
+          "ns_boost": 25.7,
+          "actual_fp": 6.9,
+          "injury_status": "HEALTHY"
+        },
+        {
+          "slot": "C",
+          "name": "DeAndre Jordan",
+          "team": "NO",
+          "opponent": "LAC",
+          "game": "NO@LAC",
+          "salary": 10,
+          "fppg": 17.4,
+          "ns_proj": 16.9,
+          "ns_boost": 17.2,
+          "actual_fp": 21.2,
+          "injury_status": "HEALTHY"
+        },
+        {
+          "slot": "UTIL",
+          "name": "Dejounte Murray",
+          "team": "NO",
+          "opponent": "LAC",
+          "game": "NO@LAC",
+          "salary": 10,
+          "fppg": 30.5,
+          "ns_proj": 31.8,
+          "ns_boost": 31.9,
+          "actual_fp": 39.6,
+          "injury_status": "HEALTHY"
+        }
+      ]
+    }
+  ]
+}

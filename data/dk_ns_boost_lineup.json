@@ -1,0 +1,1455 @@
+{
+  "2026-03-08": {
+    "date": "2026-03-08",
+    "display_date": "Mar 8, 2026",
+    "platform": "draftkings",
+    "salary_cap": 50000,
+    "total_salary": 50000,
+    "total_ns_boost": 256.9,
+    "total_actual_dk_fp": null,
+    "players": [
+      {
+        "slot": "PG",
+        "name": "Amen Thompson",
+        "team": "HOU",
+        "position": "PG",
+        "eligible_pos": [
+          "PG",
+          "G",
+          "UTIL"
+        ],
+        "salary": 8300,
+        "fppg": 38.68,
+        "dk_proj": 45.4,
+        "dk_ns_proj": 42.8,
+        "dk_boost": 45.4,
+        "dk_value": 5.16,
+        "opponent": "SAS",
+        "game": "HOU@SAS",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "SG",
+        "name": "Trey Murphy III",
+        "team": "NOP",
+        "position": "PG/SG",
+        "eligible_pos": [
+          "PG",
+          "SG",
+          "G",
+          "UTIL"
+        ],
+        "salary": 7700,
+        "fppg": 39.28,
+        "dk_proj": 40.4,
+        "dk_ns_proj": 40.3,
+        "dk_boost": 40.4,
+        "dk_value": 5.23,
+        "opponent": "WAS",
+        "game": "WAS@NOP",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "SF",
+        "name": "Kevin Durant",
+        "team": "HOU",
+        "position": "SF",
+        "eligible_pos": [
+          "SF",
+          "F",
+          "UTIL"
+        ],
+        "salary": 9000,
+        "fppg": 41.94,
+        "dk_proj": 40.7,
+        "dk_ns_proj": 41.9,
+        "dk_boost": 40.7,
+        "dk_value": 4.66,
+        "opponent": "SAS",
+        "game": "HOU@SAS",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "PF",
+        "name": "Paolo Banchero",
+        "team": "ORL",
+        "position": "PF",
+        "eligible_pos": [
+          "PF",
+          "F",
+          "UTIL"
+        ],
+        "salary": 9800,
+        "fppg": 42.74,
+        "dk_proj": 43.6,
+        "dk_ns_proj": 43.9,
+        "dk_boost": 43.6,
+        "dk_value": 4.48,
+        "opponent": "MIL",
+        "game": "ORL@MIL",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "C",
+        "name": "Precious Achiuwa",
+        "team": "SAC",
+        "position": "PF/C",
+        "eligible_pos": [
+          "PF",
+          "C",
+          "F",
+          "UTIL"
+        ],
+        "salary": 6100,
+        "fppg": 21.23,
+        "dk_proj": 38.6,
+        "dk_ns_proj": 30.5,
+        "dk_boost": 38.6,
+        "dk_value": 5.0,
+        "opponent": "CHI",
+        "game": "CHI@SAC",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "G",
+        "name": "Caleb Love",
+        "team": "POR",
+        "position": "PG/SG",
+        "eligible_pos": [
+          "PG",
+          "SG",
+          "G",
+          "UTIL"
+        ],
+        "salary": 3000,
+        "fppg": 20.23,
+        "dk_proj": 18.5,
+        "dk_ns_proj": 19.5,
+        "dk_boost": 18.5,
+        "dk_value": 6.5,
+        "opponent": "IND",
+        "game": "IND@POR",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "F",
+        "name": "Matisse Thybulle",
+        "team": "POR",
+        "position": "SF/PF",
+        "eligible_pos": [
+          "SF",
+          "PF",
+          "F",
+          "UTIL"
+        ],
+        "salary": 3100,
+        "fppg": 13.65,
+        "dk_proj": 14.1,
+        "dk_ns_proj": 14.6,
+        "dk_boost": 14.1,
+        "dk_value": 4.71,
+        "opponent": "IND",
+        "game": "IND@POR",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "UTIL",
+        "name": "Ethan Thompson",
+        "team": "IND",
+        "position": "PG/SG",
+        "eligible_pos": [
+          "PG",
+          "SG",
+          "G",
+          "UTIL"
+        ],
+        "salary": 3000,
+        "fppg": 11.2,
+        "dk_proj": 15.6,
+        "dk_ns_proj": 12.9,
+        "dk_boost": 15.6,
+        "dk_value": 4.3,
+        "opponent": "POR",
+        "game": "IND@POR",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      }
+    ]
+  },
+  "2026-03-09": {
+    "date": "2026-03-09",
+    "display_date": "Mar 9, 2026",
+    "platform": "draftkings",
+    "salary_cap": 50000,
+    "total_salary": 50000,
+    "total_ns_boost": 229.1,
+    "total_actual_dk_fp": null,
+    "players": [
+      {
+        "slot": "PG",
+        "name": "Shai Gilgeous-Alexander",
+        "team": "OKC",
+        "position": "PG",
+        "eligible_pos": [
+          "PG",
+          "G",
+          "UTIL"
+        ],
+        "salary": 10700,
+        "fppg": 50.97,
+        "dk_proj": 45.2,
+        "dk_ns_proj": 49.7,
+        "dk_boost": 45.2,
+        "dk_value": 4.64,
+        "opponent": "DEN",
+        "game": "DEN@OKC",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "SG",
+        "name": "Donovan Mitchell",
+        "team": "CLE",
+        "position": "SG",
+        "eligible_pos": [
+          "SG",
+          "G",
+          "UTIL"
+        ],
+        "salary": 9700,
+        "fppg": 45.58,
+        "dk_proj": 49.5,
+        "dk_ns_proj": 48.4,
+        "dk_boost": 49.5,
+        "dk_value": 4.99,
+        "opponent": "PHI",
+        "game": "PHI@CLE",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "SF",
+        "name": "Kawhi Leonard",
+        "team": "LAC",
+        "position": "SF",
+        "eligible_pos": [
+          "SF",
+          "F",
+          "UTIL"
+        ],
+        "salary": 9800,
+        "fppg": 46.02,
+        "dk_proj": 45.4,
+        "dk_ns_proj": 46.9,
+        "dk_boost": 45.4,
+        "dk_value": 4.79,
+        "opponent": "NYK",
+        "game": "NYK@LAC",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "PF",
+        "name": "Kyle Filipowski",
+        "team": "UTA",
+        "position": "PF/C",
+        "eligible_pos": [
+          "PF",
+          "C",
+          "F",
+          "UTIL"
+        ],
+        "salary": 7800,
+        "fppg": 25.0,
+        "dk_proj": 35.2,
+        "dk_ns_proj": 30.8,
+        "dk_boost": 35.2,
+        "dk_value": 3.95,
+        "opponent": "GSW",
+        "game": "GSW@UTA",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "C",
+        "name": "DaRon Holmes II",
+        "team": "DEN",
+        "position": "C",
+        "eligible_pos": [
+          "C",
+          "UTIL"
+        ],
+        "salary": 3000,
+        "fppg": 8.22,
+        "dk_proj": 8.6,
+        "dk_ns_proj": 8.6,
+        "dk_boost": 8.6,
+        "dk_value": 2.87,
+        "opponent": "OKC",
+        "game": "DEN@OKC",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "G",
+        "name": "Marjon Beauchamp",
+        "team": "PHI",
+        "position": "SG/SF",
+        "eligible_pos": [
+          "SG",
+          "SF",
+          "F",
+          "G",
+          "UTIL"
+        ],
+        "salary": 3000,
+        "fppg": 21.12,
+        "dk_proj": 20.2,
+        "dk_ns_proj": 20.8,
+        "dk_boost": 20.2,
+        "dk_value": 6.93,
+        "opponent": "CLE",
+        "game": "PHI@CLE",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "F",
+        "name": "Dalen Terry",
+        "team": "PHI",
+        "position": "SF",
+        "eligible_pos": [
+          "SF",
+          "F",
+          "UTIL"
+        ],
+        "salary": 3000,
+        "fppg": 9.35,
+        "dk_proj": 11.6,
+        "dk_ns_proj": 10.7,
+        "dk_boost": 11.6,
+        "dk_value": 3.57,
+        "opponent": "CLE",
+        "game": "PHI@CLE",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "UTIL",
+        "name": "Bogdan Bogdanovic",
+        "team": "LAC",
+        "position": "PG/SG",
+        "eligible_pos": [
+          "PG",
+          "SG",
+          "G",
+          "UTIL"
+        ],
+        "salary": 3000,
+        "fppg": 16.6,
+        "dk_proj": 13.4,
+        "dk_ns_proj": 15.3,
+        "dk_boost": 13.4,
+        "dk_value": 5.1,
+        "opponent": "NYK",
+        "game": "NYK@LAC",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      }
+    ]
+  },
+  "2026-03-10": {
+    "date": "2026-03-10",
+    "display_date": "Mar 10, 2026",
+    "platform": "draftkings",
+    "salary_cap": 50000,
+    "total_salary": 49900,
+    "total_ns_boost": 264.8,
+    "total_actual_dk_fp": null,
+    "players": [
+      {
+        "slot": "PG",
+        "name": "Luka Doncic",
+        "team": "LAL",
+        "position": "PG",
+        "eligible_pos": [
+          "PG",
+          "G",
+          "UTIL"
+        ],
+        "salary": 12200,
+        "fppg": 58.91,
+        "dk_proj": 59.9,
+        "dk_ns_proj": 61.2,
+        "dk_boost": 59.9,
+        "dk_value": 5.02,
+        "opponent": "MIN",
+        "game": "MIN@LAL",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "SG",
+        "name": "Devin Booker",
+        "team": "PHX",
+        "position": "PG/SG",
+        "eligible_pos": [
+          "PG",
+          "SG",
+          "G",
+          "UTIL"
+        ],
+        "salary": 8700,
+        "fppg": 39.54,
+        "dk_proj": 42.7,
+        "dk_ns_proj": 41.9,
+        "dk_boost": 42.7,
+        "dk_value": 4.82,
+        "opponent": "MIL",
+        "game": "PHX@MIL",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "SF",
+        "name": "Matas Buzelis",
+        "team": "CHI",
+        "position": "SF/PF",
+        "eligible_pos": [
+          "SF",
+          "PF",
+          "F",
+          "UTIL"
+        ],
+        "salary": 7100,
+        "fppg": 29.86,
+        "dk_proj": 43.1,
+        "dk_ns_proj": 37.1,
+        "dk_boost": 43.1,
+        "dk_value": 5.23,
+        "opponent": "GSW",
+        "game": "CHI@GSW",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "PF",
+        "name": "Deni Avdija",
+        "team": "POR",
+        "position": "SF/PF",
+        "eligible_pos": [
+          "SF",
+          "PF",
+          "F",
+          "UTIL"
+        ],
+        "salary": 8500,
+        "fppg": 44.08,
+        "dk_proj": 39.5,
+        "dk_ns_proj": 42.3,
+        "dk_boost": 39.5,
+        "dk_value": 4.98,
+        "opponent": "CHA",
+        "game": "CHA@POR",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "C",
+        "name": "Nick Richards",
+        "team": "CHI",
+        "position": "C",
+        "eligible_pos": [
+          "C",
+          "UTIL"
+        ],
+        "salary": 4000,
+        "fppg": 13.04,
+        "dk_proj": 24.0,
+        "dk_ns_proj": 18.4,
+        "dk_boost": 24.0,
+        "dk_value": 4.6,
+        "opponent": "GSW",
+        "game": "CHI@GSW",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "G",
+        "name": "Dru Smith",
+        "team": "MIA",
+        "position": "PG",
+        "eligible_pos": [
+          "PG",
+          "G",
+          "UTIL"
+        ],
+        "salary": 3400,
+        "fppg": 16.65,
+        "dk_proj": 21.5,
+        "dk_ns_proj": 19.4,
+        "dk_boost": 21.5,
+        "dk_value": 5.71,
+        "opponent": "WAS",
+        "game": "WAS@MIA",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "F",
+        "name": "Dalen Terry",
+        "team": "PHI",
+        "position": "SF",
+        "eligible_pos": [
+          "SF",
+          "F",
+          "UTIL"
+        ],
+        "salary": 3000,
+        "fppg": 9.69,
+        "dk_proj": 15.6,
+        "dk_ns_proj": 12.4,
+        "dk_boost": 15.6,
+        "dk_value": 4.13,
+        "opponent": "MEM",
+        "game": "MEM@PHI",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "UTIL",
+        "name": "Caleb Love",
+        "team": "POR",
+        "position": "PG/SG",
+        "eligible_pos": [
+          "PG",
+          "SG",
+          "G",
+          "UTIL"
+        ],
+        "salary": 3000,
+        "fppg": 20.23,
+        "dk_proj": 18.5,
+        "dk_ns_proj": 19.5,
+        "dk_boost": 18.5,
+        "dk_value": 6.5,
+        "opponent": "CHA",
+        "game": "CHA@POR",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      }
+    ]
+  },
+  "2026-03-11": {
+    "date": "2026-03-11",
+    "display_date": "Mar 11, 2026",
+    "platform": "draftkings",
+    "salary_cap": 50000,
+    "total_salary": 49900,
+    "total_ns_boost": 268.2,
+    "total_actual_dk_fp": null,
+    "players": [
+      {
+        "slot": "PG",
+        "name": "Amen Thompson",
+        "team": "HOU",
+        "position": "PG",
+        "eligible_pos": [
+          "PG",
+          "G",
+          "UTIL"
+        ],
+        "salary": 8000,
+        "fppg": 38.71,
+        "dk_proj": 43.3,
+        "dk_ns_proj": 41.7,
+        "dk_boost": 43.3,
+        "dk_value": 5.21,
+        "opponent": "DEN",
+        "game": "HOU@DEN",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "SG",
+        "name": "Donovan Mitchell",
+        "team": "CLE",
+        "position": "SG",
+        "eligible_pos": [
+          "SG",
+          "G",
+          "UTIL"
+        ],
+        "salary": 9200,
+        "fppg": 45.38,
+        "dk_proj": 44.8,
+        "dk_ns_proj": 46.1,
+        "dk_boost": 44.8,
+        "dk_value": 5.01,
+        "opponent": "ORL",
+        "game": "CLE@ORL",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "SF",
+        "name": "Kawhi Leonard",
+        "team": "LAC",
+        "position": "SF",
+        "eligible_pos": [
+          "SF",
+          "F",
+          "UTIL"
+        ],
+        "salary": 9300,
+        "fppg": 46.18,
+        "dk_proj": 48.1,
+        "dk_ns_proj": 48.4,
+        "dk_boost": 48.1,
+        "dk_value": 5.2,
+        "opponent": "MIN",
+        "game": "MIN@LAC",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "PF",
+        "name": "Paolo Banchero",
+        "team": "ORL",
+        "position": "PF",
+        "eligible_pos": [
+          "PF",
+          "F",
+          "UTIL"
+        ],
+        "salary": 9400,
+        "fppg": 42.81,
+        "dk_proj": 42.6,
+        "dk_ns_proj": 43.6,
+        "dk_boost": 42.6,
+        "dk_value": 4.64,
+        "opponent": "CLE",
+        "game": "CLE@ORL",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "C",
+        "name": "Sandro Mamukelashvili",
+        "team": "TOR",
+        "position": "C",
+        "eligible_pos": [
+          "C",
+          "UTIL"
+        ],
+        "salary": 4600,
+        "fppg": 22.73,
+        "dk_proj": 26.8,
+        "dk_ns_proj": 25.2,
+        "dk_boost": 26.8,
+        "dk_value": 5.48,
+        "opponent": "NOP",
+        "game": "TOR@NOP",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "G",
+        "name": "Svi Mykhailiuk",
+        "team": "UTA",
+        "position": "SG",
+        "eligible_pos": [
+          "SG",
+          "G",
+          "UTIL"
+        ],
+        "salary": 3000,
+        "fppg": 16.69,
+        "dk_proj": 17.1,
+        "dk_ns_proj": 16.9,
+        "dk_boost": 17.1,
+        "dk_value": 5.63,
+        "opponent": "NYK",
+        "game": "NYK@UTA",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "F",
+        "name": "Kyle Anderson",
+        "team": "MIN",
+        "position": "PF/C",
+        "eligible_pos": [
+          "PF",
+          "C",
+          "F",
+          "UTIL"
+        ],
+        "salary": 3100,
+        "fppg": 18.04,
+        "dk_proj": 20.2,
+        "dk_ns_proj": 19.3,
+        "dk_boost": 20.2,
+        "dk_value": 6.23,
+        "opponent": "LAC",
+        "game": "MIN@LAC",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "UTIL",
+        "name": "Ryan Kalkbrenner",
+        "team": "CHA",
+        "position": "C",
+        "eligible_pos": [
+          "C",
+          "UTIL"
+        ],
+        "salary": 3300,
+        "fppg": 20.22,
+        "dk_proj": 25.3,
+        "dk_ns_proj": 23.8,
+        "dk_boost": 25.3,
+        "dk_value": 7.21,
+        "opponent": "SAC",
+        "game": "CHA@SAC",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      }
+    ]
+  },
+  "2026-03-12": {
+    "date": "2026-03-12",
+    "display_date": "Mar 12, 2026",
+    "platform": "draftkings",
+    "salary_cap": 50000,
+    "total_salary": 49900,
+    "total_ns_boost": 259.9,
+    "total_actual_dk_fp": null,
+    "players": [
+      {
+        "slot": "PG",
+        "name": "Luka Doncic",
+        "team": "LAL",
+        "position": "PG",
+        "eligible_pos": [
+          "PG",
+          "G",
+          "UTIL"
+        ],
+        "salary": 12300,
+        "fppg": 59.14,
+        "dk_proj": 60.7,
+        "dk_ns_proj": 61.9,
+        "dk_boost": 60.7,
+        "dk_value": 5.03,
+        "opponent": "CHI",
+        "game": "CHI@LAL",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "SG",
+        "name": "Devin Booker",
+        "team": "PHX",
+        "position": "PG/SG",
+        "eligible_pos": [
+          "PG",
+          "SG",
+          "G",
+          "UTIL"
+        ],
+        "salary": 8800,
+        "fppg": 39.7,
+        "dk_proj": 43.3,
+        "dk_ns_proj": 42.3,
+        "dk_boost": 43.3,
+        "dk_value": 4.81,
+        "opponent": "IND",
+        "game": "PHX@IND",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "SF",
+        "name": "Matas Buzelis",
+        "team": "CHI",
+        "position": "SF/PF",
+        "eligible_pos": [
+          "SF",
+          "PF",
+          "F",
+          "UTIL"
+        ],
+        "salary": 7300,
+        "fppg": 30.35,
+        "dk_proj": 43.3,
+        "dk_ns_proj": 37.5,
+        "dk_boost": 43.3,
+        "dk_value": 5.14,
+        "opponent": "LAL",
+        "game": "CHI@LAL",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "PF",
+        "name": "Paolo Banchero",
+        "team": "ORL",
+        "position": "PF",
+        "eligible_pos": [
+          "PF",
+          "F",
+          "UTIL"
+        ],
+        "salary": 9500,
+        "fppg": 42.86,
+        "dk_proj": 42.4,
+        "dk_ns_proj": 42.8,
+        "dk_boost": 42.4,
+        "dk_value": 4.51,
+        "opponent": "WAS",
+        "game": "WAS@ORL",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "C",
+        "name": "Moussa Cisse",
+        "team": "DAL",
+        "position": "C",
+        "eligible_pos": [
+          "C",
+          "UTIL"
+        ],
+        "salary": 3000,
+        "fppg": 12.75,
+        "dk_proj": 22.1,
+        "dk_ns_proj": 17.1,
+        "dk_boost": 22.1,
+        "dk_value": 5.7,
+        "opponent": "MEM",
+        "game": "DAL@MEM",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "G",
+        "name": "Ethan Thompson",
+        "team": "IND",
+        "position": "PG/SG",
+        "eligible_pos": [
+          "PG",
+          "SG",
+          "G",
+          "UTIL"
+        ],
+        "salary": 3000,
+        "fppg": 11.2,
+        "dk_proj": 17.7,
+        "dk_ns_proj": 14.1,
+        "dk_boost": 17.7,
+        "dk_value": 4.7,
+        "opponent": "PHX",
+        "game": "PHX@IND",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "F",
+        "name": "Paul George",
+        "team": "PHI",
+        "position": "SF",
+        "eligible_pos": [
+          "SF",
+          "F",
+          "UTIL"
+        ],
+        "salary": 3000,
+        "fppg": 32.34,
+        "dk_proj": 14.6,
+        "dk_ns_proj": 32.3,
+        "dk_boost": 14.6,
+        "dk_value": 10.78,
+        "opponent": "DET",
+        "game": "PHI@DET",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "UTIL",
+        "name": "Jamaree Bouyea",
+        "team": "PHX",
+        "position": "PG",
+        "eligible_pos": [
+          "PG",
+          "G",
+          "UTIL"
+        ],
+        "salary": 3000,
+        "fppg": 13.98,
+        "dk_proj": 15.8,
+        "dk_ns_proj": 15.0,
+        "dk_boost": 15.8,
+        "dk_value": 5.0,
+        "opponent": "IND",
+        "game": "PHX@IND",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      }
+    ]
+  },
+  "2026-03-13": {
+    "date": "2026-03-13",
+    "display_date": "Mar 13, 2026",
+    "platform": "draftkings",
+    "salary_cap": 50000,
+    "total_salary": 49700,
+    "total_ns_boost": 277.7,
+    "total_actual_dk_fp": null,
+    "players": [
+      {
+        "slot": "PG",
+        "name": "Josh Giddey",
+        "team": "CHI",
+        "position": "PG",
+        "eligible_pos": [
+          "PG",
+          "G",
+          "UTIL"
+        ],
+        "salary": 8900,
+        "fppg": 44.93,
+        "dk_proj": 49.2,
+        "dk_ns_proj": 48.1,
+        "dk_boost": 49.2,
+        "dk_value": 5.4,
+        "opponent": "LAC",
+        "game": "CHI@LAC",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "SG",
+        "name": "Devin Booker",
+        "team": "PHX",
+        "position": "PG/SG",
+        "eligible_pos": [
+          "PG",
+          "SG",
+          "G",
+          "UTIL"
+        ],
+        "salary": 8900,
+        "fppg": 40.17,
+        "dk_proj": 45.8,
+        "dk_ns_proj": 43.4,
+        "dk_boost": 45.8,
+        "dk_value": 4.88,
+        "opponent": "TOR",
+        "game": "PHX@TOR",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "SF",
+        "name": "Kawhi Leonard",
+        "team": "LAC",
+        "position": "SF",
+        "eligible_pos": [
+          "SF",
+          "F",
+          "UTIL"
+        ],
+        "salary": 9700,
+        "fppg": 46.54,
+        "dk_proj": 50.8,
+        "dk_ns_proj": 51.2,
+        "dk_boost": 50.8,
+        "dk_value": 5.28,
+        "opponent": "CHI",
+        "game": "CHI@LAC",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "PF",
+        "name": "Deni Avdija",
+        "team": "POR",
+        "position": "SF/PF",
+        "eligible_pos": [
+          "SF",
+          "PF",
+          "F",
+          "UTIL"
+        ],
+        "salary": 8800,
+        "fppg": 43.98,
+        "dk_proj": 41.4,
+        "dk_ns_proj": 44.7,
+        "dk_boost": 41.4,
+        "dk_value": 5.08,
+        "opponent": "UTA",
+        "game": "UTA@POR",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "C",
+        "name": "Sandro Mamukelashvili",
+        "team": "TOR",
+        "position": "C",
+        "eligible_pos": [
+          "C",
+          "UTIL"
+        ],
+        "salary": 4300,
+        "fppg": 22.66,
+        "dk_proj": 25.5,
+        "dk_ns_proj": 24.5,
+        "dk_boost": 25.5,
+        "dk_value": 5.7,
+        "opponent": "PHX",
+        "game": "PHX@TOR",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "G",
+        "name": "Caleb Love",
+        "team": "POR",
+        "position": "PG/SG",
+        "eligible_pos": [
+          "PG",
+          "SG",
+          "G",
+          "UTIL"
+        ],
+        "salary": 3000,
+        "fppg": 20.23,
+        "dk_proj": 23.6,
+        "dk_ns_proj": 22.3,
+        "dk_boost": 23.6,
+        "dk_value": 7.43,
+        "opponent": "UTA",
+        "game": "UTA@POR",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "F",
+        "name": "Jalen Slawson",
+        "team": "IND",
+        "position": "SF/PF",
+        "eligible_pos": [
+          "SF",
+          "PF",
+          "F",
+          "UTIL"
+        ],
+        "salary": 3100,
+        "fppg": 20.38,
+        "dk_proj": 22.3,
+        "dk_ns_proj": 21.4,
+        "dk_boost": 22.3,
+        "dk_value": 6.9,
+        "opponent": "NYK",
+        "game": "NYK@IND",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "UTIL",
+        "name": "Svi Mykhailiuk",
+        "team": "UTA",
+        "position": "SG",
+        "eligible_pos": [
+          "SG",
+          "G",
+          "UTIL"
+        ],
+        "salary": 3000,
+        "fppg": 16.69,
+        "dk_proj": 19.1,
+        "dk_ns_proj": 18.2,
+        "dk_boost": 19.1,
+        "dk_value": 6.07,
+        "opponent": "POR",
+        "game": "UTA@POR",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      }
+    ]
+  },
+  "2026-03-14": {
+    "date": "2026-03-14",
+    "display_date": "Mar 14, 2026",
+    "platform": "draftkings",
+    "salary_cap": 50000,
+    "total_salary": 50000,
+    "total_ns_boost": 301.4,
+    "total_actual_dk_fp": null,
+    "players": [
+      {
+        "slot": "PG",
+        "name": "Luka Doncic",
+        "team": "LAL",
+        "position": "PG",
+        "eligible_pos": [
+          "PG",
+          "G",
+          "UTIL"
+        ],
+        "salary": 12400,
+        "fppg": 59.71,
+        "dk_proj": 63.4,
+        "dk_ns_proj": 63.6,
+        "dk_boost": 63.4,
+        "dk_value": 5.13,
+        "opponent": "DEN",
+        "game": "DEN@LAL",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "SG",
+        "name": "Austin Reaves",
+        "team": "LAL",
+        "position": "PG/SG",
+        "eligible_pos": [
+          "PG",
+          "SG",
+          "G",
+          "UTIL"
+        ],
+        "salary": 8000,
+        "fppg": 40.87,
+        "dk_proj": 45.7,
+        "dk_ns_proj": 44.1,
+        "dk_boost": 45.7,
+        "dk_value": 5.51,
+        "opponent": "DEN",
+        "game": "DEN@LAL",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "SF",
+        "name": "Kawhi Leonard",
+        "team": "LAC",
+        "position": "SF",
+        "eligible_pos": [
+          "SF",
+          "F",
+          "UTIL"
+        ],
+        "salary": 9900,
+        "fppg": 46.41,
+        "dk_proj": 48.7,
+        "dk_ns_proj": 49.0,
+        "dk_boost": 48.7,
+        "dk_value": 4.95,
+        "opponent": "SAC",
+        "game": "SAC@LAC",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "PF",
+        "name": "DeMar DeRozan",
+        "team": "SAC",
+        "position": "SF/PF",
+        "eligible_pos": [
+          "SF",
+          "PF",
+          "F",
+          "UTIL"
+        ],
+        "salary": 6300,
+        "fppg": 30.62,
+        "dk_proj": 37.9,
+        "dk_ns_proj": 35.5,
+        "dk_boost": 37.9,
+        "dk_value": 5.63,
+        "opponent": "LAC",
+        "game": "SAC@LAC",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "C",
+        "name": "Ryan Kalkbrenner",
+        "team": "CHA",
+        "position": "C",
+        "eligible_pos": [
+          "C",
+          "UTIL"
+        ],
+        "salary": 3300,
+        "fppg": 20.22,
+        "dk_proj": 25.5,
+        "dk_ns_proj": 23.6,
+        "dk_boost": 25.5,
+        "dk_value": 7.15,
+        "opponent": "SAS",
+        "game": "CHA@SAS",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "G",
+        "name": "Dru Smith",
+        "team": "MIA",
+        "position": "PG",
+        "eligible_pos": [
+          "PG",
+          "G",
+          "UTIL"
+        ],
+        "salary": 3700,
+        "fppg": 16.75,
+        "dk_proj": 23.3,
+        "dk_ns_proj": 20.9,
+        "dk_boost": 23.3,
+        "dk_value": 5.65,
+        "opponent": "ORL",
+        "game": "ORL@MIA",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "F",
+        "name": "Paul George",
+        "team": "PHI",
+        "position": "SF",
+        "eligible_pos": [
+          "SF",
+          "F",
+          "UTIL"
+        ],
+        "salary": 3000,
+        "fppg": 32.34,
+        "dk_proj": 35.5,
+        "dk_ns_proj": 35.0,
+        "dk_boost": 35.5,
+        "dk_value": 11.67,
+        "opponent": "BKN",
+        "game": "BKN@PHI",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "UTIL",
+        "name": "Ochai Agbaji",
+        "team": "BKN",
+        "position": "SG/SF",
+        "eligible_pos": [
+          "SG",
+          "SF",
+          "F",
+          "G",
+          "UTIL"
+        ],
+        "salary": 3400,
+        "fppg": 10.12,
+        "dk_proj": 21.4,
+        "dk_ns_proj": 15.4,
+        "dk_boost": 21.4,
+        "dk_value": 4.53,
+        "opponent": "PHI",
+        "game": "BKN@PHI",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      }
+    ]
+  },
+  "2026-03-15": {
+    "date": "2026-03-15",
+    "display_date": "Mar 15, 2026",
+    "platform": "draftkings",
+    "salary_cap": 50000,
+    "total_salary": 50000,
+    "total_ns_boost": 280.6,
+    "total_actual_dk_fp": null,
+    "players": [
+      {
+        "slot": "PG",
+        "name": "Cade Cunningham",
+        "team": "DET",
+        "position": "PG",
+        "eligible_pos": [
+          "PG",
+          "G",
+          "UTIL"
+        ],
+        "salary": 11100,
+        "fppg": 50.81,
+        "dk_proj": 48.0,
+        "dk_ns_proj": 51.1,
+        "dk_boost": 48.0,
+        "dk_value": 4.6,
+        "opponent": "TOR",
+        "game": "DET@TOR",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "SG",
+        "name": "Donovan Mitchell",
+        "team": "CLE",
+        "position": "SG",
+        "eligible_pos": [
+          "SG",
+          "G",
+          "UTIL"
+        ],
+        "salary": 9800,
+        "fppg": 45.25,
+        "dk_proj": 41.1,
+        "dk_ns_proj": 44.9,
+        "dk_boost": 41.1,
+        "dk_value": 4.58,
+        "opponent": "DAL",
+        "game": "DAL@CLE",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "SF",
+        "name": "Deni Avdija",
+        "team": "POR",
+        "position": "SF/PF",
+        "eligible_pos": [
+          "SF",
+          "PF",
+          "F",
+          "UTIL"
+        ],
+        "salary": 9000,
+        "fppg": 43.91,
+        "dk_proj": 40.4,
+        "dk_ns_proj": 44.2,
+        "dk_boost": 40.4,
+        "dk_value": 4.91,
+        "opponent": "PHI",
+        "game": "POR@PHI",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "PF",
+        "name": "DeMar DeRozan",
+        "team": "SAC",
+        "position": "SF/PF",
+        "eligible_pos": [
+          "SF",
+          "PF",
+          "F",
+          "UTIL"
+        ],
+        "salary": 6400,
+        "fppg": 30.73,
+        "dk_proj": 36.7,
+        "dk_ns_proj": 34.5,
+        "dk_boost": 36.7,
+        "dk_value": 5.39,
+        "opponent": "UTA",
+        "game": "UTA@SAC",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "C",
+        "name": "Mitchell Robinson",
+        "team": "NYK",
+        "position": "C",
+        "eligible_pos": [
+          "C",
+          "UTIL"
+        ],
+        "salary": 4700,
+        "fppg": 21.6,
+        "dk_proj": 32.3,
+        "dk_ns_proj": 27.5,
+        "dk_boost": 32.3,
+        "dk_value": 5.85,
+        "opponent": "GSW",
+        "game": "GSW@NYK",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "G",
+        "name": "Caleb Love",
+        "team": "POR",
+        "position": "PG/SG",
+        "eligible_pos": [
+          "PG",
+          "SG",
+          "G",
+          "UTIL"
+        ],
+        "salary": 3000,
+        "fppg": 20.23,
+        "dk_proj": 23.6,
+        "dk_ns_proj": 22.3,
+        "dk_boost": 23.6,
+        "dk_value": 7.43,
+        "opponent": "PHI",
+        "game": "POR@PHI",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "F",
+        "name": "Paul George",
+        "team": "PHI",
+        "position": "SF",
+        "eligible_pos": [
+          "SF",
+          "F",
+          "UTIL"
+        ],
+        "salary": 3000,
+        "fppg": 32.34,
+        "dk_proj": 35.5,
+        "dk_ns_proj": 35.0,
+        "dk_boost": 35.5,
+        "dk_value": 11.67,
+        "opponent": "POR",
+        "game": "POR@PHI",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      },
+      {
+        "slot": "UTIL",
+        "name": "Jalen Slawson",
+        "team": "IND",
+        "position": "SF/PF",
+        "eligible_pos": [
+          "SF",
+          "PF",
+          "F",
+          "UTIL"
+        ],
+        "salary": 3000,
+        "fppg": 20.38,
+        "dk_proj": 23.0,
+        "dk_ns_proj": 22.1,
+        "dk_boost": 23.0,
+        "dk_value": 7.37,
+        "opponent": "MIL",
+        "game": "IND@MIL",
+        "injury_status": "HEALTHY",
+        "actual_dk_fp": null
+      }
+    ]
+  }
+}

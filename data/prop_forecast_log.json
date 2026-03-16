@@ -1,0 +1,6338 @@
+[
+  {
+    "date": "2026-03-15",
+    "player": "Shai Gilgeous-Alexander",
+    "category": "PTS",
+    "projected": 31.93,
+    "propLine": 30.97,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Shai Gilgeous-Alexander",
+    "category": "REB",
+    "projected": 6.58,
+    "propLine": 6.39,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Shai Gilgeous-Alexander",
+    "category": "AST",
+    "projected": 9.55,
+    "propLine": 9.26,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Shai Gilgeous-Alexander",
+    "category": "STL",
+    "projected": 1.32,
+    "propLine": 1.28,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Shai Gilgeous-Alexander",
+    "category": "BLK",
+    "projected": 1.65,
+    "propLine": 1.6,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Giannis Antetokounmpo",
+    "category": "PTS",
+    "projected": 25.91,
+    "propLine": 25.13,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Giannis Antetokounmpo",
+    "category": "REB",
+    "projected": 6.8,
+    "propLine": 6.6,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Giannis Antetokounmpo",
+    "category": "AST",
+    "projected": 4.53,
+    "propLine": 4.4,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Giannis Antetokounmpo",
+    "category": "STL",
+    "projected": 1.94,
+    "propLine": 1.88,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Cade Cunningham",
+    "category": "PTS",
+    "projected": 16.54,
+    "propLine": 16.04,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Cade Cunningham",
+    "category": "REB",
+    "projected": 5.75,
+    "propLine": 5.58,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Cade Cunningham",
+    "category": "AST",
+    "projected": 15.46,
+    "propLine": 15.0,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Cade Cunningham",
+    "category": "STL",
+    "projected": 2.16,
+    "propLine": 2.09,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Anthony Edwards",
+    "category": "PTS",
+    "projected": 30.9,
+    "propLine": 29.98,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Anthony Edwards",
+    "category": "REB",
+    "projected": 4.03,
+    "propLine": 3.91,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Anthony Edwards",
+    "category": "AST",
+    "projected": 4.7,
+    "propLine": 4.56,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Anthony Edwards",
+    "category": "STL",
+    "projected": 1.01,
+    "propLine": 0.98,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Anthony Edwards",
+    "category": "BLK",
+    "projected": 0.67,
+    "propLine": 0.65,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "James Harden",
+    "category": "PTS",
+    "projected": 22.98,
+    "propLine": 22.29,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "James Harden",
+    "category": "REB",
+    "projected": 5.74,
+    "propLine": 5.57,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "James Harden",
+    "category": "AST",
+    "projected": 6.76,
+    "propLine": 6.56,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Donovan Mitchell",
+    "category": "PTS",
+    "projected": 21.59,
+    "propLine": 20.94,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Donovan Mitchell",
+    "category": "REB",
+    "projected": 3.27,
+    "propLine": 3.17,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Donovan Mitchell",
+    "category": "AST",
+    "projected": 6.21,
+    "propLine": 6.03,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Donovan Mitchell",
+    "category": "STL",
+    "projected": 1.64,
+    "propLine": 1.59,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Deni Avdija",
+    "category": "PTS",
+    "projected": 17.54,
+    "propLine": 17.01,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Deni Avdija",
+    "category": "REB",
+    "projected": 4.62,
+    "propLine": 4.48,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Deni Avdija",
+    "category": "AST",
+    "projected": 7.08,
+    "propLine": 6.86,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Deni Avdija",
+    "category": "STL",
+    "projected": 0.92,
+    "propLine": 0.9,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Deni Avdija",
+    "category": "BLK",
+    "projected": 1.23,
+    "propLine": 1.19,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Scottie Barnes",
+    "category": "PTS",
+    "projected": 15.47,
+    "propLine": 15.0,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Scottie Barnes",
+    "category": "REB",
+    "projected": 5.6,
+    "propLine": 5.43,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Scottie Barnes",
+    "category": "AST",
+    "projected": 3.29,
+    "propLine": 3.19,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Scottie Barnes",
+    "category": "STL",
+    "projected": 1.65,
+    "propLine": 1.6,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Scottie Barnes",
+    "category": "BLK",
+    "projected": 0.99,
+    "propLine": 0.96,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Evan Mobley",
+    "category": "PTS",
+    "projected": 20.92,
+    "propLine": 20.29,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Evan Mobley",
+    "category": "REB",
+    "projected": 9.45,
+    "propLine": 9.16,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Evan Mobley",
+    "category": "AST",
+    "projected": 2.36,
+    "propLine": 2.29,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Evan Mobley",
+    "category": "BLK",
+    "projected": 1.69,
+    "propLine": 1.64,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kevin Porter Jr.",
+    "category": "PTS",
+    "projected": 10.68,
+    "propLine": 10.36,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kevin Porter Jr.",
+    "category": "REB",
+    "projected": 6.01,
+    "propLine": 5.83,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kevin Porter Jr.",
+    "category": "AST",
+    "projected": 4.67,
+    "propLine": 4.53,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kevin Porter Jr.",
+    "category": "STL",
+    "projected": 2.67,
+    "propLine": 2.59,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Karl-Anthony Towns",
+    "category": "PTS",
+    "projected": 25.92,
+    "propLine": 25.14,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Karl-Anthony Towns",
+    "category": "REB",
+    "projected": 11.2,
+    "propLine": 10.86,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Karl-Anthony Towns",
+    "category": "AST",
+    "projected": 5.12,
+    "propLine": 4.97,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Karl-Anthony Towns",
+    "category": "BLK",
+    "projected": 0.64,
+    "propLine": 0.62,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jalen Brunson",
+    "category": "PTS",
+    "projected": 28.81,
+    "propLine": 27.94,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jalen Brunson",
+    "category": "REB",
+    "projected": 4.41,
+    "propLine": 4.27,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jalen Brunson",
+    "category": "AST",
+    "projected": 8.47,
+    "propLine": 8.22,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jalen Brunson",
+    "category": "STL",
+    "projected": 1.69,
+    "propLine": 1.64,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Cooper Flagg",
+    "category": "PTS",
+    "projected": 16.93,
+    "propLine": 16.42,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Cooper Flagg",
+    "category": "REB",
+    "projected": 7.16,
+    "propLine": 6.95,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Cooper Flagg",
+    "category": "AST",
+    "projected": 5.53,
+    "propLine": 5.37,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Julius Randle",
+    "category": "PTS",
+    "projected": 12.1,
+    "propLine": 11.74,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Julius Randle",
+    "category": "REB",
+    "projected": 5.88,
+    "propLine": 5.7,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Julius Randle",
+    "category": "AST",
+    "projected": 2.42,
+    "propLine": 2.35,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Julius Randle",
+    "category": "STL",
+    "projected": 0.69,
+    "propLine": 0.67,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jalen Duren",
+    "category": "PTS",
+    "projected": 29.7,
+    "propLine": 28.81,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jalen Duren",
+    "category": "REB",
+    "projected": 11.45,
+    "propLine": 11.11,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jalen Duren",
+    "category": "AST",
+    "projected": 1.7,
+    "propLine": 1.65,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jalen Duren",
+    "category": "STL",
+    "projected": 1.27,
+    "propLine": 1.23,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jalen Duren",
+    "category": "BLK",
+    "projected": 2.12,
+    "propLine": 2.06,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Brandon Ingram",
+    "category": "PTS",
+    "projected": 21.64,
+    "propLine": 20.99,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Brandon Ingram",
+    "category": "REB",
+    "projected": 5.49,
+    "propLine": 5.33,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Brandon Ingram",
+    "category": "AST",
+    "projected": 3.55,
+    "propLine": 3.45,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Brandon Ingram",
+    "category": "STL",
+    "projected": 1.62,
+    "propLine": 1.57,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Chet Holmgren",
+    "category": "PTS",
+    "projected": 18.46,
+    "propLine": 17.91,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Chet Holmgren",
+    "category": "REB",
+    "projected": 9.57,
+    "propLine": 9.28,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Chet Holmgren",
+    "category": "AST",
+    "projected": 1.37,
+    "propLine": 1.33,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Chet Holmgren",
+    "category": "BLK",
+    "projected": 0.68,
+    "propLine": 0.66,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ryan Rollins",
+    "category": "PTS",
+    "projected": 16.59,
+    "propLine": 16.09,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ryan Rollins",
+    "category": "REB",
+    "projected": 3.51,
+    "propLine": 3.4,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ryan Rollins",
+    "category": "AST",
+    "projected": 7.98,
+    "propLine": 7.74,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ryan Rollins",
+    "category": "STL",
+    "projected": 0.64,
+    "propLine": 0.62,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ryan Rollins",
+    "category": "BLK",
+    "projected": 0.64,
+    "propLine": 0.62,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Immanuel Quickley",
+    "category": "PTS",
+    "projected": 17.85,
+    "propLine": 17.31,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Immanuel Quickley",
+    "category": "REB",
+    "projected": 4.63,
+    "propLine": 4.49,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Immanuel Quickley",
+    "category": "AST",
+    "projected": 3.3,
+    "propLine": 3.21,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Immanuel Quickley",
+    "category": "STL",
+    "projected": 0.99,
+    "propLine": 0.96,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Donovan Clingan",
+    "category": "PTS",
+    "projected": 13.51,
+    "propLine": 13.1,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Donovan Clingan",
+    "category": "REB",
+    "projected": 12.19,
+    "propLine": 11.82,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Donovan Clingan",
+    "category": "AST",
+    "projected": 2.64,
+    "propLine": 2.56,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Donovan Clingan",
+    "category": "STL",
+    "projected": 1.65,
+    "propLine": 1.6,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Donovan Clingan",
+    "category": "BLK",
+    "projected": 3.29,
+    "propLine": 3.2,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Russell Westbrook",
+    "category": "PTS",
+    "projected": 17.51,
+    "propLine": 16.98,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Russell Westbrook",
+    "category": "REB",
+    "projected": 10.3,
+    "propLine": 9.99,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Russell Westbrook",
+    "category": "AST",
+    "projected": 10.64,
+    "propLine": 10.32,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Russell Westbrook",
+    "category": "STL",
+    "projected": 1.72,
+    "propLine": 1.67,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Rudy Gobert",
+    "category": "PTS",
+    "projected": 10.72,
+    "propLine": 10.4,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Rudy Gobert",
+    "category": "REB",
+    "projected": 9.29,
+    "propLine": 9.01,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Rudy Gobert",
+    "category": "AST",
+    "projected": 2.86,
+    "propLine": 2.77,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jrue Holiday",
+    "category": "PTS",
+    "projected": 17.47,
+    "propLine": 16.95,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jrue Holiday",
+    "category": "REB",
+    "projected": 3.14,
+    "propLine": 3.05,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jrue Holiday",
+    "category": "AST",
+    "projected": 5.59,
+    "propLine": 5.42,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jrue Holiday",
+    "category": "STL",
+    "projected": 0.7,
+    "propLine": 0.68,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jrue Holiday",
+    "category": "BLK",
+    "projected": 0.7,
+    "propLine": 0.68,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ivica Zubac",
+    "category": "PTS",
+    "projected": 9.69,
+    "propLine": 9.4,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ivica Zubac",
+    "category": "REB",
+    "projected": 8.26,
+    "propLine": 8.01,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ivica Zubac",
+    "category": "AST",
+    "projected": 1.79,
+    "propLine": 1.74,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ivica Zubac",
+    "category": "BLK",
+    "projected": 0.72,
+    "propLine": 0.7,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Andrew Nembhard",
+    "category": "PTS",
+    "projected": 16.36,
+    "propLine": 15.87,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Andrew Nembhard",
+    "category": "REB",
+    "projected": 2.55,
+    "propLine": 2.47,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Andrew Nembhard",
+    "category": "AST",
+    "projected": 6.55,
+    "propLine": 6.35,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Andrew Nembhard",
+    "category": "STL",
+    "projected": 1.82,
+    "propLine": 1.76,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Paul George",
+    "category": "PTS",
+    "projected": 18.91,
+    "propLine": 18.34,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Paul George",
+    "category": "REB",
+    "projected": 4.39,
+    "propLine": 4.26,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Paul George",
+    "category": "AST",
+    "projected": 4.05,
+    "propLine": 3.93,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Paul George",
+    "category": "STL",
+    "projected": 2.03,
+    "propLine": 1.96,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "RJ Barrett",
+    "category": "PTS",
+    "projected": 21.49,
+    "propLine": 20.84,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "RJ Barrett",
+    "category": "REB",
+    "projected": 6.48,
+    "propLine": 6.29,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "RJ Barrett",
+    "category": "AST",
+    "projected": 2.39,
+    "propLine": 2.32,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "RJ Barrett",
+    "category": "STL",
+    "projected": 1.02,
+    "propLine": 0.99,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "RJ Barrett",
+    "category": "BLK",
+    "projected": 0.68,
+    "propLine": 0.66,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "OG Anunoby",
+    "category": "PTS",
+    "projected": 23.14,
+    "propLine": 22.44,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "OG Anunoby",
+    "category": "REB",
+    "projected": 5.36,
+    "propLine": 5.2,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "OG Anunoby",
+    "category": "AST",
+    "projected": 2.68,
+    "propLine": 2.6,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "OG Anunoby",
+    "category": "STL",
+    "projected": 1.34,
+    "propLine": 1.3,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "VJ Edgecombe",
+    "category": "PTS",
+    "projected": 15.57,
+    "propLine": 15.1,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "VJ Edgecombe",
+    "category": "REB",
+    "projected": 4.64,
+    "propLine": 4.5,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "VJ Edgecombe",
+    "category": "AST",
+    "projected": 3.98,
+    "propLine": 3.86,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "VJ Edgecombe",
+    "category": "STL",
+    "projected": 1.66,
+    "propLine": 1.61,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "VJ Edgecombe",
+    "category": "BLK",
+    "projected": 0.99,
+    "propLine": 0.96,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Mikal Bridges",
+    "category": "PTS",
+    "projected": 7.76,
+    "propLine": 7.53,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Mikal Bridges",
+    "category": "REB",
+    "projected": 5.4,
+    "propLine": 5.24,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Mikal Bridges",
+    "category": "AST",
+    "projected": 2.02,
+    "propLine": 1.96,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Mikal Bridges",
+    "category": "STL",
+    "projected": 0.67,
+    "propLine": 0.65,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Mikal Bridges",
+    "category": "BLK",
+    "projected": 0.67,
+    "propLine": 0.65,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kristaps Porzingis",
+    "category": "PTS",
+    "projected": 19.82,
+    "propLine": 19.22,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kristaps Porzingis",
+    "category": "REB",
+    "projected": 5.6,
+    "propLine": 5.43,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kristaps Porzingis",
+    "category": "AST",
+    "projected": 3.88,
+    "propLine": 3.76,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kristaps Porzingis",
+    "category": "STL",
+    "projected": 0.86,
+    "propLine": 0.84,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kristaps Porzingis",
+    "category": "BLK",
+    "projected": 2.58,
+    "propLine": 2.51,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "DeMar DeRozan",
+    "category": "PTS",
+    "projected": 25.92,
+    "propLine": 25.15,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "DeMar DeRozan",
+    "category": "REB",
+    "projected": 2.33,
+    "propLine": 2.26,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "DeMar DeRozan",
+    "category": "AST",
+    "projected": 4.65,
+    "propLine": 4.51,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "DeMar DeRozan",
+    "category": "STL",
+    "projected": 1.33,
+    "propLine": 1.29,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "DeMar DeRozan",
+    "category": "BLK",
+    "projected": 1.0,
+    "propLine": 0.97,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Josh Hart",
+    "category": "PTS",
+    "projected": 13.48,
+    "propLine": 13.08,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Josh Hart",
+    "category": "REB",
+    "projected": 8.51,
+    "propLine": 8.26,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Josh Hart",
+    "category": "AST",
+    "projected": 2.48,
+    "propLine": 2.41,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Josh Hart",
+    "category": "STL",
+    "projected": 0.71,
+    "propLine": 0.69,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Isaiah Hartenstein",
+    "category": "PTS",
+    "projected": 6.69,
+    "propLine": 6.49,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Isaiah Hartenstein",
+    "category": "REB",
+    "projected": 7.52,
+    "propLine": 7.3,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Isaiah Hartenstein",
+    "category": "AST",
+    "projected": 4.6,
+    "propLine": 4.46,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Isaiah Hartenstein",
+    "category": "STL",
+    "projected": 1.25,
+    "propLine": 1.22,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Isaiah Hartenstein",
+    "category": "BLK",
+    "projected": 1.67,
+    "propLine": 1.62,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "P.J. Washington",
+    "category": "PTS",
+    "projected": 9.35,
+    "propLine": 9.07,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "P.J. Washington",
+    "category": "REB",
+    "projected": 7.68,
+    "propLine": 7.45,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "P.J. Washington",
+    "category": "AST",
+    "projected": 1.34,
+    "propLine": 1.3,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "P.J. Washington",
+    "category": "STL",
+    "projected": 0.67,
+    "propLine": 0.65,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Naz Reid",
+    "category": "PTS",
+    "projected": 15.44,
+    "propLine": 14.97,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Naz Reid",
+    "category": "REB",
+    "projected": 4.31,
+    "propLine": 4.18,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Naz Reid",
+    "category": "AST",
+    "projected": 1.79,
+    "propLine": 1.74,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Naz Reid",
+    "category": "BLK",
+    "projected": 1.08,
+    "propLine": 1.04,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jaden McDaniels",
+    "category": "PTS",
+    "projected": 10.45,
+    "propLine": 10.13,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jaden McDaniels",
+    "category": "REB",
+    "projected": 1.63,
+    "propLine": 1.58,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jaden McDaniels",
+    "category": "AST",
+    "projected": 1.63,
+    "propLine": 1.58,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jaden McDaniels",
+    "category": "STL",
+    "projected": 0.65,
+    "propLine": 0.63,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jerami Grant",
+    "category": "PTS",
+    "projected": 18.08,
+    "propLine": 17.54,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jerami Grant",
+    "category": "REB",
+    "projected": 2.68,
+    "propLine": 2.6,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jerami Grant",
+    "category": "AST",
+    "projected": 1.34,
+    "propLine": 1.3,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jerami Grant",
+    "category": "STL",
+    "projected": 1.0,
+    "propLine": 0.97,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jerami Grant",
+    "category": "BLK",
+    "projected": 0.67,
+    "propLine": 0.65,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Donte DiVincenzo",
+    "category": "PTS",
+    "projected": 6.97,
+    "propLine": 6.76,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Donte DiVincenzo",
+    "category": "REB",
+    "projected": 4.98,
+    "propLine": 4.83,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Donte DiVincenzo",
+    "category": "AST",
+    "projected": 1.66,
+    "propLine": 1.61,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Donte DiVincenzo",
+    "category": "STL",
+    "projected": 1.0,
+    "propLine": 0.97,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ajay Mitchell",
+    "category": "PTS",
+    "projected": 19.07,
+    "propLine": 18.5,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ajay Mitchell",
+    "category": "REB",
+    "projected": 3.01,
+    "propLine": 2.92,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ajay Mitchell",
+    "category": "AST",
+    "projected": 3.68,
+    "propLine": 3.57,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ajay Mitchell",
+    "category": "STL",
+    "projected": 1.0,
+    "propLine": 0.97,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Naji Marshall",
+    "category": "PTS",
+    "projected": 12.6,
+    "propLine": 12.22,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Naji Marshall",
+    "category": "REB",
+    "projected": 5.25,
+    "propLine": 5.09,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Naji Marshall",
+    "category": "AST",
+    "projected": 3.5,
+    "propLine": 3.4,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Naji Marshall",
+    "category": "STL",
+    "projected": 1.05,
+    "propLine": 1.02,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Brandin Podziemski",
+    "category": "PTS",
+    "projected": 17.0,
+    "propLine": 16.49,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Brandin Podziemski",
+    "category": "REB",
+    "projected": 7.08,
+    "propLine": 6.87,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Brandin Podziemski",
+    "category": "AST",
+    "projected": 4.6,
+    "propLine": 4.46,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Brandin Podziemski",
+    "category": "STL",
+    "projected": 1.42,
+    "propLine": 1.37,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Isaiah Collier",
+    "category": "PTS",
+    "projected": 19.03,
+    "propLine": 18.45,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Isaiah Collier",
+    "category": "REB",
+    "projected": 2.87,
+    "propLine": 2.79,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Isaiah Collier",
+    "category": "AST",
+    "projected": 8.97,
+    "propLine": 8.71,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Isaiah Collier",
+    "category": "STL",
+    "projected": 0.72,
+    "propLine": 0.7,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Myles Turner",
+    "category": "PTS",
+    "projected": 13.28,
+    "propLine": 12.88,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Myles Turner",
+    "category": "REB",
+    "projected": 6.82,
+    "propLine": 6.62,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Myles Turner",
+    "category": "AST",
+    "projected": 2.87,
+    "propLine": 2.79,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Toumani Camara",
+    "category": "PTS",
+    "projected": 7.9,
+    "propLine": 7.67,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Toumani Camara",
+    "category": "REB",
+    "projected": 6.87,
+    "propLine": 6.67,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Toumani Camara",
+    "category": "AST",
+    "projected": 2.75,
+    "propLine": 2.67,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Toumani Camara",
+    "category": "STL",
+    "projected": 1.03,
+    "propLine": 1.0,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kyle Filipowski",
+    "category": "PTS",
+    "projected": 16.15,
+    "propLine": 15.67,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kyle Filipowski",
+    "category": "REB",
+    "projected": 10.05,
+    "propLine": 9.75,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kyle Filipowski",
+    "category": "AST",
+    "projected": 5.38,
+    "propLine": 5.22,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kyle Filipowski",
+    "category": "STL",
+    "projected": 1.79,
+    "propLine": 1.74,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kyle Filipowski",
+    "category": "BLK",
+    "projected": 0.72,
+    "propLine": 0.7,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Tobias Harris",
+    "category": "PTS",
+    "projected": 10.71,
+    "propLine": 10.38,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Tobias Harris",
+    "category": "REB",
+    "projected": 3.29,
+    "propLine": 3.2,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Tobias Harris",
+    "category": "AST",
+    "projected": 2.06,
+    "propLine": 2.0,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Tobias Harris",
+    "category": "BLK",
+    "projected": 1.24,
+    "propLine": 1.2,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Draymond Green",
+    "category": "PTS",
+    "projected": 11.29,
+    "propLine": 10.95,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Draymond Green",
+    "category": "REB",
+    "projected": 4.31,
+    "propLine": 4.19,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Draymond Green",
+    "category": "AST",
+    "projected": 6.64,
+    "propLine": 6.44,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Draymond Green",
+    "category": "STL",
+    "projected": 1.0,
+    "propLine": 0.97,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Draymond Green",
+    "category": "BLK",
+    "projected": 0.66,
+    "propLine": 0.64,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jakob Poeltl",
+    "category": "PTS",
+    "projected": 10.37,
+    "propLine": 10.06,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jakob Poeltl",
+    "category": "REB",
+    "projected": 7.26,
+    "propLine": 7.04,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jakob Poeltl",
+    "category": "AST",
+    "projected": 1.73,
+    "propLine": 1.68,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jakob Poeltl",
+    "category": "BLK",
+    "projected": 1.73,
+    "propLine": 1.68,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Quentin Grimes",
+    "category": "PTS",
+    "projected": 22.33,
+    "propLine": 21.66,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Quentin Grimes",
+    "category": "REB",
+    "projected": 4.81,
+    "propLine": 4.67,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Quentin Grimes",
+    "category": "AST",
+    "projected": 3.78,
+    "propLine": 3.67,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Quentin Grimes",
+    "category": "STL",
+    "projected": 1.37,
+    "propLine": 1.33,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jaylon Tyson",
+    "category": "PTS",
+    "projected": 10.92,
+    "propLine": 10.59,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jaylon Tyson",
+    "category": "REB",
+    "projected": 2.37,
+    "propLine": 2.3,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jaylon Tyson",
+    "category": "AST",
+    "projected": 2.85,
+    "propLine": 2.76,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ayo Dosunmu",
+    "category": "PTS",
+    "projected": 10.89,
+    "propLine": 10.56,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ayo Dosunmu",
+    "category": "REB",
+    "projected": 4.67,
+    "propLine": 4.53,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ayo Dosunmu",
+    "category": "AST",
+    "projected": 3.89,
+    "propLine": 3.77,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Bobby Portis",
+    "category": "PTS",
+    "projected": 17.63,
+    "propLine": 17.1,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Bobby Portis",
+    "category": "REB",
+    "projected": 7.26,
+    "propLine": 7.04,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Bobby Portis",
+    "category": "AST",
+    "projected": 1.73,
+    "propLine": 1.68,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Bobby Portis",
+    "category": "STL",
+    "projected": 1.04,
+    "propLine": 1.01,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "De'Anthony Melton",
+    "category": "PTS",
+    "projected": 21.57,
+    "propLine": 20.92,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "De'Anthony Melton",
+    "category": "REB",
+    "projected": 5.68,
+    "propLine": 5.51,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "De'Anthony Melton",
+    "category": "AST",
+    "projected": 2.65,
+    "propLine": 2.57,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "De'Anthony Melton",
+    "category": "STL",
+    "projected": 2.27,
+    "propLine": 2.2,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "De'Anthony Melton",
+    "category": "BLK",
+    "projected": 1.14,
+    "propLine": 1.1,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Brandon Williams",
+    "category": "PTS",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Brandon Williams",
+    "category": "REB",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Brandon Williams",
+    "category": "AST",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Brandon Williams",
+    "category": "STL",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Brandon Williams",
+    "category": "BLK",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kyle Kuzma",
+    "category": "PTS",
+    "projected": 16.73,
+    "propLine": 16.23,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kyle Kuzma",
+    "category": "REB",
+    "projected": 3.41,
+    "propLine": 3.31,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kyle Kuzma",
+    "category": "AST",
+    "projected": 1.71,
+    "propLine": 1.66,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kyle Kuzma",
+    "category": "STL",
+    "projected": 1.71,
+    "propLine": 1.66,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Dennis Schroder",
+    "category": "PTS",
+    "projected": 5.51,
+    "propLine": 5.34,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Dennis Schroder",
+    "category": "REB",
+    "projected": 2.75,
+    "propLine": 2.67,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Dennis Schroder",
+    "category": "AST",
+    "projected": 4.59,
+    "propLine": 4.45,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Bez Mbeng",
+    "category": "PTS",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Bez Mbeng",
+    "category": "REB",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Bez Mbeng",
+    "category": "AST",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Bez Mbeng",
+    "category": "STL",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Bez Mbeng",
+    "category": "BLK",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Aaron Nesmith",
+    "category": "PTS",
+    "projected": 15.9,
+    "propLine": 15.43,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Aaron Nesmith",
+    "category": "REB",
+    "projected": 2.23,
+    "propLine": 2.16,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Aaron Nesmith",
+    "category": "AST",
+    "projected": 2.23,
+    "propLine": 2.16,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Aaron Nesmith",
+    "category": "STL",
+    "projected": 0.64,
+    "propLine": 0.62,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Daniel Gafford",
+    "category": "PTS",
+    "projected": 21.28,
+    "propLine": 20.64,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Daniel Gafford",
+    "category": "REB",
+    "projected": 13.07,
+    "propLine": 12.67,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Daniel Gafford",
+    "category": "AST",
+    "projected": 1.87,
+    "propLine": 1.81,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Daniel Gafford",
+    "category": "BLK",
+    "projected": 0.75,
+    "propLine": 0.72,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Maxime Raynaud",
+    "category": "PTS",
+    "projected": 15.27,
+    "propLine": 14.81,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Maxime Raynaud",
+    "category": "REB",
+    "projected": 7.47,
+    "propLine": 7.24,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Maxime Raynaud",
+    "category": "AST",
+    "projected": 2.04,
+    "propLine": 1.97,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Maxime Raynaud",
+    "category": "BLK",
+    "projected": 1.7,
+    "propLine": 1.65,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Al Horford",
+    "category": "PTS",
+    "projected": 8.24,
+    "propLine": 7.99,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Al Horford",
+    "category": "REB",
+    "projected": 6.18,
+    "propLine": 5.99,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Al Horford",
+    "category": "AST",
+    "projected": 3.71,
+    "propLine": 3.59,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Al Horford",
+    "category": "BLK",
+    "projected": 2.06,
+    "propLine": 2.0,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Scoot Henderson",
+    "category": "PTS",
+    "projected": 26.13,
+    "propLine": 25.35,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Scoot Henderson",
+    "category": "REB",
+    "projected": 3.36,
+    "propLine": 3.26,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Scoot Henderson",
+    "category": "AST",
+    "projected": 3.73,
+    "propLine": 3.62,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Scoot Henderson",
+    "category": "BLK",
+    "projected": 0.75,
+    "propLine": 0.72,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Isaiah Stewart",
+    "category": "PTS",
+    "projected": 12.0,
+    "propLine": 11.64,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Isaiah Stewart",
+    "category": "REB",
+    "projected": 7.56,
+    "propLine": 7.33,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Isaiah Stewart",
+    "category": "AST",
+    "projected": 2.67,
+    "propLine": 2.59,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Isaiah Stewart",
+    "category": "BLK",
+    "projected": 1.78,
+    "propLine": 1.72,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jay Huff",
+    "category": "PTS",
+    "projected": 14.0,
+    "propLine": 13.58,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jay Huff",
+    "category": "REB",
+    "projected": 5.87,
+    "propLine": 5.69,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jay Huff",
+    "category": "AST",
+    "projected": 1.35,
+    "propLine": 1.31,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jay Huff",
+    "category": "BLK",
+    "projected": 1.81,
+    "propLine": 1.75,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jarace Walker",
+    "category": "PTS",
+    "projected": 12.54,
+    "propLine": 12.17,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jarace Walker",
+    "category": "REB",
+    "projected": 7.92,
+    "propLine": 7.68,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jarace Walker",
+    "category": "AST",
+    "projected": 2.31,
+    "propLine": 2.24,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jarace Walker",
+    "category": "STL",
+    "projected": 1.32,
+    "propLine": 1.28,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Mitchell Robinson",
+    "category": "PTS",
+    "projected": 8.8,
+    "propLine": 8.54,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Mitchell Robinson",
+    "category": "REB",
+    "projected": 15.6,
+    "propLine": 15.13,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Mitchell Robinson",
+    "category": "AST",
+    "projected": 1.2,
+    "propLine": 1.16,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Mitchell Robinson",
+    "category": "STL",
+    "projected": 1.6,
+    "propLine": 1.55,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Mitchell Robinson",
+    "category": "BLK",
+    "projected": 0.8,
+    "propLine": 0.78,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Cason Wallace",
+    "category": "PTS",
+    "projected": 6.03,
+    "propLine": 5.84,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Cason Wallace",
+    "category": "REB",
+    "projected": 1.77,
+    "propLine": 1.72,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Cason Wallace",
+    "category": "AST",
+    "projected": 2.13,
+    "propLine": 2.06,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Cason Wallace",
+    "category": "STL",
+    "projected": 2.13,
+    "propLine": 2.06,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Sandro Mamukelashvili",
+    "category": "PTS",
+    "projected": 10.45,
+    "propLine": 10.13,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Sandro Mamukelashvili",
+    "category": "REB",
+    "projected": 7.1,
+    "propLine": 6.89,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Sandro Mamukelashvili",
+    "category": "AST",
+    "projected": 2.51,
+    "propLine": 2.43,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Sandro Mamukelashvili",
+    "category": "STL",
+    "projected": 0.84,
+    "propLine": 0.81,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Precious Achiuwa",
+    "category": "PTS",
+    "projected": 16.97,
+    "propLine": 16.46,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Precious Achiuwa",
+    "category": "REB",
+    "projected": 10.56,
+    "propLine": 10.24,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Precious Achiuwa",
+    "category": "AST",
+    "projected": 1.13,
+    "propLine": 1.1,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Precious Achiuwa",
+    "category": "BLK",
+    "projected": 2.26,
+    "propLine": 2.19,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Robert Williams III",
+    "category": "PTS",
+    "projected": 11.38,
+    "propLine": 11.03,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Robert Williams III",
+    "category": "REB",
+    "projected": 10.94,
+    "propLine": 10.61,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Robert Williams III",
+    "category": "AST",
+    "projected": 0.88,
+    "propLine": 0.85,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Robert Williams III",
+    "category": "STL",
+    "projected": 1.31,
+    "propLine": 1.27,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Robert Williams III",
+    "category": "BLK",
+    "projected": 2.19,
+    "propLine": 2.12,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Marvin Bagley III",
+    "category": "PTS",
+    "projected": 7.1,
+    "propLine": 6.89,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Marvin Bagley III",
+    "category": "REB",
+    "projected": 7.94,
+    "propLine": 7.7,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Marvin Bagley III",
+    "category": "AST",
+    "projected": 2.51,
+    "propLine": 2.43,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Marvin Bagley III",
+    "category": "BLK",
+    "projected": 1.25,
+    "propLine": 1.22,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Dylan Cardwell",
+    "category": "PTS",
+    "projected": 4.67,
+    "propLine": 4.53,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Dylan Cardwell",
+    "category": "REB",
+    "projected": 10.5,
+    "propLine": 10.19,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Dylan Cardwell",
+    "category": "AST",
+    "projected": 1.94,
+    "propLine": 1.89,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Dylan Cardwell",
+    "category": "STL",
+    "projected": 1.17,
+    "propLine": 1.13,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Dylan Cardwell",
+    "category": "BLK",
+    "projected": 0.78,
+    "propLine": 0.75,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ace Bailey",
+    "category": "PTS",
+    "projected": 14.78,
+    "propLine": 14.33,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ace Bailey",
+    "category": "REB",
+    "projected": 4.28,
+    "propLine": 4.15,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ace Bailey",
+    "category": "AST",
+    "projected": 2.33,
+    "propLine": 2.26,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ace Bailey",
+    "category": "STL",
+    "projected": 1.56,
+    "propLine": 1.51,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "T.J. McConnell",
+    "category": "PTS",
+    "projected": 13.24,
+    "propLine": 12.84,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "T.J. McConnell",
+    "category": "REB",
+    "projected": 4.07,
+    "propLine": 3.95,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "T.J. McConnell",
+    "category": "AST",
+    "projected": 6.62,
+    "propLine": 6.42,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "T.J. McConnell",
+    "category": "STL",
+    "projected": 1.02,
+    "propLine": 0.99,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Khris Middleton",
+    "category": "PTS",
+    "projected": 23.33,
+    "propLine": 22.63,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Khris Middleton",
+    "category": "REB",
+    "projected": 2.12,
+    "propLine": 2.06,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Khris Middleton",
+    "category": "AST",
+    "projected": 1.7,
+    "propLine": 1.65,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Khris Middleton",
+    "category": "STL",
+    "projected": 0.85,
+    "propLine": 0.82,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Andre Drummond",
+    "category": "PTS",
+    "projected": 4.77,
+    "propLine": 4.62,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Andre Drummond",
+    "category": "REB",
+    "projected": 10.13,
+    "propLine": 9.82,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Andre Drummond",
+    "category": "AST",
+    "projected": 2.38,
+    "propLine": 2.31,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Max Christie",
+    "category": "PTS",
+    "projected": 11.27,
+    "propLine": 10.93,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Max Christie",
+    "category": "REB",
+    "projected": 1.09,
+    "propLine": 1.06,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Max Christie",
+    "category": "STL",
+    "projected": 1.09,
+    "propLine": 1.06,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kevin Huerter",
+    "category": "PTS",
+    "projected": 11.67,
+    "propLine": 11.32,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kevin Huerter",
+    "category": "REB",
+    "projected": 4.67,
+    "propLine": 4.53,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kevin Huerter",
+    "category": "AST",
+    "projected": 3.89,
+    "propLine": 3.77,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kevin Huerter",
+    "category": "STL",
+    "projected": 0.78,
+    "propLine": 0.75,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Brice Sensabaugh",
+    "category": "PTS",
+    "projected": 25.77,
+    "propLine": 25.0,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Brice Sensabaugh",
+    "category": "REB",
+    "projected": 3.18,
+    "propLine": 3.09,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Brice Sensabaugh",
+    "category": "AST",
+    "projected": 2.86,
+    "propLine": 2.78,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Brice Sensabaugh",
+    "category": "STL",
+    "projected": 0.95,
+    "propLine": 0.93,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Brice Sensabaugh",
+    "category": "BLK",
+    "projected": 0.95,
+    "propLine": 0.93,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jalen Slawson",
+    "category": "PTS",
+    "projected": 5.81,
+    "propLine": 5.64,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jalen Slawson",
+    "category": "REB",
+    "projected": 6.4,
+    "propLine": 6.2,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jalen Slawson",
+    "category": "AST",
+    "projected": 4.65,
+    "propLine": 4.51,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jalen Slawson",
+    "category": "STL",
+    "projected": 1.16,
+    "propLine": 1.13,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jalen Slawson",
+    "category": "BLK",
+    "projected": 0.58,
+    "propLine": 0.56,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jaylin Williams",
+    "category": "PTS",
+    "projected": 14.15,
+    "propLine": 13.73,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jaylin Williams",
+    "category": "REB",
+    "projected": 8.43,
+    "propLine": 8.18,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jaylin Williams",
+    "category": "AST",
+    "projected": 2.41,
+    "propLine": 2.34,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jaylin Williams",
+    "category": "BLK",
+    "projected": 0.6,
+    "propLine": 0.58,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Duncan Robinson",
+    "category": "PTS",
+    "projected": 20.68,
+    "propLine": 20.06,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Duncan Robinson",
+    "category": "REB",
+    "projected": 4.74,
+    "propLine": 4.6,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Duncan Robinson",
+    "category": "AST",
+    "projected": 3.88,
+    "propLine": 3.76,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Sam Merrill",
+    "category": "PTS",
+    "projected": 7.0,
+    "propLine": 6.79,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Sam Merrill",
+    "category": "REB",
+    "projected": 4.2,
+    "propLine": 4.07,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Sam Merrill",
+    "category": "AST",
+    "projected": 3.85,
+    "propLine": 3.73,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Sam Merrill",
+    "category": "STL",
+    "projected": 0.7,
+    "propLine": 0.68,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Aaron Wiggins",
+    "category": "PTS",
+    "projected": 9.48,
+    "propLine": 9.2,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Aaron Wiggins",
+    "category": "REB",
+    "projected": 4.06,
+    "propLine": 3.94,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Aaron Wiggins",
+    "category": "AST",
+    "projected": 1.81,
+    "propLine": 1.75,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Aaron Wiggins",
+    "category": "STL",
+    "projected": 0.9,
+    "propLine": 0.88,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Dominick Barlow",
+    "category": "PTS",
+    "projected": 10.25,
+    "propLine": 9.95,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Dominick Barlow",
+    "category": "REB",
+    "projected": 5.77,
+    "propLine": 5.59,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Dominick Barlow",
+    "category": "AST",
+    "projected": 0.96,
+    "propLine": 0.93,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Dominick Barlow",
+    "category": "STL",
+    "projected": 0.64,
+    "propLine": 0.62,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Dominick Barlow",
+    "category": "BLK",
+    "projected": 0.96,
+    "propLine": 0.93,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "MarJon Beauchamp",
+    "category": "PTS",
+    "projected": 9.14,
+    "propLine": 8.87,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "MarJon Beauchamp",
+    "category": "REB",
+    "projected": 2.94,
+    "propLine": 2.85,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "MarJon Beauchamp",
+    "category": "AST",
+    "projected": 0.98,
+    "propLine": 0.95,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "MarJon Beauchamp",
+    "category": "STL",
+    "projected": 0.98,
+    "propLine": 0.95,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Caleb Love",
+    "category": "PTS",
+    "projected": 15.68,
+    "propLine": 15.21,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Caleb Love",
+    "category": "AST",
+    "projected": 5.6,
+    "propLine": 5.43,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Caleb Love",
+    "category": "STL",
+    "projected": 0.56,
+    "propLine": 0.54,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ronald Holland II",
+    "category": "PTS",
+    "projected": 16.72,
+    "propLine": 16.22,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ronald Holland II",
+    "category": "REB",
+    "projected": 3.89,
+    "propLine": 3.77,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ronald Holland II",
+    "category": "AST",
+    "projected": 1.17,
+    "propLine": 1.13,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jamal Shead",
+    "category": "PTS",
+    "projected": 7.44,
+    "propLine": 7.21,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jamal Shead",
+    "category": "REB",
+    "projected": 1.75,
+    "propLine": 1.7,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jamal Shead",
+    "category": "AST",
+    "projected": 6.12,
+    "propLine": 5.94,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jamal Shead",
+    "category": "STL",
+    "projected": 1.31,
+    "propLine": 1.27,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Andersson Garcia",
+    "category": "PTS",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Andersson Garcia",
+    "category": "REB",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Andersson Garcia",
+    "category": "AST",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Andersson Garcia",
+    "category": "STL",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Andersson Garcia",
+    "category": "BLK",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Cam Thomas",
+    "category": "PTS",
+    "projected": 9.06,
+    "propLine": 8.79,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Cam Thomas",
+    "category": "REB",
+    "projected": 0.82,
+    "propLine": 0.8,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Cam Thomas",
+    "category": "AST",
+    "projected": 3.29,
+    "propLine": 3.2,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Cam Thomas",
+    "category": "STL",
+    "projected": 0.82,
+    "propLine": 0.8,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kyle Anderson",
+    "category": "PTS",
+    "projected": 5.83,
+    "propLine": 5.66,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kyle Anderson",
+    "category": "REB",
+    "projected": 7.0,
+    "propLine": 6.79,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kyle Anderson",
+    "category": "AST",
+    "projected": 4.67,
+    "propLine": 4.53,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kyle Anderson",
+    "category": "STL",
+    "projected": 0.58,
+    "propLine": 0.57,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kyle Anderson",
+    "category": "BLK",
+    "projected": 1.17,
+    "propLine": 1.13,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Luguentz Dort",
+    "category": "PTS",
+    "projected": 6.59,
+    "propLine": 6.39,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Luguentz Dort",
+    "category": "REB",
+    "projected": 4.94,
+    "propLine": 4.79,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Luguentz Dort",
+    "category": "AST",
+    "projected": 0.99,
+    "propLine": 0.96,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Luguentz Dort",
+    "category": "STL",
+    "projected": 0.66,
+    "propLine": 0.64,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Luguentz Dort",
+    "category": "BLK",
+    "projected": 0.66,
+    "propLine": 0.64,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Isaiah Joe",
+    "category": "PTS",
+    "projected": 9.9,
+    "propLine": 9.6,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Isaiah Joe",
+    "category": "REB",
+    "projected": 2.7,
+    "propLine": 2.62,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Isaiah Joe",
+    "category": "AST",
+    "projected": 1.5,
+    "propLine": 1.46,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Isaiah Joe",
+    "category": "BLK",
+    "projected": 0.6,
+    "propLine": 0.58,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Micah Potter",
+    "category": "PTS",
+    "projected": 6.42,
+    "propLine": 6.22,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Micah Potter",
+    "category": "REB",
+    "projected": 3.67,
+    "propLine": 3.56,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Klay Thompson",
+    "category": "PTS",
+    "projected": 13.78,
+    "propLine": 13.37,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Klay Thompson",
+    "category": "REB",
+    "projected": 1.72,
+    "propLine": 1.67,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Klay Thompson",
+    "category": "AST",
+    "projected": 1.72,
+    "propLine": 1.67,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Klay Thompson",
+    "category": "STL",
+    "projected": 0.86,
+    "propLine": 0.84,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Cameron Payne",
+    "category": "PTS",
+    "projected": 17.15,
+    "propLine": 16.64,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Cameron Payne",
+    "category": "REB",
+    "projected": 2.27,
+    "propLine": 2.2,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Cameron Payne",
+    "category": "AST",
+    "projected": 4.21,
+    "propLine": 4.08,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Cameron Payne",
+    "category": "STL",
+    "projected": 1.62,
+    "propLine": 1.57,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Cameron Payne",
+    "category": "BLK",
+    "projected": 0.97,
+    "propLine": 0.94,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Paul Reed",
+    "category": "PTS",
+    "projected": 4.14,
+    "propLine": 4.02,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Paul Reed",
+    "category": "REB",
+    "projected": 2.07,
+    "propLine": 2.01,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Paul Reed",
+    "category": "BLK",
+    "projected": 0.89,
+    "propLine": 0.86,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kevin Love",
+    "category": "PTS",
+    "projected": 6.84,
+    "propLine": 6.63,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kevin Love",
+    "category": "REB",
+    "projected": 6.51,
+    "propLine": 6.32,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kevin Love",
+    "category": "AST",
+    "projected": 0.98,
+    "propLine": 0.95,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kevin Love",
+    "category": "STL",
+    "projected": 0.65,
+    "propLine": 0.63,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Gui Santos",
+    "category": "PTS",
+    "projected": 16.75,
+    "propLine": 16.25,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Gui Santos",
+    "category": "REB",
+    "projected": 5.47,
+    "propLine": 5.31,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Gui Santos",
+    "category": "AST",
+    "projected": 4.79,
+    "propLine": 4.64,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Gui Santos",
+    "category": "STL",
+    "projected": 1.03,
+    "propLine": 0.99,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jose Alvarado",
+    "category": "PTS",
+    "projected": 3.11,
+    "propLine": 3.02,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jose Alvarado",
+    "category": "REB",
+    "projected": 2.33,
+    "propLine": 2.26,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jose Alvarado",
+    "category": "AST",
+    "projected": 9.33,
+    "propLine": 9.05,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jose Alvarado",
+    "category": "STL",
+    "projected": 1.56,
+    "propLine": 1.51,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Nique Clifford",
+    "category": "PTS",
+    "projected": 12.59,
+    "propLine": 12.21,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Nique Clifford",
+    "category": "REB",
+    "projected": 3.99,
+    "propLine": 3.87,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Nique Clifford",
+    "category": "AST",
+    "projected": 4.3,
+    "propLine": 4.17,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Nique Clifford",
+    "category": "STL",
+    "projected": 1.84,
+    "propLine": 1.79,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Alex Caruso",
+    "category": "PTS",
+    "projected": 6.8,
+    "propLine": 6.6,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Alex Caruso",
+    "category": "REB",
+    "projected": 4.53,
+    "propLine": 4.4,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Alex Caruso",
+    "category": "AST",
+    "projected": 1.51,
+    "propLine": 1.47,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Alex Caruso",
+    "category": "STL",
+    "projected": 2.27,
+    "propLine": 2.2,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Craig Porter Jr.",
+    "category": "PTS",
+    "projected": 2.03,
+    "propLine": 1.97,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Craig Porter Jr.",
+    "category": "REB",
+    "projected": 2.84,
+    "propLine": 2.76,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Craig Porter Jr.",
+    "category": "AST",
+    "projected": 1.62,
+    "propLine": 1.57,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Obi Toppin",
+    "category": "PTS",
+    "projected": 20.0,
+    "propLine": 19.4,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Obi Toppin",
+    "category": "REB",
+    "projected": 7.33,
+    "propLine": 7.11,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Obi Toppin",
+    "category": "AST",
+    "projected": 1.33,
+    "propLine": 1.29,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Dean Wade",
+    "category": "PTS",
+    "projected": 5.38,
+    "propLine": 5.22,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Dean Wade",
+    "category": "REB",
+    "projected": 5.04,
+    "propLine": 4.89,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Dean Wade",
+    "category": "AST",
+    "projected": 1.01,
+    "propLine": 0.98,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Dean Wade",
+    "category": "BLK",
+    "projected": 0.67,
+    "propLine": 0.65,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Quinten Post",
+    "category": "PTS",
+    "projected": 5.68,
+    "propLine": 5.51,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Quinten Post",
+    "category": "REB",
+    "projected": 3.69,
+    "propLine": 3.58,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Quinten Post",
+    "category": "AST",
+    "projected": 1.7,
+    "propLine": 1.65,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Caris LeVert",
+    "category": "PTS",
+    "projected": 3.67,
+    "propLine": 3.56,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Caris LeVert",
+    "category": "REB",
+    "projected": 2.0,
+    "propLine": 1.94,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Caris LeVert",
+    "category": "AST",
+    "projected": 2.0,
+    "propLine": 1.94,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Caris LeVert",
+    "category": "STL",
+    "projected": 1.0,
+    "propLine": 0.97,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Daniss Jenkins",
+    "category": "PTS",
+    "projected": 8.3,
+    "propLine": 8.06,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Daniss Jenkins",
+    "category": "REB",
+    "projected": 3.11,
+    "propLine": 3.02,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Daniss Jenkins",
+    "category": "AST",
+    "projected": 5.54,
+    "propLine": 5.37,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Daniss Jenkins",
+    "category": "STL",
+    "projected": 2.42,
+    "propLine": 2.35,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "AJ Green",
+    "category": "PTS",
+    "projected": 5.68,
+    "propLine": 5.51,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "AJ Green",
+    "category": "REB",
+    "projected": 1.89,
+    "propLine": 1.84,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "AJ Green",
+    "category": "AST",
+    "projected": 1.51,
+    "propLine": 1.47,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Vit Krejci",
+    "category": "PTS",
+    "projected": 4.14,
+    "propLine": 4.01,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Vit Krejci",
+    "category": "REB",
+    "projected": 4.14,
+    "propLine": 4.01,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Vit Krejci",
+    "category": "AST",
+    "projected": 2.41,
+    "propLine": 2.34,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Landry Shamet",
+    "category": "PTS",
+    "projected": 8.3,
+    "propLine": 8.05,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Landry Shamet",
+    "category": "REB",
+    "projected": 2.99,
+    "propLine": 2.9,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Landry Shamet",
+    "category": "AST",
+    "projected": 1.33,
+    "propLine": 1.29,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Quenton Jackson",
+    "category": "PTS",
+    "projected": 4.75,
+    "propLine": 4.61,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Quenton Jackson",
+    "category": "REB",
+    "projected": 1.7,
+    "propLine": 1.65,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Quenton Jackson",
+    "category": "AST",
+    "projected": 3.4,
+    "propLine": 3.29,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Daeqwon Plowden",
+    "category": "PTS",
+    "projected": 12.35,
+    "propLine": 11.98,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Daeqwon Plowden",
+    "category": "REB",
+    "projected": 4.88,
+    "propLine": 4.73,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Daeqwon Plowden",
+    "category": "AST",
+    "projected": 0.65,
+    "propLine": 0.63,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Daeqwon Plowden",
+    "category": "STL",
+    "projected": 1.62,
+    "propLine": 1.58,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Svi Mykhailiuk",
+    "category": "PTS",
+    "projected": 12.06,
+    "propLine": 11.7,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Svi Mykhailiuk",
+    "category": "REB",
+    "projected": 1.88,
+    "propLine": 1.83,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Svi Mykhailiuk",
+    "category": "AST",
+    "projected": 2.26,
+    "propLine": 2.19,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Javonte Green",
+    "category": "PTS",
+    "projected": 9.89,
+    "propLine": 9.59,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Javonte Green",
+    "category": "REB",
+    "projected": 2.23,
+    "propLine": 2.17,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Javonte Green",
+    "category": "AST",
+    "projected": 0.96,
+    "propLine": 0.93,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Javonte Green",
+    "category": "STL",
+    "projected": 2.87,
+    "propLine": 2.79,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kris Murray",
+    "category": "PTS",
+    "projected": 0.93,
+    "propLine": 0.91,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kris Murray",
+    "category": "REB",
+    "projected": 3.11,
+    "propLine": 3.02,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kris Murray",
+    "category": "AST",
+    "projected": 0.62,
+    "propLine": 0.6,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Pat Spencer",
+    "category": "PTS",
+    "projected": 7.86,
+    "propLine": 7.62,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Pat Spencer",
+    "category": "REB",
+    "projected": 2.95,
+    "propLine": 2.86,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Pat Spencer",
+    "category": "AST",
+    "projected": 3.6,
+    "propLine": 3.49,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Pat Spencer",
+    "category": "STL",
+    "projected": 0.98,
+    "propLine": 0.95,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Will Richard",
+    "category": "PTS",
+    "projected": 4.31,
+    "propLine": 4.18,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Will Richard",
+    "category": "REB",
+    "projected": 3.59,
+    "propLine": 3.48,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Will Richard",
+    "category": "STL",
+    "projected": 1.44,
+    "propLine": 1.39,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ryan Nembhard",
+    "category": "PTS",
+    "projected": 2.63,
+    "propLine": 2.55,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ryan Nembhard",
+    "category": "REB",
+    "projected": 1.97,
+    "propLine": 1.91,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ryan Nembhard",
+    "category": "AST",
+    "projected": 5.59,
+    "propLine": 5.42,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Trendon Watford",
+    "category": "PTS",
+    "projected": 8.54,
+    "propLine": 8.28,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Trendon Watford",
+    "category": "REB",
+    "projected": 3.76,
+    "propLine": 3.64,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Trendon Watford",
+    "category": "AST",
+    "projected": 2.05,
+    "propLine": 1.99,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Trendon Watford",
+    "category": "STL",
+    "projected": 0.68,
+    "propLine": 0.66,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Trendon Watford",
+    "category": "BLK",
+    "projected": 1.02,
+    "propLine": 0.99,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Devin Carter",
+    "category": "PTS",
+    "projected": 13.75,
+    "propLine": 13.34,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Devin Carter",
+    "category": "REB",
+    "projected": 5.22,
+    "propLine": 5.06,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Devin Carter",
+    "category": "AST",
+    "projected": 2.85,
+    "propLine": 2.76,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Devin Carter",
+    "category": "STL",
+    "projected": 1.42,
+    "propLine": 1.38,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Gary Payton II",
+    "category": "PTS",
+    "projected": 11.66,
+    "propLine": 11.31,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Gary Payton II",
+    "category": "REB",
+    "projected": 4.73,
+    "propLine": 4.59,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Gary Payton II",
+    "category": "AST",
+    "projected": 1.26,
+    "propLine": 1.22,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Gary Payton II",
+    "category": "STL",
+    "projected": 1.58,
+    "propLine": 1.53,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ben Sheppard",
+    "category": "PTS",
+    "projected": 8.38,
+    "propLine": 8.13,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ben Sheppard",
+    "category": "REB",
+    "projected": 3.14,
+    "propLine": 3.05,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ben Sheppard",
+    "category": "AST",
+    "projected": 1.75,
+    "propLine": 1.69,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Keon Ellis",
+    "category": "PTS",
+    "projected": 16.85,
+    "propLine": 16.35,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Keon Ellis",
+    "category": "REB",
+    "projected": 2.92,
+    "propLine": 2.83,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Keon Ellis",
+    "category": "AST",
+    "projected": 0.65,
+    "propLine": 0.63,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Keon Ellis",
+    "category": "STL",
+    "projected": 0.97,
+    "propLine": 0.94,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Keon Ellis",
+    "category": "BLK",
+    "projected": 0.97,
+    "propLine": 0.94,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Adem Bona",
+    "category": "PTS",
+    "projected": 7.67,
+    "propLine": 7.44,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Adem Bona",
+    "category": "REB",
+    "projected": 7.31,
+    "propLine": 7.09,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Adem Bona",
+    "category": "STL",
+    "projected": 0.73,
+    "propLine": 0.71,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Adem Bona",
+    "category": "BLK",
+    "projected": 1.1,
+    "propLine": 1.06,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Matisse Thybulle",
+    "category": "PTS",
+    "projected": 3.26,
+    "propLine": 3.16,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Matisse Thybulle",
+    "category": "REB",
+    "projected": 0.72,
+    "propLine": 0.7,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Matisse Thybulle",
+    "category": "AST",
+    "projected": 0.72,
+    "propLine": 0.7,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Matisse Thybulle",
+    "category": "STL",
+    "projected": 2.53,
+    "propLine": 2.46,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Bones Hyland",
+    "category": "PTS",
+    "projected": 10.72,
+    "propLine": 10.39,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Bones Hyland",
+    "category": "AST",
+    "projected": 2.68,
+    "propLine": 2.6,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Cody Williams",
+    "category": "PTS",
+    "projected": 13.28,
+    "propLine": 12.88,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Cody Williams",
+    "category": "REB",
+    "projected": 3.89,
+    "propLine": 3.77,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Cody Williams",
+    "category": "AST",
+    "projected": 4.86,
+    "propLine": 4.71,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Cody Williams",
+    "category": "BLK",
+    "projected": 0.65,
+    "propLine": 0.63,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Nae'Qwan Tomlin",
+    "category": "PTS",
+    "projected": 4.23,
+    "propLine": 4.1,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Nae'Qwan Tomlin",
+    "category": "REB",
+    "projected": 1.27,
+    "propLine": 1.23,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Nae'Qwan Tomlin",
+    "category": "STL",
+    "projected": 1.27,
+    "propLine": 1.23,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Tolu Smith",
+    "category": "PTS",
+    "projected": 4.34,
+    "propLine": 4.21,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Tolu Smith",
+    "category": "REB",
+    "projected": 5.15,
+    "propLine": 5.0,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Tolu Smith",
+    "category": "AST",
+    "projected": 0.81,
+    "propLine": 0.79,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Tolu Smith",
+    "category": "BLK",
+    "projected": 1.08,
+    "propLine": 1.05,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kenrich Williams",
+    "category": "PTS",
+    "projected": 5.83,
+    "propLine": 5.65,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kenrich Williams",
+    "category": "REB",
+    "projected": 2.59,
+    "propLine": 2.51,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kenrich Williams",
+    "category": "AST",
+    "projected": 0.97,
+    "propLine": 0.94,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ja'Kobe Walter",
+    "category": "PTS",
+    "projected": 6.54,
+    "propLine": 6.34,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ja'Kobe Walter",
+    "category": "REB",
+    "projected": 2.54,
+    "propLine": 2.47,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ja'Kobe Walter",
+    "category": "AST",
+    "projected": 1.09,
+    "propLine": 1.06,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ja'Kobe Walter",
+    "category": "STL",
+    "projected": 1.45,
+    "propLine": 1.41,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Tyrese Martin",
+    "category": "PTS",
+    "projected": 4.08,
+    "propLine": 3.95,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Tyrese Martin",
+    "category": "REB",
+    "projected": 1.46,
+    "propLine": 1.41,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Tyrese Martin",
+    "category": "AST",
+    "projected": 1.16,
+    "propLine": 1.13,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Tyrese Martin",
+    "category": "STL",
+    "projected": 0.87,
+    "propLine": 0.85,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jared McCain",
+    "category": "PTS",
+    "projected": 8.4,
+    "propLine": 8.15,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jared McCain",
+    "category": "REB",
+    "projected": 1.34,
+    "propLine": 1.3,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jared McCain",
+    "category": "AST",
+    "projected": 0.67,
+    "propLine": 0.65,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jordan Clarkson",
+    "category": "PTS",
+    "projected": 11.01,
+    "propLine": 10.68,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jordan Clarkson",
+    "category": "REB",
+    "projected": 2.2,
+    "propLine": 2.14,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jordan Clarkson",
+    "category": "AST",
+    "projected": 1.89,
+    "propLine": 1.83,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Sidy Cissoko",
+    "category": "PTS",
+    "projected": 5.85,
+    "propLine": 5.67,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Sidy Cissoko",
+    "category": "REB",
+    "projected": 2.09,
+    "propLine": 2.03,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Sidy Cissoko",
+    "category": "AST",
+    "projected": 0.84,
+    "propLine": 0.81,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Sidy Cissoko",
+    "category": "STL",
+    "projected": 0.84,
+    "propLine": 0.81,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Moussa Cisse",
+    "category": "PTS",
+    "projected": 4.46,
+    "propLine": 4.32,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Moussa Cisse",
+    "category": "REB",
+    "projected": 8.6,
+    "propLine": 8.34,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Moussa Cisse",
+    "category": "STL",
+    "projected": 0.64,
+    "propLine": 0.62,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Moussa Cisse",
+    "category": "BLK",
+    "projected": 0.96,
+    "propLine": 0.93,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Blake Hinson",
+    "category": "PTS",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Blake Hinson",
+    "category": "REB",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Blake Hinson",
+    "category": "AST",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Blake Hinson",
+    "category": "STL",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Blake Hinson",
+    "category": "BLK",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Seth Curry",
+    "category": "PTS",
+    "projected": 4.29,
+    "propLine": 4.16,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Seth Curry",
+    "category": "REB",
+    "projected": 1.32,
+    "propLine": 1.28,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Seth Curry",
+    "category": "AST",
+    "projected": 1.65,
+    "propLine": 1.6,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Mike Conley",
+    "category": "REB",
+    "projected": 1.04,
+    "propLine": 1.01,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Mike Conley",
+    "category": "AST",
+    "projected": 2.08,
+    "propLine": 2.02,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Thomas Bryant",
+    "category": "PTS",
+    "projected": 10.45,
+    "propLine": 10.13,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Thomas Bryant",
+    "category": "REB",
+    "projected": 4.72,
+    "propLine": 4.58,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Thomas Bryant",
+    "category": "STL",
+    "projected": 0.67,
+    "propLine": 0.65,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Thomas Bryant",
+    "category": "BLK",
+    "projected": 1.35,
+    "propLine": 1.31,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jericho Sims",
+    "category": "PTS",
+    "projected": 8.23,
+    "propLine": 7.99,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jericho Sims",
+    "category": "REB",
+    "projected": 4.46,
+    "propLine": 4.33,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jericho Sims",
+    "category": "AST",
+    "projected": 1.72,
+    "propLine": 1.66,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Killian Hayes",
+    "category": "PTS",
+    "projected": 5.61,
+    "propLine": 5.44,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Killian Hayes",
+    "category": "REB",
+    "projected": 2.4,
+    "propLine": 2.33,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Killian Hayes",
+    "category": "AST",
+    "projected": 2.67,
+    "propLine": 2.59,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Killian Hayes",
+    "category": "STL",
+    "projected": 0.8,
+    "propLine": 0.78,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Blake Wesley",
+    "category": "PTS",
+    "projected": 2.88,
+    "propLine": 2.79,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Blake Wesley",
+    "category": "AST",
+    "projected": 1.23,
+    "propLine": 1.2,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Elijah Harkless",
+    "category": "PTS",
+    "projected": 9.89,
+    "propLine": 9.59,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Elijah Harkless",
+    "category": "REB",
+    "projected": 1.91,
+    "propLine": 1.86,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Elijah Harkless",
+    "category": "AST",
+    "projected": 2.55,
+    "propLine": 2.47,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Elijah Harkless",
+    "category": "STL",
+    "projected": 1.28,
+    "propLine": 1.24,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Drew Eubanks",
+    "category": "PTS",
+    "projected": 4.43,
+    "propLine": 4.3,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Drew Eubanks",
+    "category": "REB",
+    "projected": 4.77,
+    "propLine": 4.63,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Drew Eubanks",
+    "category": "AST",
+    "projected": 1.02,
+    "propLine": 0.99,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Drew Eubanks",
+    "category": "BLK",
+    "projected": 1.02,
+    "propLine": 0.99,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Gary Trent Jr.",
+    "category": "PTS",
+    "projected": 4.61,
+    "propLine": 4.47,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Gary Trent Jr.",
+    "category": "REB",
+    "projected": 1.36,
+    "propLine": 1.31,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ousmane Dieng",
+    "category": "PTS",
+    "projected": 4.42,
+    "propLine": 4.29,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ousmane Dieng",
+    "category": "REB",
+    "projected": 4.42,
+    "propLine": 4.29,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ousmane Dieng",
+    "category": "AST",
+    "projected": 2.84,
+    "propLine": 2.76,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ousmane Dieng",
+    "category": "STL",
+    "projected": 0.63,
+    "propLine": 0.61,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Marcus Sasser",
+    "category": "PTS",
+    "projected": 12.22,
+    "propLine": 11.85,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Marcus Sasser",
+    "category": "REB",
+    "projected": 2.04,
+    "propLine": 1.98,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Marcus Sasser",
+    "category": "AST",
+    "projected": 2.04,
+    "propLine": 1.98,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Marcus Sasser",
+    "category": "STL",
+    "projected": 0.68,
+    "propLine": 0.66,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Justin Edwards",
+    "category": "PTS",
+    "projected": 11.13,
+    "propLine": 10.8,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Justin Edwards",
+    "category": "REB",
+    "projected": 4.67,
+    "propLine": 4.53,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Justin Edwards",
+    "category": "AST",
+    "projected": 2.87,
+    "propLine": 2.79,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Justin Edwards",
+    "category": "STL",
+    "projected": 2.87,
+    "propLine": 2.79,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Justin Edwards",
+    "category": "BLK",
+    "projected": 0.72,
+    "propLine": 0.7,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Nate Williams",
+    "category": "PTS",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Nate Williams",
+    "category": "REB",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Nate Williams",
+    "category": "AST",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Nate Williams",
+    "category": "STL",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Nate Williams",
+    "category": "BLK",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ethan Thompson",
+    "category": "PTS",
+    "projected": 8.52,
+    "propLine": 8.27,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ethan Thompson",
+    "category": "REB",
+    "projected": 2.74,
+    "propLine": 2.66,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ethan Thompson",
+    "category": "AST",
+    "projected": 1.83,
+    "propLine": 1.77,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ethan Thompson",
+    "category": "STL",
+    "projected": 1.52,
+    "propLine": 1.48,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Oscar Tshiebwe",
+    "category": "PTS",
+    "projected": 6.07,
+    "propLine": 5.89,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Oscar Tshiebwe",
+    "category": "REB",
+    "projected": 4.25,
+    "propLine": 4.12,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Oscar Tshiebwe",
+    "category": "AST",
+    "projected": 0.91,
+    "propLine": 0.88,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Oscar Tshiebwe",
+    "category": "STL",
+    "projected": 0.91,
+    "propLine": 0.88,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Gradey Dick",
+    "category": "PTS",
+    "projected": 6.27,
+    "propLine": 6.08,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Gradey Dick",
+    "category": "REB",
+    "projected": 0.82,
+    "propLine": 0.79,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Gradey Dick",
+    "category": "AST",
+    "projected": 0.54,
+    "propLine": 0.53,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Caleb Martin",
+    "category": "PTS",
+    "projected": 1.97,
+    "propLine": 1.91,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Caleb Martin",
+    "category": "REB",
+    "projected": 2.95,
+    "propLine": 2.87,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Caleb Martin",
+    "category": "AST",
+    "projected": 0.98,
+    "propLine": 0.96,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Caleb Martin",
+    "category": "BLK",
+    "projected": 0.98,
+    "propLine": 0.96,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Dwight Powell",
+    "category": "PTS",
+    "projected": 5.23,
+    "propLine": 5.07,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Dwight Powell",
+    "category": "REB",
+    "projected": 6.18,
+    "propLine": 5.99,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Dwight Powell",
+    "category": "AST",
+    "projected": 1.43,
+    "propLine": 1.38,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Dwight Powell",
+    "category": "STL",
+    "projected": 0.95,
+    "propLine": 0.92,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Tyler Kolek",
+    "category": "PTS",
+    "projected": 0.53,
+    "propLine": 0.51,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Tyler Kolek",
+    "category": "REB",
+    "projected": 0.79,
+    "propLine": 0.77,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Tyler Kolek",
+    "category": "AST",
+    "projected": 2.64,
+    "propLine": 2.56,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Taurean Prince",
+    "category": "PTS",
+    "projected": 2.77,
+    "propLine": 2.69,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Taurean Prince",
+    "category": "REB",
+    "projected": 2.08,
+    "propLine": 2.02,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Taurean Prince",
+    "category": "STL",
+    "projected": 0.69,
+    "propLine": 0.67,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Trayce Jackson-Davis",
+    "category": "PTS",
+    "projected": 0.62,
+    "propLine": 0.61,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Trayce Jackson-Davis",
+    "category": "REB",
+    "projected": 2.5,
+    "propLine": 2.42,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Trayce Jackson-Davis",
+    "category": "AST",
+    "projected": 0.62,
+    "propLine": 0.61,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kam Jones",
+    "category": "PTS",
+    "projected": 6.45,
+    "propLine": 6.25,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kam Jones",
+    "category": "REB",
+    "projected": 1.9,
+    "propLine": 1.84,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kam Jones",
+    "category": "AST",
+    "projected": 6.07,
+    "propLine": 5.89,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kam Jones",
+    "category": "STL",
+    "projected": 1.14,
+    "propLine": 1.1,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "LJ Cryer",
+    "category": "PTS",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "LJ Cryer",
+    "category": "REB",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "LJ Cryer",
+    "category": "AST",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "LJ Cryer",
+    "category": "STL",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "LJ Cryer",
+    "category": "BLK",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jabari Walker",
+    "category": "PTS",
+    "projected": 9.38,
+    "propLine": 9.1,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jabari Walker",
+    "category": "REB",
+    "projected": 2.04,
+    "propLine": 1.98,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jabari Walker",
+    "category": "AST",
+    "projected": 0.82,
+    "propLine": 0.79,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jabari Walker",
+    "category": "STL",
+    "projected": 0.82,
+    "propLine": 0.79,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Dalen Terry",
+    "category": "PTS",
+    "projected": 5.05,
+    "propLine": 4.89,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Dalen Terry",
+    "category": "REB",
+    "projected": 2.21,
+    "propLine": 2.14,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Dalen Terry",
+    "category": "AST",
+    "projected": 2.52,
+    "propLine": 2.45,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Dalen Terry",
+    "category": "BLK",
+    "projected": 0.95,
+    "propLine": 0.92,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kobe Brown",
+    "category": "PTS",
+    "projected": 6.61,
+    "propLine": 6.41,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kobe Brown",
+    "category": "REB",
+    "projected": 4.3,
+    "propLine": 4.17,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Kobe Brown",
+    "category": "AST",
+    "projected": 0.66,
+    "propLine": 0.64,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Larry Nance Jr.",
+    "category": "PTS",
+    "projected": 2.18,
+    "propLine": 2.11,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Larry Nance Jr.",
+    "category": "REB",
+    "projected": 2.18,
+    "propLine": 2.11,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Larry Nance Jr.",
+    "category": "AST",
+    "projected": 0.73,
+    "propLine": 0.7,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jaylen Clark",
+    "category": "PTS",
+    "projected": 5.65,
+    "propLine": 5.48,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Pete Nance",
+    "category": "PTS",
+    "projected": 2.87,
+    "propLine": 2.78,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Pete Nance",
+    "category": "REB",
+    "projected": 1.91,
+    "propLine": 1.85,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Pete Nance",
+    "category": "AST",
+    "projected": 1.27,
+    "propLine": 1.24,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Pete Nance",
+    "category": "STL",
+    "projected": 0.64,
+    "propLine": 0.62,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jeremy Sochan",
+    "category": "PTS",
+    "projected": 1.59,
+    "propLine": 1.54,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jeremy Sochan",
+    "category": "REB",
+    "projected": 1.06,
+    "propLine": 1.03,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jeremy Sochan",
+    "category": "AST",
+    "projected": 0.53,
+    "propLine": 0.51,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Jeremy Sochan",
+    "category": "STL",
+    "projected": 1.06,
+    "propLine": 1.03,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Taelon Peter",
+    "category": "PTS",
+    "projected": 6.28,
+    "propLine": 6.09,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Taelon Peter",
+    "category": "REB",
+    "projected": 1.48,
+    "propLine": 1.43,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Taelon Peter",
+    "category": "AST",
+    "projected": 1.11,
+    "propLine": 1.07,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Taelon Peter",
+    "category": "STL",
+    "projected": 0.74,
+    "propLine": 0.72,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Taelon Peter",
+    "category": "BLK",
+    "projected": 0.74,
+    "propLine": 0.72,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "John Poulakidas",
+    "category": "PTS",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "John Poulakidas",
+    "category": "REB",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "John Poulakidas",
+    "category": "AST",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "John Poulakidas",
+    "category": "STL",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "John Poulakidas",
+    "category": "BLK",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Malevy Leons",
+    "category": "PTS",
+    "projected": 2.15,
+    "propLine": 2.09,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Malevy Leons",
+    "category": "REB",
+    "projected": 1.79,
+    "propLine": 1.74,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Malevy Leons",
+    "category": "AST",
+    "projected": 0.72,
+    "propLine": 0.7,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Gary Harris",
+    "category": "PTS",
+    "projected": 1.83,
+    "propLine": 1.77,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Gary Harris",
+    "category": "REB",
+    "projected": 0.61,
+    "propLine": 0.59,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Gary Harris",
+    "category": "AST",
+    "projected": 0.61,
+    "propLine": 0.59,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ariel Hukporti",
+    "category": "PTS",
+    "projected": 0.64,
+    "propLine": 0.62,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ariel Hukporti",
+    "category": "REB",
+    "projected": 1.27,
+    "propLine": 1.24,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Ariel Hukporti",
+    "category": "AST",
+    "projected": 0.64,
+    "propLine": 0.62,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Patrick Baldwin Jr.",
+    "category": "PTS",
+    "projected": 1.41,
+    "propLine": 1.37,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Patrick Baldwin Jr.",
+    "category": "REB",
+    "projected": 2.82,
+    "propLine": 2.73,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Patrick Baldwin Jr.",
+    "category": "BLK",
+    "projected": 1.06,
+    "propLine": 1.02,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "A.J. Lawson",
+    "category": "REB",
+    "projected": 0.73,
+    "propLine": 0.71,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Joan Beringer",
+    "category": "PTS",
+    "projected": 1.87,
+    "propLine": 1.81,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Joan Beringer",
+    "category": "REB",
+    "projected": 0.8,
+    "propLine": 0.78,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Terrence Shannon Jr.",
+    "category": "PTS",
+    "projected": 4.97,
+    "propLine": 4.82,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Terrence Shannon Jr.",
+    "category": "AST",
+    "projected": 1.55,
+    "propLine": 1.51,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Mohamed Diawara",
+    "category": "PTS",
+    "projected": 6.24,
+    "propLine": 6.05,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Mohamed Diawara",
+    "category": "REB",
+    "projected": 3.28,
+    "propLine": 3.18,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Mohamed Diawara",
+    "category": "AST",
+    "projected": 1.31,
+    "propLine": 1.27,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Wendell Moore Jr.",
+    "category": "PTS",
+    "projected": 1.39,
+    "propLine": 1.35,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Wendell Moore Jr.",
+    "category": "REB",
+    "projected": 1.39,
+    "propLine": 1.35,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Olivier Sarr",
+    "category": "PTS",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Olivier Sarr",
+    "category": "REB",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Olivier Sarr",
+    "category": "AST",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Olivier Sarr",
+    "category": "STL",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Olivier Sarr",
+    "category": "BLK",
+    "projected": NaN,
+    "propLine": NaN,
+    "actual": null,
+    "hit": null
+  },
+  {
+    "date": "2026-03-15",
+    "player": "Alijah Martin",
+    "category": "PTS",
+    "projected": 2.4,
+    "propLine": 2.33,
+    "actual": null,
+    "hit": null
+  }
+]
