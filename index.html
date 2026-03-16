@@ -10502,7 +10502,7 @@ Lead with the player name and rank. Mention recent form. Include the H2H history
   let NS_BOOST_HISTORY = [];
 
   function loadNSBoostJSON() {
-    fetch('ns_boost_lineup.json?_=' + Date.now())
+    fetch('data/ns_boost_lineup.json?_=' + Date.now())
       .then(function(r){ return r.json(); })
       .then(function(data){
         NS_BOOST_HISTORY = data.history || [];
