@@ -2168,35 +2168,39 @@
         gap: 10px !important;
       }
 
-      /* Player card — clean vertical layout, PrizePicks feel */
+      /* Player card — compact mobile layout (half size) */
       .yahoo-player-card {
-        padding: 14px !important;
+        padding: 6px 8px !important;
+        border-radius: 8px !important;
       }
       .yahoo-card-top {
-        gap: 14px !important;
-        margin-bottom: 10px !important;
+        gap: 8px !important;
+        margin-bottom: 4px !important;
         align-items: center !important;
       }
       .yahoo-card-headshot {
-        width: 58px !important;
-        height: 58px !important;
+        width: 32px !important;
+        height: 32px !important;
         border-radius: 50% !important;
         flex-shrink: 0 !important;
-        border: 2px solid rgba(123,47,255,0.45) !important;
+        border: 1px solid rgba(123,47,255,0.45) !important;
       }
       .yahoo-card-name {
-        font-size: 1.15em !important;
-        white-space: normal !important;
-        line-height: 1.15 !important;
+        font-size: 0.82em !important;
+        white-space: nowrap !important;
+        line-height: 1.1 !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
       }
-      .yahoo-card-pos-team { font-size: 0.7em !important; margin-top: 3px !important; }
-      .yahoo-card-salary   { font-size: 0.9em !important; margin-top: 5px !important; }
-      .yahoo-view-btn      { top: 12px !important; right: 12px !important; font-size: 0.78em !important; padding: 5px 12px !important; }
-      .yahoo-card-stats    { justify-content: space-around !important; padding-top: 10px !important; }
-      .yahoo-card-stat-val { font-size: 1.1em !important; }
-      .yahoo-card-stat-lbl { font-size: 0.58em !important; }
-      .yahoo-card-boost    { margin-top: 10px !important; padding: 8px 12px !important; }
-      .yahoo-card-boost-val { font-size: 1.1em !important; }
+      .yahoo-card-pos-team { font-size: 0.58em !important; margin-top: 1px !important; }
+      .yahoo-card-salary   { font-size: 0.72em !important; margin-top: 2px !important; }
+      .yahoo-view-btn      { top: 4px !important; right: 4px !important; font-size: 0.62em !important; padding: 2px 6px !important; }
+      .yahoo-card-stats    { justify-content: space-around !important; padding-top: 4px !important; gap: 4px !important; }
+      .yahoo-card-stat-val { font-size: 0.82em !important; }
+      .yahoo-card-stat-lbl { font-size: 0.48em !important; }
+      .yahoo-card-boost    { margin-top: 4px !important; padding: 3px 6px !important; }
+      .yahoo-card-boost-val { font-size: 0.82em !important; }
+      .yahoo-card-boost-lbl { font-size: 0.55em !important; }
     }
 
     @media(max-width:480px) {
@@ -3681,62 +3685,44 @@
     .signup-step-panel { display: none; }
     .signup-step-panel.active { display: block; }
 
-    /* ── TEAM MULTI-SELECT (NBA, NFL, MLB, NHL, WNBA, MLS) ── */
+    /* ── TEAM MULTI-SELECT (NBA, NFL, MLB, NHL, WNBA, MLS) — LOGO GRID ── */
+    .auth-league-tabs {
+      display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px;
+    }
+    .auth-league-tab {
+      font-family: 'Rajdhani', sans-serif; font-weight: 800; font-size: 0.78em;
+      letter-spacing: 2px; padding: 6px 14px; border-radius: 50px;
+      border: 1px solid rgba(123,47,255,0.3); background: rgba(0,0,0,0.3);
+      color: #ffffff; cursor: pointer; transition: all 0.15s;
+    }
+    .auth-league-tab.active {
+      border-color: var(--gold); background: rgba(255,184,0,0.12); color: var(--gold);
+    }
     .auth-teams-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(58px, 1fr));
       gap: 8px;
-      max-height: 320px;
+      max-height: 280px;
       overflow-y: auto;
-      padding: 4px;
+      padding: 10px;
+      background: rgba(0,0,0,0.3);
+      border-radius: 10px;
+      border: 1px solid rgba(123,47,255,0.15);
       scrollbar-width: thin;
       scrollbar-color: rgba(123,47,255,0.2) transparent;
     }
     .auth-teams-grid::-webkit-scrollbar { width: 4px; }
     .auth-teams-grid::-webkit-scrollbar-thumb { background: rgba(123,47,255,0.2); border-radius: 2px; }
-    .auth-team-league {
-      grid-column: 1 / -1;
-      font-family: 'Rajdhani', sans-serif;
-      font-weight: 700;
-      font-size: 0.8em;
-      letter-spacing: 2px;
-      color: var(--primary);
-      margin: 14px 0 6px 0;
-      padding-bottom: 4px;
-      border-bottom: 1px solid rgba(123,47,255,0.2);
+    .auth-team-logo-card {
+      display: flex; flex-direction: column; align-items: center; gap: 2px;
+      padding: 6px 2px; border-radius: 8px; border: 2px solid transparent;
+      background: rgba(255,255,255,0.03); cursor: pointer; transition: 0.2s; user-select: none;
     }
-    .auth-team-league:first-child { margin-top: 0; }
-
-    .auth-team-chip {
-      position: relative;
-    }
-    .auth-team-chip input[type="checkbox"] {
-      position: absolute; opacity: 0; width: 0; height: 0;
-    }
-    .auth-team-chip label {
-      display: block;
-      padding: 7px 10px;
-      background: rgba(0,0,0,0.4);
-      border: 1px solid rgba(123,47,255,0.1);
-      border-radius: 6px;
-      font-family: 'Rajdhani', sans-serif;
-      font-weight: 600;
-      font-size: 0.75em;
-      color: #ffffff;
-      cursor: pointer;
-      text-align: center;
-      transition: all 0.15s;
-      user-select: none;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    .auth-team-chip input:checked + label {
-      border-color: var(--gold);
-      background: rgba(255,184,0,0.1);
-      color: var(--gold);
-    }
-    .auth-team-chip label:hover { border-color: rgba(123,47,255,0.3); color: var(--text); }
+    .auth-team-logo-card:hover { background: rgba(255,255,255,0.08); border-color: rgba(123,47,255,0.3); }
+    .auth-team-logo-card.selected { border-color: var(--gold); background: rgba(255,184,0,0.1); }
+    .auth-team-logo-card img { width: 36px; height: 36px; object-fit: contain; filter: drop-shadow(0 0 3px rgba(0,0,0,0.5)); }
+    .auth-team-league { display: none; }
+    .auth-team-chip { display: none; }
 
     /* source dropdown small label */
     .auth-small-label {
@@ -4061,17 +4047,22 @@
     .props-grid { grid-template-columns: 1fr !important; gap: 10px !important; }
 
     /* Card layout */
-    .prop-card-body { padding: 12px 14px !important; }
-    .prop-card-header { padding: 12px 14px !important; }
-    .prop-card-header img { width: 52px !important; height: 52px !important; border-radius: 50% !important; }
-    .prop-card-name { font-size: 1.05em !important; white-space: normal !important; line-height: 1.2 !important; }
-    .prop-card-team { font-size: 0.65em !important; }
-    .prop-card-stars { font-size: 0.85em !important; }
-    .prop-card-footer { flex-direction: row !important; gap: 10px !important; padding: 10px 14px !important; align-items: center !important; }
-    .prop-save-btn { font-size: 0.8em !important; padding: 8px 14px !important; }
-    .prop-select-label { font-size: 0.78em !important; }
-    .prop-avgs { gap: 8px !important; }
-    .prop-avg-chip { padding: 9px 10px !important; min-width: 0 !important; flex: 1; }
+    .prop-card-body { padding: 8px 10px !important; }
+    .prop-card-header { padding: 8px 10px !important; }
+    .prop-card-header img, .prop-card-headshot { width: 32px !important; height: 32px !important; border-radius: 50% !important; }
+    .prop-card-name { font-size: 0.85em !important; white-space: nowrap !important; overflow: hidden !important; text-overflow: ellipsis !important; line-height: 1.1 !important; }
+    .prop-card-team { font-size: 0.55em !important; }
+    .prop-card-stars { font-size: 0.72em !important; }
+    .prop-line-val { font-size: 1.2em !important; }
+    .prop-stat-label { font-size: 0.6em !important; }
+    .prop-ns-proj { font-size: 0.65em !important; }
+    .prop-card-footer { flex-direction: row !important; gap: 6px !important; padding: 6px 10px !important; align-items: center !important; }
+    .prop-save-btn { font-size: 0.68em !important; padding: 5px 10px !important; }
+    .prop-select-label { font-size: 0.65em !important; }
+    .prop-avgs { gap: 4px !important; }
+    .prop-avg-chip { padding: 5px 6px !important; min-width: 0 !important; flex: 1; }
+    .prop-avg-val { font-size: 0.9em !important; }
+    .prop-avg-lbl { font-size: 0.5em !important; }
 
     /* AUTH / SIGN IN modal — raised higher on mobile so full card is visible */
     .auth-overlay {
@@ -4304,8 +4295,8 @@
       min-height: 80px !important;
     }
     .yahoo-card-headshot {
-      width: 62px !important;
-      height: 62px !important;
+      width: 32px !important;
+      height: 32px !important;
       border-radius: 50% !important;
       flex-shrink: 0 !important;
       object-fit: cover !important;
@@ -4369,8 +4360,13 @@
   @media (max-width: 480px) {
     .logo-main { font-size: 1.45em !important; }
     .topbar-inner { height: 54px !important; }
-    .yahoo-card-headshot { width: 52px !important; height: 52px !important; }
-    .game-box { min-width: 140px !important; max-width: 140px !important; }
+    .yahoo-card-headshot { width: 32px !important; height: 32px !important; }
+    .game-box { min-width: 120px !important; max-width: 130px !important; padding: 6px 4px !important; }
+    .game-box-team img { width: 22px !important; height: 22px !important; }
+    .game-box-team span { font-size: 0.72em !important; letter-spacing: 0 !important; }
+    .game-box-time { font-size: 0.55em !important; margin-bottom: 3px !important; }
+    .game-box-odds { font-size: 0.5em !important; }
+    .game-box-at { font-size: 0.65em !important; }
   }
 
   /* ── PHONE ONLY (480px and below) ── */
@@ -4382,31 +4378,68 @@
 
     /* ── Player stat card: clean grid layout on mobile ── */
     .fc-row2 {
-      flex-direction: column !important;
-      align-items: flex-start !important;
-      padding: 10px 14px !important;
-      gap: 8px !important;
+      flex-direction: row !important;
+      align-items: center !important;
+      padding: 5px 8px !important;
+      gap: 4px !important;
+      flex-wrap: nowrap !important;
+      overflow-x: auto !important;
     }
     .fc-proj-label {
-      min-width: 0 !important; width: 100% !important;
-      white-space: normal !important; font-size: 0.72em !important;
-      margin-right: 0 !important;
+      min-width: 0 !important; width: auto !important;
+      white-space: nowrap !important; font-size: 0.52em !important;
+      margin-right: 4px !important; flex-shrink: 0 !important;
     }
     .fc-proj-total {
       min-width: 0 !important; width: auto !important;
-      margin-right: 0 !important; font-size: 1.4em !important;
+      margin-right: 4px !important; font-size: 1.0em !important;
+      flex-shrink: 0 !important;
     }
     .fc-proj-stats {
-      display: grid !important;
-      grid-template-columns: repeat(2, 1fr) !important;
-      gap: 6px !important; width: 100% !important;
-      overflow-x: unset !important;
-      overflow-y: auto !important;
-      max-height: 260px !important;
+      display: flex !important;
+      flex-wrap: nowrap !important;
+      gap: 3px !important; flex: 1 !important; min-width: 0 !important;
+      overflow-x: auto !important;
+      overflow-y: hidden !important;
+      max-height: none !important;
+      padding-bottom: 0 !important;
     }
     .fc-proj-chip {
-      min-width: 0 !important; width: 100% !important;
+      background: #000 !important; border: 1px solid rgba(255,255,255,0.12) !important;
+      border-radius: 4px !important; padding: 2px 4px !important;
+      text-align: center !important; flex-shrink: 0 !important;
+      min-width: 32px !important; width: auto !important;
     }
+    .fc-proj-chip-val { font-size: 0.78em !important; }
+    .fc-proj-chip-lbl { font-size: 0.48em !important; }
+
+    /* Season Avg stat boxes — small black chips on mobile */
+    .full-stat-row {
+      gap: 3px !important;
+      padding: 4px 8px 8px !important;
+    }
+    .full-stat-box {
+      background: #000 !important;
+      border: 1px solid rgba(255,255,255,0.12) !important;
+      border-radius: 4px !important;
+      padding: 2px 4px !important;
+      min-width: 38px !important;
+    }
+    .full-stat-box-val { font-size: 0.82em !important; }
+    .full-stat-box-lbl { font-size: 0.48em !important; margin-bottom: 1px !important; }
+
+    /* ── Prop cards: explicit 480px compaction ── */
+    .prop-card-header img, .prop-card-headshot { width: 28px !important; height: 28px !important; border-radius: 50% !important; }
+    .prop-card-body { padding: 6px 8px !important; }
+    .prop-card-header { padding: 6px 8px !important; }
+    .prop-card-name { font-size: 0.78em !important; }
+    .prop-card-team { font-size: 0.5em !important; }
+    .prop-line-val { font-size: 1.1em !important; }
+    .prop-card-footer { gap: 4px !important; padding: 5px 8px !important; }
+    .prop-save-btn { font-size: 0.62em !important; padding: 4px 8px !important; }
+    .prop-avg-chip { padding: 4px 5px !important; }
+    .prop-avg-val { font-size: 0.82em !important; }
+    .prop-avg-lbl { font-size: 0.45em !important; }
 
     .pos-grid { grid-template-columns: 1fr !important; }
     .feature-grid { grid-template-columns: 1fr !important; }
@@ -4676,9 +4709,19 @@
       <div class="auth-section-label">02 — <span style="color:#fff;font-weight:700;">NEURAL</span><span style="color:var(--primary);font-weight:700;">STITCH</span>™ CALIBRATION</div>
 
       <div class="auth-input-group">
-        <label class="auth-label">FAVORITE TEAMS (SELECT YOUR FAVORITE TEAMS)</label>
-        <div class="auth-teams-grid" id="teamsGrid">
-          <div class="auth-team-league">NBA</div>
+        <label class="auth-label">FAVORITE TEAMS (TAP TO SELECT)</label>
+        <div class="auth-league-tabs" id="authLeagueTabs">
+          <div class="auth-league-tab active" data-league="nba">NBA</div>
+          <div class="auth-league-tab" data-league="nfl">NFL</div>
+          <div class="auth-league-tab" data-league="mlb">MLB</div>
+          <div class="auth-league-tab" data-league="nhl">NHL</div>
+          <div class="auth-league-tab" data-league="wnba">WNBA</div>
+          <div class="auth-league-tab" data-league="mls">MLS</div>
+        </div>
+        <div class="auth-teams-grid" id="teamsGrid"></div>
+        <div style="font-family:'Share Tech Mono',monospace;font-size:0.7em;color:rgba(255,255,255,0.5);margin-top:6px;text-align:right;" id="authTeamCount">0 teams selected</div>
+        <!-- HIDDEN: old team chips kept for form data compatibility -->
+        <div id="oldTeamsGrid" style="display:none;">
           <div class="auth-team-chip"><input type="checkbox" id="t-nba-atl" value="Atlanta Hawks" data-league="NBA"><label for="t-nba-atl">Hawks</label></div>
           <div class="auth-team-chip"><input type="checkbox" id="t-nba-bos" value="Boston Celtics" data-league="NBA"><label for="t-nba-bos">Celtics</label></div>
           <div class="auth-team-chip"><input type="checkbox" id="t-nba-bkn" value="Brooklyn Nets" data-league="NBA"><label for="t-nba-bkn">Nets</label></div>
@@ -4851,7 +4894,7 @@
           <div class="auth-team-chip"><input type="checkbox" id="t-mls-tor" value="Toronto FC" data-league="MLS"><label for="t-mls-tor">Toronto FC</label></div>
           <div class="auth-team-chip"><input type="checkbox" id="t-mls-van" value="Vancouver Whitecaps" data-league="MLS"><label for="t-mls-van">Whitecaps</label></div>
         </div>
-        <div class="auth-small-label">Scroll to see all teams · We use this to send you player &amp; team updates for the leagues you follow</div>
+        <div class="auth-small-label">Tap logos to select · We use this to send you player &amp; team updates for the leagues you follow</div>
       </div>
 
       <div class="auth-input-group" style="margin-top:20px;">
@@ -6139,6 +6182,7 @@
       }
 
       .prop-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; transition: border-color 0.2s, transform 0.2s; }
+      .prop-card-headshot { width: 48px; height: 48px; }
       .prop-card:hover { border-color: rgba(255,184,0,0.4); transform: translateY(-2px); }
       .prop-card-header { display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; background: rgba(0,0,0,0.3); border-bottom: 1px solid var(--border); }
       .prop-card-name { font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: 1.15em; color: #fff; }
@@ -7062,6 +7106,14 @@
     'SA':'SPURS',                         // San Antonio alternate
   };
 
+  const LOGO_PATH = 'NBA - SIM/NBA POWER RANKINGS SIMULATOR/assets/images/';
+  function teamLogo(abbr, size) {
+    size = size || 16;
+    const name = TEAM_LOGO_MAP[(abbr||'').toUpperCase().trim()];
+    if (!name) return abbr || '';
+    return '<img src="' + LOGO_PATH + name + '.png" style="width:' + size + 'px;height:' + size + 'px;vertical-align:middle;object-fit:contain;" onerror="this.outerHTML=\'' + (abbr||'') + '\'" alt="' + (abbr||'') + '">';
+  }
+
   // ── PLAYERS STATE ──
   let currentPlatform = 'yahoo';
   let currentPosition = 'PG';
@@ -7108,14 +7160,14 @@
         const fppg       = parseFloat(p.fppg||0).toFixed(1);
         const proj       = parseFloat(p.projectedScore||0).toFixed(1);
         const salary     = p.salary ? '$'+p.salary : '—';
-        const nameEsc = (p.name||'').split("'").join('&#39;');
-        return `<div style="background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:16px;width:185px;min-width:185px;flex-shrink:0;text-align:center;cursor:pointer;transition:all 0.2s;" onclick="openFullCardByName('${nameEsc}','${pos}')" onmouseover="this.style.borderColor='rgba(123,47,255,0.5)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='none'">
+        const nameEsc = (p.name||'').replace(/'/g, '\\x27');
+        return `<div style="background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:16px;width:185px;min-width:0;flex-shrink:0;text-align:center;cursor:pointer;transition:all 0.2s;" onclick="openFullCardByName('${nameEsc}','${pos}')" onmouseover="this.style.borderColor='rgba(123,47,255,0.5)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='none'">
           <div style="font-family:'Share Tech Mono',monospace;font-size:0.65em;color:var(--primary);letter-spacing:2px;margin-bottom:8px;">${pos} · #1</div>
           <div style="width:64px;height:64px;border-radius:50%;overflow:hidden;margin:0 auto 10px;background:var(--bg);border:2px solid rgba(123,47,255,0.3);">
             ${imgSrc ? `<img src="${imgSrc}" style="width:100%;height:100%;object-fit:cover;object-position:center top;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ccircle cx=%2750%27 cy=%2735%27 r=%2722%27 fill=%27%23667%27/%3E%3Cellipse cx=%2750%27 cy=%2790%27 rx=%2735%27 ry=%2728%27 fill=%27%23667%27/%3E%3C/svg%3E'">` : `<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-family:'Rajdhani',sans-serif;font-weight:900;font-size:1.4em;color:var(--primary);">${initials}</div>`}
           </div>
           <div style="font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1.0em;color:#fff;margin-bottom:4px;">${p.name}</div>
-          <div style="font-family:'Share Tech Mono',monospace;font-size:0.6em;color:var(--text-muted);margin-bottom:10px;">${p.team||''} vs ${p.opponent||'?'}</div>
+          <div style="font-family:'Share Tech Mono',monospace;font-size:0.6em;color:var(--text-muted);margin-bottom:10px;">${teamLogo(p.team, 14)} vs ${teamLogo(p.opponent, 14)}</div>
           <div style="display:flex;gap:6px;justify-content:center;margin-bottom:8px;">
             <div style="text-align:center;"><div style="font-family:'Share Tech Mono',monospace;font-size:0.9em;color:var(--text);font-weight:700;">${fppg}</div><div style="font-family:'Share Tech Mono',monospace;font-size:0.52em;color:var(--text-muted);letter-spacing:1px;">FPPG</div></div>
             <div style="text-align:center;"><div style="font-family:'Share Tech Mono',monospace;font-size:0.9em;color:var(--primary);font-weight:700;">${proj}</div><div style="font-family:'Share Tech Mono',monospace;font-size:0.52em;color:var(--text-muted);letter-spacing:1px;">NS PROJ</div></div>
@@ -7169,7 +7221,7 @@
     var injBadge = (inj && inj !== 'HEALTHY' && inj !== '')
       ? '<span style="position:absolute;top:8px;left:8px;background:rgba(255,59,92,0.2);border:1px solid var(--red);color:var(--red);font-size:0.58em;padding:1px 5px;border-radius:4px;">' + inj + '</span>'
       : '';
-    var nameEsc = (p.name||'').split("'").join('&#39;');
+    var nameEsc = (p.name||'').replace(/'/g, '\\x27');
     var pos = (p.position||'').toUpperCase();
     // Matchup: always show away @ home
     var teamUC = (p.team||'').toUpperCase();
@@ -7189,7 +7241,7 @@
       + img
       + '<div class="yahoo-card-info">'
       + '<div class="yahoo-card-name">' + p.name + '</div>'
-      + '<div class="yahoo-card-pos-team" style="margin-top:2px;">' + pos + ' &middot; ' + matchupStr + '</div>'
+      + '<div class="yahoo-card-pos-team" style="margin-top:2px;">' + teamLogo(p.team, 14) + ' ' + pos + ' &middot; ' + matchupStr + '</div>'
       + '</div></div>'
       + '<div style="display:flex;align-items:center;gap:6px;font-family:\'Share Tech Mono\',monospace;font-size:0.72em;margin-bottom:8px;flex-wrap:nowrap;white-space:nowrap;overflow:hidden;">'
       + '<span style="background:#7B00FF;color:#fff;font-size:0.82em;padding:1px 4px;border-radius:3px;font-weight:900;font-style:italic;">Y!</span>'
@@ -7255,7 +7307,7 @@
         const nameHTML = isGTD
           ? '<span style="color:#FF8C00;font-weight:700;">' + p.name + ' <span style="font-size:0.7em;background:rgba(255,140,0,0.15);border:1px solid rgba(255,140,0,0.4);border-radius:4px;padding:1px 5px;letter-spacing:1px;">&#9888; GTD</span></span>'
           : p.name;
-        const nameEscPC = (p.name||'').split("'").join('&#39;');
+        const nameEscPC = (p.name||'').replace(/'/g, '\\x27');
         return `<div class="pos-card" onclick="openFullCardByName('${nameEscPC}','${pos}')">
           <div class="pos-card-rank">RANK #${i+1}</div>
           <div class="pos-card-header">
@@ -7263,7 +7315,7 @@
             ${headshotHTML}
             <div style="flex:1;">
               <div class="pos-card-name">${nameHTML}</div>
-              <div class="pos-card-meta">${p.team||''} · ${(p.position||'').toUpperCase()} ${p.opponent ? '· vs '+p.opponent : ''}</div>
+              <div class="pos-card-meta">${teamLogo(p.team, 14)} ${(p.position||'').toUpperCase()} ${p.opponent ? '· vs '+teamLogo(p.opponent, 14) : ''}</div>
             </div>
             <div>
               <div class="pos-card-fppg">${proj}</div>
@@ -7504,7 +7556,7 @@
     const todayDisplay = new Date().toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
 
     const _pct = document.getElementById('playerCardTitle'); if (_pct) _pct.textContent = p.name.toUpperCase();
-    const nameEscFC = (p.name||'').split("'").join('&#39;');
+    const nameEscFC = (p.name||'').replace(/'/g, '\\x27');
     document.getElementById('fullPlayerCard').innerHTML = `
       <div class="full-card">
 
@@ -7833,7 +7885,7 @@ Lead with the player name and rank. Mention recent form. Include the H2H history
         <div class="card-avatar">${initials}</div>
         <div>
           <div class="card-name">${p.name}</div>
-          <div class="card-meta">${p.team} · ${p.position} · ${p.game || 'TBD'}</div>
+          <div class="card-meta">${teamLogo(p.team, 14)} ${p.position} · ${p.game || 'TBD'}</div>
         </div>
       </div>
       <div>
@@ -8103,7 +8155,7 @@ Lead with the player name and rank. Mention recent form. Include the H2H history
         const blk   = parseFloat(p.projBLK||0).toFixed(1);
         const tov   = parseFloat(p.projTO||0).toFixed(1);
         const min   = parseFloat(p.projMIN||0).toFixed(1);
-        const safeName = p.name.split("'").join('&#39;');
+        const safeName = p.name.replace(/'/g, '\\x27');
         const injSt = (p.injuryStatus||'').toUpperCase().trim();
         const isInjOut = INJURED.has(injSt);
         const isGTD = injSt === 'GTD';
@@ -8321,7 +8373,7 @@ Lead with the player name and rank. Mention recent form. Include the H2H history
         const tov  = _stat(p.projTO,  p.avgTO);
         const mn   = _stat(p.projMIN, p.avgMIN);
         const sal  = p.salary ? '$'+p.salary : '—';
-        const safeName = (p.name||'').split("'").join('&#39;');
+        const safeName = (p.name||'').replace(/'/g, '\\x27');
         const ngInjSt = (p.injuryStatus||'').toUpperCase().trim();
         const ngIsInjOut = ['OUT','INJ','O'].includes(ngInjSt);
         const isGTD = ngInjSt === 'GTD';
@@ -8385,8 +8437,8 @@ Lead with the player name and rank. Mention recent form. Include the H2H history
             const initials = (p.name||'??').split(' ').map(n=>n[0]).join('').substring(0,2).toUpperCase();
             const imgSrc = p.headshotUrl || p.image || p.imageUrl || '';
             const img = imgSrc
-              ? '<img class="yahoo-card-headshot" src="' + imgSrc + '" onerror="this.src=\'' + silURL + '\'" alt="" style="width:58px;height:58px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid rgba(123,47,255,0.35);">'
-              : '<div style="width:58px;height:58px;border-radius:50%;background:rgba(123,47,255,0.15);border:2px solid rgba(123,47,255,0.35);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:Rajdhani,sans-serif;font-weight:900;font-size:1.2em;color:var(--primary);">' + initials + '</div>';
+              ? '<img class="yahoo-card-headshot" src="' + imgSrc + '" onerror="this.src=\'' + silURL + '\'" alt="">'
+              : '<div class="yahoo-card-headshot" style="background:rgba(123,47,255,0.15);display:flex;align-items:center;justify-content:center;font-family:Rajdhani,sans-serif;font-weight:900;font-size:1.2em;color:var(--primary);">' + initials + '</div>';
             const pts = parseFloat(p.avgPTS||p.projPTS||0).toFixed(1);
             const reb = parseFloat(p.avgREB||p.projREB||0).toFixed(1);
             const ast = parseFloat(p.avgAST||p.projAST||0).toFixed(1);
@@ -8399,7 +8451,7 @@ Lead with the player name and rank. Mention recent form. Include the H2H history
               ? '<span style="background:rgba(255,59,92,0.18);border:1px solid var(--red);color:var(--red);font-size:0.6em;padding:1px 5px;border-radius:4px;font-family:\'Share Tech Mono\',monospace;letter-spacing:1px;">' + ngInjSt + '</span>'
               : '';
             const cardOpacity = ngIsInjOut ? 'opacity:0.65;border-color:rgba(255,59,92,0.4);' : '';
-            const nameEsc = (p.name||'').split("'").join('&#39;');
+            const nameEsc = (p.name||'').replace(/'/g, '\\x27');
             const statChip = (val, lbl) => '<div style="text-align:center;min-width:32px;">'
               + '<div style="font-family:\'Rajdhani\',sans-serif;font-weight:900;font-size:1.05em;color:#fff;line-height:1;">' + val + '</div>'
               + '<div style="font-family:\'Share Tech Mono\',monospace;font-size:0.58em;color:var(--text-muted);letter-spacing:1px;">' + lbl + '</div>'
@@ -8832,7 +8884,7 @@ Lead with the player name and rank. Mention recent form. Include the H2H history
     el.innerHTML = top5.map(({p, cat, propLine, hitRate, isOver, stars}) => {
       const hs = p.headshotUrl || p.image || p.imageUrl || '';
       const ini = (p.name||'??').split(' ').map(n=>n[0]).join('').substring(0,2).toUpperCase();
-      const nameEsc = (p.name||'').split("'").join('&#39;');
+      const nameEsc = (p.name||'').replace(/'/g, '\\x27');
       const edgeColor = isOver ? 'var(--green)' : 'var(--red)';
       const edgeLabel = isOver ? '▲ OVER' : '▼ UNDER';
       const starHTML = renderStarHTML(stars);
@@ -8842,7 +8894,7 @@ Lead with the player name and rank. Mention recent form. Include the H2H history
         </div>
         <div style="font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.95em;color:#fff;margin-bottom:2px;line-height:1.2;">${p.name}</div>
         <div style="font-family:'Share Tech Mono',monospace;font-size:0.68em;color:var(--primary);letter-spacing:2px;margin-bottom:4px;font-weight:700;">${cat}</div>
-        <div style="font-family:'Share Tech Mono',monospace;font-size:0.58em;color:var(--text-muted);letter-spacing:1px;margin-bottom:6px;">${p.team}</div>
+        <div style="font-family:'Share Tech Mono',monospace;font-size:0.58em;color:var(--text-muted);letter-spacing:1px;margin-bottom:6px;">${teamLogo(p.team, 14)}</div>
         <div style="font-family:'Share Tech Mono',monospace;font-size:0.62em;letter-spacing:-1px;margin-bottom:4px;">${starHTML}</div>
         <div style="font-family:'Share Tech Mono',monospace;font-size:0.6em;color:rgba(255,255,255,0.45);letter-spacing:1px;margin-bottom:2px;">LINE</div>
         <div style="font-family:'Share Tech Mono',monospace;font-size:1.15em;font-weight:900;color:${edgeColor};margin-bottom:4px;">${edgeLabel} ${propLine}</div>
@@ -8934,22 +8986,22 @@ Lead with the player name and rank. Mention recent form. Include the H2H history
       if (parseFloat(propLine) < 0.5) return '';
       const stars = getStarRating(proj, avg, l3);
       const starStr = renderStarHTML(stars);
-      const nameEscProp = (p.name||'').split("'").join('&#39;');
+      const nameEscProp = (p.name||'').replace(/'/g, '\\x27');
       const isOver = proj > parseFloat(propLine);
       const edgeClass = isOver ? 'over' : 'under';
       const edgeLabel = isOver ? `▲ OVER ${propLine}` : `▼ UNDER ${propLine}`;
       const _hs6 = p.headshotUrl || p.image || p.imageUrl || '';
       const _ini6 = (p.name||'??').split(' ').map(n=>n[0]).join('').substring(0,2).toUpperCase();
       const _hsHTML6 = _hs6
-        ? `<img src="${_hs6}" style="width:48px;height:48px;border-radius:50%;object-fit:cover;object-position:center top;border:2px solid rgba(123,47,255,0.3);flex-shrink:0;" onerror="this.style.display='none'" alt="">`
-        : `<div style="width:48px;height:48px;border-radius:50%;background:rgba(123,47,255,0.1);border:2px solid rgba(123,47,255,0.25);display:flex;align-items:center;justify-content:center;font-family:'Rajdhani',sans-serif;font-weight:900;font-size:1.1em;color:var(--primary);flex-shrink:0;">${_ini6}</div>`;
+        ? `<img class="prop-card-headshot" src="${_hs6}" style="border-radius:50%;object-fit:cover;object-position:center top;border:2px solid rgba(123,47,255,0.3);flex-shrink:0;" onerror="this.style.display='none'" alt="">`
+        : `<div class="prop-card-headshot" style="border-radius:50%;background:rgba(123,47,255,0.1);border:2px solid rgba(123,47,255,0.25);display:flex;align-items:center;justify-content:center;font-family:'Rajdhani',sans-serif;font-weight:900;font-size:1.1em;color:var(--primary);flex-shrink:0;">${_ini6}</div>`;
       return `<div class="prop-card" onclick="openPropStatModal('${nameEscProp}');" style="cursor:pointer;" title="Click to view ${currentPropCat} history">
         <div class="prop-card-header">
           <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0;">
             ${_hsHTML6}
             <div style="flex:1;min-width:0;">
               <div class="prop-card-name">${p.name}</div>
-              <div class="prop-card-team">${p.team} · ${p.position} · ${p.game}</div>
+              <div class="prop-card-team">${teamLogo(p.team, 14)} ${p.position} · ${p.game}</div>
             </div>
           </div>
           <div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0;">
@@ -9053,7 +9105,7 @@ Lead with the player name and rank. Mention recent form. Include the H2H history
       const s = getStatValue(p, currentPropCat);
       const propLine = (s.avg * 0.97).toFixed(1);
       const arrow = s.proj > parseFloat(propLine) ? '↑' : '↓';
-      const safeName = p.name.split("'").join('&#39;');
+      const safeName = p.name.replace(/'/g, '\\x27');
       const pos = (p.position||'PG').toUpperCase();
       return `<span class="props-ticker-item" onclick="propsTickerOpenPlayer('${pos}','${safeName}')"><span class="star">★★★★★</span> <span class="pname">${p.name}</span> <span class="pval">(${currentPropCat} = ${s.proj.toFixed(1)}${arrow})</span></span>`;
     }).join('');
@@ -9067,7 +9119,8 @@ Lead with the player name and rank. Mention recent form. Include the H2H history
 
   // ── PROP STAT HISTORY MODAL ──
   function openPropStatModal(playerName) {
-    const p = APP.players.find(pl => pl.name === playerName);
+    const decoded = playerName.replace(/\\x27/g, "'").replace(/&#39;/g, "'");
+    const p = APP.players.find(pl => pl.name === decoded || pl.name === playerName);
     if (!p) return;
 
     const cat = currentPropCat;
@@ -9121,7 +9174,7 @@ Lead with the player name and rank. Mention recent form. Include the H2H history
              </div>`
         }
         <div class="psm-name" style="text-align:center;">${p.name}</div>
-        <div class="psm-meta" style="text-align:center;">${p.team} · ${p.position} · ${p.game || '—'} · ${p.time || ''}</div>
+        <div class="psm-meta" style="text-align:center;">${teamLogo(p.team, 16)} ${p.position} · ${p.game || '—'} · ${p.time || ''}</div>
         <div style="text-align:center;margin-top:6px;"><div class="psm-cat-badge">${cat} STAT HISTORY</div></div>
         <div class="psm-stars" style="margin-top:8px;text-align:center;">${starStr}</div>
       </div>
@@ -9315,7 +9368,7 @@ Lead with the player name and rank. Mention recent form. Include the H2H history
         <button class="builder-slot-remove" onclick="event.stopPropagation();removeBuilderPlayer(${idx})">✕</button>
         <div class="builder-slot-num">${idx + 1}</div>
         <div class="builder-slot-name">${p.name}</div>
-        <div class="builder-slot-meta">${p.team} · ${p.position} · ${sal}</div>
+        <div class="builder-slot-meta">${teamLogo(p.team, 14)} ${p.position} · ${sal}</div>
         <div class="builder-slot-proj">⚡ ${parseFloat(p.powerBoostIndex||p.projectedScore||0).toFixed(1)} NS ⚡ BOOST</div>`;
     }
     renderBuilderRoster();
@@ -10107,7 +10160,8 @@ Lead with the player name and rank. Mention recent form. Include the H2H history
 
   // Save prop player to lineup builder
   function savePropsPlayerToBuilder(playerName) {
-    const p = APP.players.find(pl => pl.name === playerName);
+    const decoded = playerName.replace(/\\x27/g, "'").replace(/&#39;/g, "'");
+    const p = APP.players.find(pl => pl.name === decoded || pl.name === playerName);
     if (!p) return;
     const boxIdx = addPlayerToLineup(p);
     if (boxIdx !== false) {
@@ -10246,7 +10300,7 @@ Lead with the player name and rank. Mention recent form. Include the H2H history
           ${lu.players.map(p => `
             <div class="saved-lineup-player">
               <div class="saved-lineup-player-name">${p.name}</div>
-              <div class="saved-lineup-player-meta">${p.team} · ${p.position} · $${p.salary} · ⚡${p.proj}</div>
+              <div class="saved-lineup-player-meta">${teamLogo(p.team, 14)} ${p.position} · $${p.salary} · ⚡${p.proj}</div>
             </div>`).join('')}
         </div>
       </div>`).join('');
@@ -10772,7 +10826,7 @@ Lead with the player name and rank. Mention recent form. Include the H2H history
     filtered.forEach(function(p) {
       const proj  = parseFloat(p.projectedScore||0).toFixed(1);
       const boost = parseFloat(p.cfsiIndex||p.projectedScore||0).toFixed(1);
-      const nm    = p.name.split("'").join('&#39;');
+      const nm    = p.name.replace(/'/g, '\\x27');
       html += '<div onclick="selectSwapPlayer(\'' + nm + '\')" style="background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:10px 14px;cursor:pointer;display:flex;align-items:center;gap:12px;" onmouseover="this.style.borderColor=\'rgba(123,47,255,0.4)\'" onmouseout="this.style.borderColor=\'var(--border)\'">'
         + '<div style="min-width:40px;font-family:\'Share Tech Mono\',monospace;font-size:0.72em;color:var(--gold);">' + (p.position||'—') + '</div>'
         + '<div style="flex:1;"><div style="font-family:Rajdhani,sans-serif;font-weight:700;color:#fff;">' + p.name + '</div>'
@@ -11676,6 +11730,127 @@ Lead with the player name and rank. Mention recent form. Include the H2H history
     const card = document.getElementById('signupCard');
     if (card) card.scrollTop = 0;
   }
+
+  /* ── SIGNUP TEAM LOGO GRID (ESPN CDN) ── */
+  (function initAuthTeamLogos() {
+    const AUTH_TEAMS = {
+      nba: [
+        {abbr:'ATL',name:'Hawks'},{abbr:'BOS',name:'Celtics'},{abbr:'BKN',name:'Nets'},{abbr:'CHA',name:'Hornets'},
+        {abbr:'CHI',name:'Bulls'},{abbr:'CLE',name:'Cavaliers'},{abbr:'DAL',name:'Mavericks'},{abbr:'DEN',name:'Nuggets'},
+        {abbr:'DET',name:'Pistons'},{abbr:'GSW',name:'Warriors'},{abbr:'HOU',name:'Rockets'},{abbr:'IND',name:'Pacers'},
+        {abbr:'LAC',name:'Clippers'},{abbr:'LAL',name:'Lakers'},{abbr:'MEM',name:'Grizzlies'},{abbr:'MIA',name:'Heat'},
+        {abbr:'MIL',name:'Bucks'},{abbr:'MIN',name:'Timberwolves'},{abbr:'NOP',name:'Pelicans'},{abbr:'NYK',name:'Knicks'},
+        {abbr:'OKC',name:'Thunder'},{abbr:'ORL',name:'Magic'},{abbr:'PHI',name:'76ers'},{abbr:'PHX',name:'Suns'},
+        {abbr:'POR',name:'Trail Blazers'},{abbr:'SAC',name:'Kings'},{abbr:'SAS',name:'Spurs'},{abbr:'TOR',name:'Raptors'},
+        {abbr:'UTA',name:'Jazz'},{abbr:'WAS',name:'Wizards'}
+      ],
+      nfl: [
+        {abbr:'ARI',name:'Cardinals'},{abbr:'ATL',name:'Falcons'},{abbr:'BAL',name:'Ravens'},{abbr:'BUF',name:'Bills'},
+        {abbr:'CAR',name:'Panthers'},{abbr:'CHI',name:'Bears'},{abbr:'CIN',name:'Bengals'},{abbr:'CLE',name:'Browns'},
+        {abbr:'DAL',name:'Cowboys'},{abbr:'DEN',name:'Broncos'},{abbr:'DET',name:'Lions'},{abbr:'GB',name:'Packers'},
+        {abbr:'HOU',name:'Texans'},{abbr:'IND',name:'Colts'},{abbr:'JAX',name:'Jaguars'},{abbr:'KC',name:'Chiefs'},
+        {abbr:'LV',name:'Raiders'},{abbr:'LAC',name:'Chargers'},{abbr:'LAR',name:'Rams'},{abbr:'MIA',name:'Dolphins'},
+        {abbr:'MIN',name:'Vikings'},{abbr:'NE',name:'Patriots'},{abbr:'NO',name:'Saints'},{abbr:'NYG',name:'Giants'},
+        {abbr:'NYJ',name:'Jets'},{abbr:'PHI',name:'Eagles'},{abbr:'PIT',name:'Steelers'},{abbr:'SEA',name:'Seahawks'},
+        {abbr:'SF',name:'49ers'},{abbr:'TB',name:'Buccaneers'},{abbr:'TEN',name:'Titans'},{abbr:'WAS',name:'Commanders'}
+      ],
+      mlb: [
+        {abbr:'ARI',name:'D-backs'},{abbr:'ATL',name:'Braves'},{abbr:'BAL',name:'Orioles'},{abbr:'BOS',name:'Red Sox'},
+        {abbr:'CHC',name:'Cubs'},{abbr:'CIN',name:'Reds'},{abbr:'CLE',name:'Guardians'},{abbr:'COL',name:'Rockies'},
+        {abbr:'CWS',name:'White Sox'},{abbr:'DET',name:'Tigers'},{abbr:'HOU',name:'Astros'},{abbr:'KC',name:'Royals'},
+        {abbr:'LAA',name:'Angels'},{abbr:'LAD',name:'Dodgers'},{abbr:'MIA',name:'Marlins'},{abbr:'MIL',name:'Brewers'},
+        {abbr:'MIN',name:'Twins'},{abbr:'NYM',name:'Mets'},{abbr:'NYY',name:'Yankees'},{abbr:'OAK',name:'Athletics'},
+        {abbr:'PHI',name:'Phillies'},{abbr:'PIT',name:'Pirates'},{abbr:'SD',name:'Padres'},{abbr:'SF',name:'Giants'},
+        {abbr:'SEA',name:'Mariners'},{abbr:'STL',name:'Cardinals'},{abbr:'TB',name:'Rays'},{abbr:'TEX',name:'Rangers'},
+        {abbr:'TOR',name:'Blue Jays'},{abbr:'WSH',name:'Nationals'}
+      ],
+      nhl: [
+        {abbr:'ANA',name:'Ducks'},{abbr:'BOS',name:'Bruins'},{abbr:'BUF',name:'Sabres'},{abbr:'CGY',name:'Flames'},
+        {abbr:'CAR',name:'Hurricanes'},{abbr:'CHI',name:'Blackhawks'},{abbr:'COL',name:'Avalanche'},{abbr:'CBJ',name:'Blue Jackets'},
+        {abbr:'DAL',name:'Stars'},{abbr:'DET',name:'Red Wings'},{abbr:'EDM',name:'Oilers'},{abbr:'FLA',name:'Panthers'},
+        {abbr:'LA',name:'Kings'},{abbr:'MIN',name:'Wild'},{abbr:'MTL',name:'Canadiens'},{abbr:'NSH',name:'Predators'},
+        {abbr:'NJ',name:'Devils'},{abbr:'NYI',name:'Islanders'},{abbr:'NYR',name:'Rangers'},{abbr:'OTT',name:'Senators'},
+        {abbr:'PHI',name:'Flyers'},{abbr:'PIT',name:'Penguins'},{abbr:'SEA',name:'Kraken'},{abbr:'SJ',name:'Sharks'},
+        {abbr:'STL',name:'Blues'},{abbr:'TB',name:'Lightning'},{abbr:'TOR',name:'Maple Leafs'},{abbr:'UTA',name:'Utah HC'},
+        {abbr:'VAN',name:'Canucks'},{abbr:'VGK',name:'Golden Knights'},{abbr:'WSH',name:'Capitals'},{abbr:'WPG',name:'Jets'}
+      ],
+      wnba: [
+        {abbr:'ATL',name:'Dream'},{abbr:'CHI',name:'Sky'},{abbr:'CONN',name:'Sun'},{abbr:'DAL',name:'Wings'},
+        {abbr:'IND',name:'Fever'},{abbr:'LA',name:'Sparks'},{abbr:'LV',name:'Aces'},{abbr:'MIN',name:'Lynx'},
+        {abbr:'NY',name:'Liberty'},{abbr:'PHX',name:'Mercury'},{abbr:'SEA',name:'Storm'},{abbr:'WSH',name:'Mystics'}
+      ],
+      mls: [
+        {abbr:'ATL',name:'Atlanta United',id:18766},{abbr:'AUS',name:'Austin FC',id:23703},{abbr:'CHI',name:'Chicago Fire',id:167},
+        {abbr:'CIN',name:'FC Cincinnati',id:21263},{abbr:'COL',name:'Rapids',id:169},{abbr:'CLB',name:'Crew',id:168},
+        {abbr:'DAL',name:'FC Dallas',id:170},{abbr:'DC',name:'D.C. United',id:166},{abbr:'HOU',name:'Dynamo',id:176},
+        {abbr:'LAFC',name:'LAFC',id:21264},{abbr:'LAG',name:'LA Galaxy',id:174},{abbr:'MIA',name:'Inter Miami',id:28740},
+        {abbr:'MIN',name:'Minnesota United',id:18766},{abbr:'MTL',name:'CF Montreal',id:181},{abbr:'NSH',name:'Nashville SC',id:23698},
+        {abbr:'NE',name:'Revolution',id:183},{abbr:'NYC',name:'NYCFC',id:17012},{abbr:'NYRB',name:'Red Bulls',id:185},
+        {abbr:'ORL',name:'Orlando City',id:9676},{abbr:'PHI',name:'Union',id:6110},{abbr:'POR',name:'Timbers',id:186},
+        {abbr:'RSL',name:'Real Salt Lake',id:179},{abbr:'SJ',name:'Earthquakes',id:187},{abbr:'SEA',name:'Sounders',id:9726},
+        {abbr:'SKC',name:'Sporting KC',id:180},{abbr:'STL',name:'St. Louis City',id:23764},{abbr:'CLT',name:'Charlotte FC',id:24107},
+        {abbr:'TOR',name:'Toronto FC',id:4186},{abbr:'VAN',name:'Whitecaps',id:4169}
+      ]
+    };
+
+    function authLogoUrl(league, abbr, team) {
+      const base = 'https://a.espncdn.com/i/teamlogos';
+      switch (league) {
+        case 'nba':  return base+'/nba/500/scoreboard/'+abbr.toLowerCase()+'.png';
+        case 'nfl':  return base+'/nfl/500/scoreboard/'+abbr.toLowerCase()+'.png';
+        case 'mlb':  return base+'/mlb/500/scoreboard/'+abbr.toLowerCase()+'.png';
+        case 'wnba': return base+'/wnba/500/'+abbr.toLowerCase()+'.png';
+        case 'nhl':  return base+'/nhl/500/scoreboard/'+abbr.toLowerCase()+'.png';
+        case 'mls':  return team && team.id
+          ? 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/'+team.id+'.png&h=80&w=80'
+          : base+'/soccer/500/default-team-logo-500.png';
+      }
+    }
+
+    const authSelectedTeams = new Set();
+    let authCurrentLeague = 'nba';
+
+    function renderAuthTeamGrid(league) {
+      authCurrentLeague = league;
+      const grid = document.getElementById('teamsGrid');
+      if (!grid) return;
+      const teams = AUTH_TEAMS[league] || [];
+      grid.innerHTML = teams.map(t => {
+        const key = league + '-' + t.abbr;
+        const sel = authSelectedTeams.has(key) ? ' selected' : '';
+        return '<div class="auth-team-logo-card'+sel+'" data-key="'+key+'" title="'+t.name+'" onclick="toggleAuthTeam(this,\''+key+'\')">'
+          + '<img src="'+authLogoUrl(league, t.abbr, t)+'" alt="'+t.name+'" onerror="this.style.opacity=\'0.3\'">'
+          + '</div>';
+      }).join('');
+    }
+
+    window.toggleAuthTeam = function(el, key) {
+      if (authSelectedTeams.has(key)) {
+        authSelectedTeams.delete(key);
+        el.classList.remove('selected');
+      } else {
+        authSelectedTeams.add(key);
+        el.classList.add('selected');
+      }
+      const ct = document.getElementById('authTeamCount');
+      if (ct) ct.textContent = authSelectedTeams.size + ' team' + (authSelectedTeams.size !== 1 ? 's' : '') + ' selected';
+      // Also check old checkboxes for form compatibility
+      const oldCb = document.getElementById('t-' + key);
+      if (oldCb) oldCb.checked = authSelectedTeams.has(key);
+    };
+
+    // League tab switching
+    document.querySelectorAll('#authLeagueTabs .auth-league-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('#authLeagueTabs .auth-league-tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        renderAuthTeamGrid(tab.dataset.league);
+      });
+    });
+
+    // Initial render
+    renderAuthTeamGrid('nba');
+  })();
 
   /* ── FORM HELPERS ── */
   function togglePass(inputId, btn) {

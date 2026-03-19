@@ -732,7 +732,7 @@
       /* ── DK Player pool — single full-width column ── */
       .players-grid { grid-template-columns: 1fr !important; gap: 10px !important; }
       .dk-player-card { padding: 14px !important; }
-      .dk-card-headshot { width: 58px !important; height: 58px !important; border-radius: 50% !important; border: 2px solid rgba(246,134,31,0.45) !important; }
+      .dk-card-headshot { width: 32px !important; height: 32px !important; border-radius: 50% !important; border: 1px solid rgba(246,134,31,0.45) !important; }
       .dk-card-name { font-size: 1.15em !important; white-space: normal !important; }
       .dk-card-pos-team { font-size: 0.7em !important; }
       .dk-card-salary { font-size: 0.9em !important; }
@@ -755,7 +755,10 @@
       .builder-btn{font-size:0.75em!important;padding:8px 12px!important;}
       .players-grid{grid-template-columns:1fr!important;}
       .dk-toast{font-size:0.85em!important;padding:10px 18px!important;white-space:normal!important;max-width:90vw!important;text-align:center!important;}
-      .dk-stat-grid{grid-template-columns:repeat(2,1fr)!important;}
+      .dk-stat-grid{display:flex!important;flex-wrap:nowrap!important;overflow-x:auto!important;gap:3px!important;}
+      .dk-stat-chip{min-width:32px!important;padding:2px 4px!important;flex-shrink:0!important;background:#000!important;border:1px solid rgba(255,255,255,0.12)!important;border-radius:4px!important;}
+      .dk-stat-chip-val{font-size:0.78em!important;}
+      .dk-stat-chip-lbl{font-size:0.48em!important;margin-top:1px!important;}
       #dkTopPicksGrid .dk-top-pick-card:last-child:nth-child(odd) { max-width: 72%; }
       .dk-top-picks-grid-wrap .dk-top-pick-card:last-child:nth-child(odd) { max-width: 72%; }
 
@@ -802,14 +805,14 @@
         display: flex !important;
         flex-direction: row !important;
         align-items: center !important;
-        gap: 12px !important;
-        padding: 12px !important;
-        border-radius: 12px !important;
-        min-height: 80px !important;
+        gap: 8px !important;
+        padding: 6px 8px !important;
+        border-radius: 8px !important;
+        min-height: 44px !important;
       }
       .dk-card-headshot {
-        width: 62px !important;
-        height: 62px !important;
+        width: 32px !important;
+        height: 32px !important;
         border-radius: 50% !important;
         flex-shrink: 0 !important;
         object-fit: cover !important;
@@ -819,19 +822,30 @@
         min-width: 0 !important;
       }
       .dk-card-name {
-        font-size: 1.1em !important;
+        font-size: 0.82em !important;
         font-weight: 700 !important;
         white-space: nowrap !important;
         overflow: hidden !important;
         text-overflow: ellipsis !important;
       }
       .dk-card-pos-team {
-        font-size: 0.72em !important;
+        font-size: 0.58em !important;
       }
       .dk-card-salary {
-        font-size: 0.88em !important;
+        font-size: 0.72em !important;
         font-weight: 700 !important;
       }
+
+      /* ── DK PROP CARDS COMPACT ── */
+      .prop-card-body { padding: 8px 10px !important; }
+      .prop-card-header { padding: 8px 10px !important; }
+      .prop-card-header img { width: 32px !important; height: 32px !important; }
+      .prop-card-name { font-size: 0.85em !important; white-space: nowrap !important; overflow: hidden !important; text-overflow: ellipsis !important; }
+      .prop-card-team { font-size: 0.55em !important; }
+      .prop-card-stars { font-size: 0.72em !important; }
+      .prop-card-footer { gap: 6px !important; padding: 6px 10px !important; }
+      .prop-save-btn { font-size: 0.68em !important; padding: 5px 10px !important; }
+      .prop-select-label { font-size: 0.65em !important; }
 
       /* ── DK BUILDER SLOTS ── */
       .dk-slots-row {
@@ -866,8 +880,25 @@
     @media(max-width:480px){
       .logo-main { font-size: 1.45em !important; }
       .topbar-inner { height: 52px !important; }
-      .dk-card-headshot { width: 52px !important; height: 52px !important; }
-      .dk-game-box { min-width: 140px !important; max-width: 140px !important; }
+      .dk-card-headshot { width: 32px !important; height: 32px !important; }
+      .dk-game-box { min-width: 120px !important; max-width: 130px !important; padding: 6px 4px !important; }
+      .dk-game-box .game-box-team img { width: 22px !important; height: 22px !important; }
+      .dk-game-box .game-box-team span, .dk-game-box-team span { font-size: 0.72em !important; letter-spacing: 0 !important; }
+      .dk-game-box-time { font-size: 0.55em !important; }
+      .dk-game-box-odds { font-size: 0.5em !important; }
+
+      /* ── DK PROP CARDS: explicit 480px compaction ── */
+      .prop-card-header img { width: 28px !important; height: 28px !important; border-radius: 50% !important; }
+      .prop-card-body { padding: 6px 8px !important; }
+      .prop-card-header { padding: 6px 8px !important; }
+      .prop-card-name { font-size: 0.78em !important; }
+      .prop-card-team { font-size: 0.5em !important; }
+      .prop-line-val { font-size: 1.1em !important; }
+      .prop-card-footer { gap: 4px !important; padding: 5px 8px !important; }
+      .prop-save-btn { font-size: 0.62em !important; padding: 4px 8px !important; }
+      .prop-avg-chip { padding: 4px 5px !important; }
+      .prop-avg-val { font-size: 0.82em !important; }
+      .prop-avg-lbl { font-size: 0.45em !important; }
     }
 
     /* ══════════════════════════════════════════════════════
@@ -1003,10 +1034,10 @@
     @media(max-width:480px){
       .dkfc-headshot,.dkfc-initials-box { width:70px; height:70px; }
       .dkfc-name { font-size:1.4em; }
-      .dkfc-stat-grid { grid-template-columns:repeat(4,1fr); gap:5px; }
-      .dkfc-stat-chip { padding:7px 3px; }
-      .dkfc-stat-chip-val { font-size:1em; }
-      .dkfc-stat-chip-lbl { font-size:0.55em; }
+      .dkfc-stat-grid { display:flex!important; flex-wrap:nowrap!important; overflow-x:auto!important; gap:4px!important; }
+      .dkfc-stat-chip { min-width:44px!important; padding:4px 6px!important; flex-shrink:0!important; border-radius:6px!important; }
+      .dkfc-stat-chip-val { font-size:0.9em!important; }
+      .dkfc-stat-chip-lbl { font-size:0.5em!important; }
       .dkfc-score-val { font-size:1.2em; }
       .dkfc-score-lbl { font-size:0.58em; }
       .dkfc-formula-row { font-size:0.72em; }
@@ -2137,7 +2168,7 @@
       }).sort((a,b) => parseFloat(b.powerBoostIndex||0) - parseFloat(a.powerBoostIndex||0));
       const p = posPlayers[0];
       if (!p) return '';
-      const nameEsc = p.name.replace(/'/g,"&#39;");
+      const nameEsc = p.name.replace(/'/g,"\\x27");
       const initials = p.name.split(' ').map(n=>n[0]).join('').substring(0,2).toUpperCase();
       const hs = p.headshotUrl
         ? `<div class="dk-top-pick-hs"><img src="${p.headshotUrl}" onerror="this.parentElement.innerHTML='<span style=\\'font-family:Rajdhani,sans-serif;font-weight:900;font-size:1.3em;color:var(--dk-orange)\\'>${initials}</span>'" alt=""></div>`
@@ -2150,7 +2181,7 @@
         <div class="dk-top-pick-pos">${pos} <span class="dk-top-pick-pos-num">#1</span></div>
         ${hs}
         <div class="dk-top-pick-name">${p.name}</div>
-        <div class="dk-top-pick-team">${p.team||'—'} · vs ${p.opponent||'?'}</div>
+        <div class="dk-top-pick-team">${dkTeamLogo(p.team, 14)} · vs ${dkTeamLogo(p.opponent, 14)}</div>
         <div class="dk-top-pick-scores">
           <div class="dk-top-pick-score-box"><div class="dk-top-pick-score-val" style="color:var(--text-muted);">${fppg}</div><div class="dk-top-pick-score-lbl">FPPG</div></div>
           <div class="dk-top-pick-score-box"><div class="dk-top-pick-score-val" style="color:var(--dk-orange);">${dkfp}</div><div class="dk-top-pick-score-lbl">NS PROJ</div></div>
@@ -2203,6 +2234,14 @@
     'UTA':'JAZZ','WAS':'WIZARDS','GS':'WARRIORS','GSW':'WARRIORS','NO':'PELICANS',
     'NOP':'PELICANS','PHO':'SUNS','PHX':'SUNS','NY':'KNICKS','SA':'SPURS'
   };
+
+  const DK_LOGO_PATH = 'NBA - SIM/NBA POWER RANKINGS SIMULATOR/assets/images/';
+  function dkTeamLogo(abbr, size) {
+    size = size || 16;
+    const name = DK_TEAM_LOGO_MAP[(abbr||'').toUpperCase().trim()];
+    if (!name) return abbr || '';
+    return '<img src="' + DK_LOGO_PATH + name + '.png" style="width:' + size + 'px;height:' + size + 'px;vertical-align:middle;object-fit:contain;" onerror="this.outerHTML=\'' + (abbr||'') + '\'" alt="' + (abbr||'') + '">';
+  }
 
   function buildDKGameBoxes() {
     const row = document.getElementById('dkGameBoxesRow');
@@ -2304,7 +2343,7 @@
         const fppg = parseFloat(p.fppg||0).toFixed(1);
         const proj = parseFloat(calcDKFP(p)||p.powerBoostIndex||0).toFixed(1);
         const sal  = '$' + (parseFloat(p.salary||0)/1000).toFixed(1) + 'K';
-        const name = (p.name||'').replace(/'/g,'&#39;');
+        const name = (p.name||'').replace(/'/g,'\\x27');
         const primaryPos=(p.position||'PG').toUpperCase().split('/')[0].split('-')[0].trim();
         return `<div class="dk-gm-player-row" onclick="openDKStatCardByName('${name}')">
           <span class="dk-gm-player-pos">${label||pos}</span>
@@ -2367,7 +2406,7 @@
   function buildDKStatCardHTML(p, inLineup, slotIdx) {
     const initials = (p.name||'??').split(' ').map(n=>n[0]).join('').substring(0,2).toUpperCase();
     const pos = (p.position||'').toUpperCase();
-    const nameEsc = p.name.replace(/'/g,"&#39;");
+    const nameEsc = p.name.replace(/'/g,"\\x27");
 
     // Team logo (same path as game matchup section)
     const teamAbbr = (p.team||'').toUpperCase().trim();
@@ -2509,7 +2548,7 @@
             ${p.name}
             <span class="dk-stat-pos-badge">${pos}</span>
           </div>
-          <div class="dk-fc-matchup">${p.team||'—'} vs ${p.opponent||'?'}${p.time ? ' · <span style="color:#00d4ff">'+p.time+'</span>' : ''}</div>
+          <div class="dk-fc-matchup">${dkTeamLogo(p.team, 16)} vs ${dkTeamLogo(p.opponent, 16)}${p.time ? ' · <span style="color:#00d4ff">'+p.time+'</span>' : ''}</div>
           <div class="dk-fc-salary">
             <span style="background:#fff;font-size:0.85em;padding:1px 6px;border-radius:3px;font-weight:900;display:inline-flex;align-items:center;gap:0;"><span style="color:#00FF41;font-family:'Rajdhani',sans-serif;font-weight:900;">D</span><span style="color:#f6861f;font-family:'Rajdhani',sans-serif;font-weight:900;">K</span></span>
             <span style="color:var(--gold)">${sal}</span>
@@ -2805,7 +2844,7 @@ Lead with the player name and DK rank. Mention salary value and recent form. Inc
     const inj = (p.injuryStatus||'').toUpperCase();
     const injBadge = (inj && inj !== 'HEALTHY' && inj !== '')
       ? `<span style="position:absolute;top:8px;left:8px;background:rgba(255,59,92,0.2);border:1px solid var(--red);color:var(--red);font-family:'Share Tech Mono',monospace;font-size:0.58em;padding:1px 5px;border-radius:4px;">${inj}</span>` : '';
-    const nameEsc = p.name.replace(/'/g,"&#39;");
+    const nameEsc = p.name.replace(/'/g,"\\x27");
     // Matchup: always show away @ home (team is away if opponent contains "@home")
     const teamUC = (p.team||'').toUpperCase();
     const oppUC  = (p.opponent||'?').toUpperCase();
@@ -2826,7 +2865,7 @@ Lead with the player name and DK rank. Mention salary value and recent form. Inc
         ${img}
         <div class="dk-card-info">
           <div class="dk-card-name">${p.name}</div>
-          <div class="dk-card-pos-team" style="margin-top:2px;">${p.position} · ${matchupStr}</div>
+          <div class="dk-card-pos-team" style="margin-top:2px;">${dkTeamLogo(p.team, 14)} ${p.position} · ${matchupStr}</div>
         </div>
       </div>
       <div style="display:flex;align-items:center;gap:6px;font-family:'Share Tech Mono',monospace;font-size:0.72em;margin-bottom:8px;flex-wrap:nowrap;white-space:nowrap;overflow:hidden;">
@@ -2865,7 +2904,7 @@ Lead with the player name and DK rank. Mention salary value and recent form. Inc
         <div class="builder-slot-pos">${slotDef.label}</div>
         ${img}
         <div class="builder-slot-name">${p.name}</div>
-        <div class="builder-slot-meta">${p.team} · ${sal}</div>
+        <div class="builder-slot-meta">${dkTeamLogo(p.team, 14)} ${sal}</div>
         <div class="builder-slot-proj">⚡ ${boost}</div>`;
       el.onclick = () => { openDKStatCard(p.name); };
     }
@@ -2934,10 +2973,10 @@ Lead with the player name and DK rank. Mention salary value and recent form. Inc
       const sal = '$' + (p.salary||0).toLocaleString();
       const fppg = parseFloat(p.fppg||0).toFixed(1);
       const boost = parseFloat(p.powerBoostIndex||0).toFixed(1);
-      const nameEsc = p.name.replace(/'/g,"&#39;");
+      const nameEsc = p.name.replace(/'/g,"\\x27");
       return `<tr class="slot-picker-row" onclick="dkPickPlayer('${nameEsc}')">
         <td>${img}</td>
-        <td><span class="sp-name">${p.name}</span><span class="sp-pos">${p.position}</span><br><span class="sp-team">${p.team}</span></td>
+        <td><span class="sp-name">${p.name}</span><span class="sp-pos">${p.position}</span><br><span class="sp-team">${dkTeamLogo(p.team, 14)}</span></td>
         <td><span class="sp-sal">${sal}</span></td>
         <td><span class="sp-fppg">${fppg}</span></td>
         <td><span class="sp-boost">⚡ ${boost}</span></td>
@@ -3480,7 +3519,7 @@ Lead with the player name and DK rank. Mention salary value and recent form. Inc
         const fppg = parseFloat(p.fppg||0).toFixed(1);
         const dkFP = calcDKFP(p).toFixed(1);
         const boost = parseFloat(p.powerBoostIndex||0).toFixed(1);
-        const nameEsc = p.name.replace(/'/g,"&#39;");
+        const nameEsc = p.name.replace(/'/g,"\\x27");
         const dkInjSt = (p.injuryStatus||'').toUpperCase().trim();
         const dkIsInjOut = ['OUT','INJ','O'].includes(dkInjSt);
         const isGTD = dkInjSt === 'GTD';
@@ -3715,7 +3754,7 @@ Lead with the player name and DK rank. Mention salary value and recent form. Inc
   }
 
   function dkSavePropsPlayerToBuilder(name) {
-    const p = dkPlayers.find(pl => pl.name === name || pl.name === name.replace(/&#39;/g,"'"));
+    const p = dkPlayers.find(pl => pl.name === name || pl.name === name.replace(/&#39;/g,"'") || pl.name === name.replace(/\\x27/g,"'"));
     if (!p) return;
     const btn = document.getElementById('dkpropsave-' + name.replace(/\s/g,'_'));
     if (btn) { btn.textContent = '✅ SAVED'; btn.classList.add('saved'); }
@@ -3919,7 +3958,7 @@ Lead with the player name and DK rank. Mention salary value and recent form. Inc
     el.innerHTML = top5.map(({p, cat, propLine, isOver, stars}) => {
       const hs = p.headshotUrl || '';
       const ini = (p.name||'??').split(' ').map(n=>n[0]).join('').substring(0,2).toUpperCase();
-      const nameEsc = (p.name||'').split("'").join('&#39;');
+      const nameEsc = (p.name||'').replace(/'/g, '\\x27');
       const edgeColor = isOver ? 'var(--dk-green)' : 'var(--red)';
       const edgeLabel = isOver ? '▲ OVER' : '▼ UNDER';
       const starHTML = renderStarHTML(stars);
@@ -3929,7 +3968,7 @@ Lead with the player name and DK rank. Mention salary value and recent form. Inc
         </div>
         <div style="font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.95em;color:#fff;margin-bottom:2px;line-height:1.2;">${p.name}</div>
         <div style="font-family:'Share Tech Mono',monospace;font-size:0.68em;color:var(--dk-orange);letter-spacing:2px;margin-bottom:4px;font-weight:700;">${cat}</div>
-        <div style="font-family:'Share Tech Mono',monospace;font-size:0.58em;color:var(--text-muted);letter-spacing:1px;margin-bottom:6px;">${p.team}</div>
+        <div style="font-family:'Share Tech Mono',monospace;font-size:0.58em;color:var(--text-muted);letter-spacing:1px;margin-bottom:6px;">${dkTeamLogo(p.team, 14)}</div>
         <div style="font-family:'Share Tech Mono',monospace;font-size:0.62em;letter-spacing:-1px;margin-bottom:4px;">${starHTML}</div>
         <div style="font-family:'Share Tech Mono',monospace;font-size:0.6em;color:rgba(255,255,255,0.45);letter-spacing:1px;margin-bottom:2px;">LINE</div>
         <div style="font-family:'Share Tech Mono',monospace;font-size:1.15em;font-weight:900;color:${edgeColor};margin-bottom:4px;">${edgeLabel} ${propLine}</div>
@@ -4000,7 +4039,7 @@ Lead with the player name and DK rank. Mention salary value and recent form. Inc
       const propLine = avg > 0 ? (avg * 0.97).toFixed(1) : proj.toFixed(1);
       const stars = dkPropGetStarRating(proj, avg, l3);
       const starStr = renderStarHTML(stars);
-      const nameEsc = (p.name||'').split("'").join('&#39;');
+      const nameEsc = (p.name||'').replace(/'/g, '\\x27');
       const isOver = proj > parseFloat(propLine);
       const edgeClass = isOver ? 'over' : 'under';
       const edgeLabel = isOver ? `▲ OVER ${propLine}` : `▼ UNDER ${propLine}`;
@@ -4016,7 +4055,7 @@ Lead with the player name and DK rank. Mention salary value and recent form. Inc
             ${hsHTML}
             <div style="flex:1;min-width:0;">
               <div class="prop-card-name">${p.name}</div>
-              <div class="prop-card-team">${p.position||'—'} · ${p.team||'—'} vs ${p.opponent||'?'}</div>
+              <div class="prop-card-team">${p.position||'—'} · ${dkTeamLogo(p.team, 14)} vs ${dkTeamLogo(p.opponent, 14)}</div>
             </div>
           </div>
           <div style="display:flex;flex-direction:column;align-items:flex-end;gap:3px;flex-shrink:0;">
@@ -4058,7 +4097,7 @@ Lead with the player name and DK rank. Mention salary value and recent form. Inc
   // DK PROP STAT MODAL
   // ══════════════════════════════════════════════
   function openDKPropStatModal(name) {
-    const p = dkPlayers.find(pl => pl.name === name || pl.name === name.replace(/&#39;/g,"'"));
+    const p = dkPlayers.find(pl => pl.name === name || pl.name === name.replace(/&#39;/g,"'") || pl.name === name.replace(/\\x27/g,"'"));
     if (!p) { console.warn('DK prop modal: player not found', name); return; }
     const cat = dkCurrentPropCat;
     const stats = dkPropGetStatValue(p, cat);
@@ -4099,7 +4138,7 @@ Lead with the player name and DK rank. Mention salary value and recent form. Inc
       <div style="margin-bottom:16px;">
         ${hsHTML}
         <div style="font-family:'Rajdhani',sans-serif;font-weight:900;font-size:1.75em;color:var(--dk-orange);letter-spacing:1px;">${p.name}</div>
-        <div style="font-family:'Share Tech Mono',monospace;font-size:0.7em;color:var(--text-muted);letter-spacing:1px;margin-top:3px;">${p.team||'—'} · ${p.position||'—'} · vs ${p.opponent||'?'} · ${p.time||''}</div>
+        <div style="font-family:'Share Tech Mono',monospace;font-size:0.7em;color:var(--text-muted);letter-spacing:1px;margin-top:3px;">${dkTeamLogo(p.team, 14)} · ${p.position||'—'} · vs ${dkTeamLogo(p.opponent, 14)} · ${p.time||''}</div>
         <div style="display:inline-block;padding:4px 14px;border-radius:6px;font-family:'Share Tech Mono',monospace;font-size:0.76em;font-weight:700;letter-spacing:2px;background:rgba(246,134,31,0.12);border:1px solid rgba(246,134,31,0.35);color:var(--dk-orange);margin-top:8px;">${cat} STAT HISTORY</div>
         <div style="color:#FFD700;font-size:1em;letter-spacing:-1px;margin-top:8px;">${starStr}</div>
       </div>
@@ -4148,7 +4187,7 @@ Lead with the player name and DK rank. Mention salary value and recent form. Inc
     if (!p) { showDKToast('Player data not found'); return; }
 
     const inLineup = dkLineup.some(l => l && l.name === name);
-    const nameEsc  = p.name.replace(/'/g,"&#39;");
+    const nameEsc  = p.name.replace(/'/g,"\\x27");
 
     // Headshot or initials
     const initials = (p.name||'??').split(' ').map(n=>n[0]).join('').substring(0,2).toUpperCase();
@@ -4231,7 +4270,7 @@ Lead with the player name and DK rank. Mention salary value and recent form. Inc
         ${headshotHTML}
         <div class="dkfc-identity">
           <div class="dkfc-name">${p.name}<span class="dkfc-pos-badge">${p.position||'—'}</span></div>
-          <div class="dkfc-meta">${p.team||'—'} · vs ${p.opponent||'?'} · ${p.time||''}</div>
+          <div class="dkfc-meta">${dkTeamLogo(p.team, 14)} · vs ${dkTeamLogo(p.opponent, 14)} · ${p.time||''}</div>
           <div class="dkfc-salary-row">
             <span class="dkfc-salary">${sal}</span>
             <span class="dkfc-fppg">DK FPPG: ${fppg}</span>
@@ -4497,7 +4536,7 @@ Lead with the player name and DK rank. Mention salary value and recent form. Inc
   }
   </script>
 
-  <div id="dkPropStatModalOverlay" style="display:none;position:fixed;inset:0;z-index:10600;background:rgba(0,0,0,0.82);backdrop-filter:blur(4px);padding:20px;overflow-y:auto;display:none;align-items:flex-start;justify-content:center;" onclick="if(event.target===this)closeDKPropStatModal()">
+  <div id="dkPropStatModalOverlay" style="display:none;position:fixed;inset:0;z-index:10600;background:rgba(0,0,0,0.82);backdrop-filter:blur(4px);padding:20px;overflow-y:auto;align-items:flex-start;justify-content:center;" onclick="if(event.target===this)closeDKPropStatModal()">
     <div id="dkPropStatModal" style="background:var(--dk-bg2);border:1px solid rgba(246,134,31,0.3);border-radius:18px;padding:24px 22px 22px;max-width:560px;width:100%;margin:40px auto;position:relative;">
       <button onclick="closeDKPropStatModal()" style="position:absolute;top:14px;right:14px;background:rgba(255,59,92,0.12);border:1px solid rgba(255,59,92,0.3);color:#ff3b5c;font-family:'Share Tech Mono',monospace;font-size:0.82em;padding:5px 12px;border-radius:6px;cursor:pointer;letter-spacing:1px;">✕ CLOSE</button>
       <div id="dkPropStatModalContent"></div>
